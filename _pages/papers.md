@@ -14,7 +14,7 @@ These papers form a cohesive argument across four domains:
 
 The prevailing AI paradigm assumes that scaling computational resources will lead to artificial general intelligence. This paper challenges that view through a thought experiment: the Evolutionary Processing Unit (EPU) represents ~5.5 × 10³⁸ brain-equivalent FLOPS of cumulative computational effort over four billion years. Rather than attempting to replicate this through brute force, we should understand the architectural principles evolution discovered: modularity, plasticity, causal grounding, and efficient attention allocation.
 
-[Download PDF](#) | [Read summary](#)
+[Download PDF](/assets/papers/EPUandBPU-FINAL.pdf)
 
 ---
 
@@ -23,7 +23,7 @@ The prevailing AI paradigm assumes that scaling computational resources will lea
 
 This paper proposes a concrete alternative to pure scaling: a modular AI architecture with specialized components coordinated by a dynamic executive function, inspired by the biological brain's distributed intelligence. The framework emphasizes continuous plasticity, explicit bias correction, causal reasoning capabilities, and built-in value alignment—offering a more efficient and interpretable path toward Augmented Human Intelligence (AHI).
 
-[Download PDF](#) | [Read summary](#)
+[Download PDF](/assets/papers/beyond-scale-modular-ai-maconochie.pdf)
 
 ---
 
@@ -32,7 +32,7 @@ This paper proposes a concrete alternative to pure scaling: a modular AI archite
 
 The 2017 Transformer paper demonstrated that attention mechanisms—selective focus on relevant information—are sufficient for remarkable AI performance. This paper argues that attention is not merely a technical mechanism but a fundamental principle governing both artificial and biological intelligence. Understanding attention as a resource allocation strategy reveals insights for building better AI systems and for living more deliberately as humans.
 
-[Download PDF](#) | [Read summary](#)
+[Download PDF](/assets/papers/Attention-Final.pdf)
 
 ---
 
@@ -41,7 +41,7 @@ The 2017 Transformer paper demonstrated that attention mechanisms—selective fo
 
 Modern life offers endless options but limited clarity about what actually matters. This paper introduces a practical framework for identifying priorities, tracking progress, and adapting to change. Grounded in behavioral science and cognitive architecture, the Mastery of Life (MOL) framework treats human flourishing as an attention allocation problem—demonstrating how principles from AI and evolutionary biology can be deliberately applied to enhance how we live.
 
-[Download PDF](#) | [Read summary](#)
+[Download PDF](/assets/papers/MOL-Final.pdf)
 
 ---
 
