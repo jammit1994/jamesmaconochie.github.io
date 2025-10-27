@@ -1,9 +1,10 @@
+# main links
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
   - title: "About"
     url: /about/
+  - title: "Working Papers"
+    url: /papers/
+  - title: "Blog"
+    url: /year-archive/
+  - title: "Contact"
+    url: /about/#contact
