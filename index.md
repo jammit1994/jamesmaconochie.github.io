@@ -3,9 +3,9 @@ layout: splash
 title: "Exploring the Edge of Human and Artificial Intelligence"
 permalink: /
 header:
-  overlay_image: /assets/images/charles-sunrise.jpg
+  overlay_image: /assets/images/sunrise_over_boston.jpg
   overlay_filter: 0.38
-  caption: "Sunrise over the Charles River — Cambridge (left) and Boston (right)"
+  caption: "Sunrise over the Charles River between Cambridge and Boston"
   actions:
     - label: "Read the Papers"
       url: /papers/
