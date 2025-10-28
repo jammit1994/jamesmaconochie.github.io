@@ -23,13 +23,13 @@ excerpt: "Working papers and frameworks on architecture, attention, and the purs
   height: auto !important;
   background-position: center 35% !important;
   background-size: cover !important;
-  padding-top: 0 !important;
+  padding-top: 1.75rem !important;
   padding-bottom: 1.75rem !important;
 }
 
 /* 🎯 Move the subtitle down relative to the title */
 .page__hero--overlay .page__lead {
-  margin-top: 3rem !important;      /* increase to push subtitle lower */
+  margin-top: 6rem !important;      /* increase to push subtitle lower */
   margin-bottom: 2rem !important;   /* adds some space before buttons */
 }
 
