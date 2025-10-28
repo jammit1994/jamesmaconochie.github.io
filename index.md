@@ -47,14 +47,14 @@ excerpt: "Working papers and frameworks on architecture, attention, and the purs
 /* ✅ Tablet & Mobile overrides */
 @media (max-width: 992px) {
   .page__hero--overlay {
-    min-height: 55vh !important;              /* a bit taller for mobile */
+    min-height: 50vh !important;              /* a bit taller for mobile */
     background-position: center 40% !important;
     padding-top: 0.5rem !important;           /* small breathing space above */
     padding-bottom: 2rem !important;
   }
   .page__hero--overlay .page__lead {
-    margin-top: 2.75rem !important;           /* maintain visible gap under title */
-    margin-bottom: 1.75rem !important;
+    margin-top: 10rem !important;           /* maintain visible gap under title */
+    margin-bottom: 0rem !important;
   }
   .page__hero--overlay .page__actions {
     margin-top: 2.25rem !important;           /* keep buttons separated */
@@ -64,11 +64,11 @@ excerpt: "Working papers and frameworks on architecture, attention, and the purs
 /* ✅ Very small screens (e.g., phones <600px) */
 @media (max-width: 600px) {
   .page__hero--overlay {
-    min-height: 60vh !important;              /* ensure room for all text */
+    min-height: 55vh !important;              /* ensure room for all text */
     background-position: center 45% !important;
   }
   .page__hero--overlay .page__lead {
-    margin-top: 2.5rem !important;
+    margin-top: 10rem !important;
   }
 }
 </style>
