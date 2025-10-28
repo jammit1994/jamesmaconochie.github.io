@@ -17,37 +17,37 @@ excerpt: "<br><br><br><br>Working papers and frameworks on architecture, attenti
 ---
 
 <style>
-/* Force a shallower hero and control the crop, even if the theme uses a pseudo-element */
+/* Shallower hero that still expands to fit its content */
 .page__hero--overlay {
-  height: 48vh !important;         /* explicit height */
-  min-height: 0 !important;        /* neutralize theme min-height */
-  background-position: center 35% !important;  /* adjust framing */
+  min-height: 48vh !important;          /* target height */
+  height: auto !important;               /* allow growth for buttons */
+  background-position: center 35% !important;
   background-size: cover !important;
-  padding-top: 0 !important;       /* remove theme's vertical padding */
-  padding-bottom: 0 !important;
+  padding-top: 1.75rem !important;
+  padding-bottom: 1.75rem !important;
 }
 
-/* If the theme sets height via a pseudo-element, neutralize it */
+/* remove the earlier ::before hack; let theme handle it normally */
 .page__hero--overlay::before {
-  height: 100% !important;
-  padding-top: 0 !important;       /* some themes use padding-top to set hero height */
+  height: auto !important;
+  padding-top: 0 !important;
 }
 
-/* Shift the whole text block lower inside the shallower hero */
-.page__hero--overlay .wrapper {
-  padding-top: 2rem !important;
-  padding-bottom: 1.5rem !important;
-}
-
-/* Push the subtitle down relative to the title */
+/* keep subtitle lower relative to title */
 .page__hero .page__lead {
   margin-top: 2.5rem !important;
 }
 
-/* Mobile: slightly taller for readability */
+/* optional: nudge the whole block a touch */
+.page__hero--overlay .wrapper {
+  padding-top: 0.5rem !important;       /* increase to push lower */
+  padding-bottom: 0.5rem !important;
+}
+
+/* mobile: a bit taller for readability */
 @media (max-width: 768px) {
   .page__hero--overlay {
-    height: 45vh !important;
+    min-height: 52vh !important;
     background-position: center 40% !important;
   }
 }
