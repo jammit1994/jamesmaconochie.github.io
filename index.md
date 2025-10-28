@@ -13,7 +13,7 @@ header:
       class: "btn--primary"
     - label: "About James"
       url: /about/
-excerpt: "<br><br>Working papers and frameworks on architecture, attention, and the pursuit of wisdom in machine intelligence."
+excerpt: "<br><br><br><br>Working papers and frameworks on architecture, attention, and the pursuit of wisdom in machine intelligence."
 ---
 
 Welcome! I build and write about modular, biologically inspired approaches to AI—how systems learn, adapt, and coordinate, and how human attention and meaning should guide what we build. These working papers are living documents: clear enough for practitioners, grounded enough for researchers, and open to revision as the field evolves.
