@@ -29,7 +29,7 @@ excerpt: "Working papers and frameworks on architecture, attention, and the purs
 
 /* 🎯 Move the subtitle down relative to the title */
 .page__hero--overlay .page__lead {
-  margin-top: 12rem !important;      /* increase to push subtitle lower */
+  margin-top: 16rem !important;      /* increase to push subtitle lower */
   margin-bottom: 1.75rem !important;   /* adds some space before buttons */
 }
 
