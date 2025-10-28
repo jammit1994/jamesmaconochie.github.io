@@ -17,38 +17,40 @@ excerpt: "Working papers and frameworks on architecture, attention, and the purs
 ---
 
 <style>
-/* keep your shallower hero */
+/* Keep your shallower hero as before */
 .page__hero--overlay {
   min-height: 48vh !important;
   height: auto !important;
   background-position: center 35% !important;
   background-size: cover !important;
-  padding-top: 0 !important;        /* no extra space above the title */
+  padding-top: 0 !important;
   padding-bottom: 1.75rem !important;
 }
 
-/* 1) Move the SUBTITLE (excerpt) down RELATIVE TO THE TITLE */
-.page__hero--overlay h1 + p                 { margin-top: 3rem !important; }
-.page__hero--overlay [class*="page__title"] + p { margin-top: 3rem !important; }  /* fallback if title has a class */
-.page__hero--overlay .page__lead            { margin-top: 3rem !important; }      /* fallback if excerpt has this class */
+/* 🎯 Move the subtitle down relative to the title */
+.page__hero--overlay .page__lead {
+  margin-top: 3rem !important;      /* increase to push subtitle lower */
+  margin-bottom: 2rem !important;   /* adds some space before buttons */
+}
 
-/* 2) Move the BUTTON BLOCK down (the element immediately after the excerpt) */
-.page__hero--overlay h1 + p + *                 { margin-top: 2rem !important; }
-.page__hero--overlay [class*="page__title"] + p + * { margin-top: 2rem !important; }
+/* 🎯 Move the Read the Papers / About James buttons down as a group */
+.page__hero--overlay .page__actions {
+  margin-top: 1.5rem !important;    /* increase if you want more separation */
+}
 
-/* If the theme wraps buttons differently, also nudge common containers */
-.page__hero--overlay .page__actions,
-.page__hero--overlay .btn-group,
-.page__hero--overlay .btn { margin-top: 2rem !important; }
+/* Ensure the buttons stay vertically inside the hero */
+.page__hero--overlay .page__actions .btn {
+  position: relative !important;
+  top: 0 !important;
+}
 
-/* mobile: a touch taller for readability */
+/* Mobile adjustments for readability */
 @media (max-width: 768px) {
-  .page__hero--overlay { min-height: 52vh !important; background-position: center 40% !important; }
-  .page__hero--overlay h1 + p,
-  .page__hero--overlay [class*="page__title"] + p,
-  .page__hero--overlay .page__lead { margin-top: 2.25rem !important; }
-  .page__hero--overlay h1 + p + *,
-  .page__hero--overlay [class*="page__title"] + p + * { margin-top: 1.5rem !important; }
+  .page__hero--overlay {
+    min-height: 52vh !important;
+    background-position: center 40% !important;
+  }
+  .page__hero--overlay .page__lead { margin-top: 2rem !important; }
 }
 </style>
 
