@@ -17,42 +17,37 @@ excerpt: "<br><br><br><br><br><br><br>Working papers and frameworks on architect
 ---
 
 <style>
-/* TEMP: force hero height + positioning with very broad selectors */
-.page__hero,
-.page__hero--overlay,
-.page__hero--image,
-section.page__hero,
-section.page__hero--overlay {
-  min-height: 38vh !important;        /* make it shallower (try 34–45) */
-  padding-top: 1.5rem !important;
-  padding-bottom: 1.5rem !important;
-  background-position: center 35% !important; /* adjust crop: 25% (higher), 55% (lower) */
+/* Force a shallower hero and control the crop, even if the theme uses a pseudo-element */
+.page__hero--overlay {
+  height: 38vh !important;         /* explicit height */
+  min-height: 0 !important;        /* neutralize theme min-height */
+  background-position: center 35% !important;  /* adjust framing */
   background-size: cover !important;
-  background-repeat: no-repeat !important;
+  padding-top: 0 !important;       /* remove theme's vertical padding */
+  padding-bottom: 0 !important;
 }
 
-/* shift the whole text block down slightly */
-.page__hero .wrapper,
+/* If the theme sets height via a pseudo-element, neutralize it */
+.page__hero--overlay::before {
+  height: 100% !important;
+  padding-top: 0 !important;       /* some themes use padding-top to set hero height */
+}
+
+/* Shift the whole text block lower inside the shallower hero */
 .page__hero--overlay .wrapper {
-  padding-top: 2rem !important;        /* increase to push text lower as a group */
+  padding-top: 2rem !important;
+  padding-bottom: 1.5rem !important;
 }
 
-/* push the subtitle (excerpt) down relative to the title */
+/* Push the subtitle down relative to the title */
 .page__hero .page__lead {
-  margin-top: 2.5rem !important;       /* increase to move it further down */
+  margin-top: 2.5rem !important;
 }
 
-/* add a visible test outline so we KNOW the rule applied; remove later */
-.page__hero--overlay { outline: 3px dashed rgba(0,0,0,.25) !important; }
-
-/* mobile: a bit taller for readability */
+/* Mobile: slightly taller for readability */
 @media (max-width: 768px) {
-  .page__hero,
-  .page__hero--overlay,
-  .page__hero--image,
-  section.page__hero,
-  section.page__hero--overlay {
-    min-height: 45vh !important;
+  .page__hero--overlay {
+    height: 45vh !important;
     background-position: center 40% !important;
   }
 }
