@@ -1,12 +1,21 @@
-/* Make the splash hero shallower and tweak image focus */
+/* Make the splash hero shallower and adjust the crop */
 .layout--splash .page__hero--overlay {
-  min-height: 38vh;      /* default feels ~55–60vh; try 38–45 for shallower */
-  padding: 2rem 0;       /* reduces top/bottom padding around the text */
-  background-position: center 35%;  /* shift the crop up/down (0%=top, 100%=bottom) */
-  /* background-size stays 'cover' so it remains full-bleed and responsive */
+  min-height: 38vh;              /* tweak 34–45vh to taste */
+  padding: 2rem 0;               /* less vertical padding around text */
+  background-position: center 35%; /* move crop: lower % = higher crop */
 }
 
-/* Optional: slightly taller on small screens for readability */
+/* Lower the subtitle (excerpt) a bit */
+.layout--splash .page__hero .page__lead {
+  margin-top: 3rem;              /* increase if you want it lower */
+}
+
+/* (Optional) Lower the whole text block slightly */
+.layout--splash .page__hero--overlay .wrapper {
+  padding-top: 1.5rem;           /* bump up to push text lower */
+}
+
+/* Slightly taller on small screens for readability */
 @media (max-width: 768px) {
   .layout--splash .page__hero--overlay {
     min-height: 45vh;
