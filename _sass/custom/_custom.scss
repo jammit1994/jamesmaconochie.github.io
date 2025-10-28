@@ -1,24 +1,29 @@
-/* Make the splash hero shallower and adjust the crop */
-.layout--splash .page__hero--overlay {
-  min-height: 38vh;              /* tweak 34–45vh to taste */
-  padding: 2rem 0;               /* less vertical padding around text */
-  background-position: center 35%; /* move crop: lower % = higher crop */
+/* ----------------------------------------------------------
+   Custom overrides for hero layout (James Maconochie site)
+   ---------------------------------------------------------- */
+
+/* Make the splash hero shallower and adjust image framing */
+.page__hero--overlay {
+  min-height: 38vh;              /* reduce height (default ≈ 55–60vh) */
+  background-position: center 35%; /* move visible crop up/down */
+  padding-top: 1.5rem;           /* tighten spacing above text */
+  padding-bottom: 1.5rem;        /* tighten spacing below text */
 }
 
-/* Lower the subtitle (excerpt) a bit */
-.layout--splash .page__hero .page__lead {
-  margin-top: 3rem;              /* increase if you want it lower */
+/* Push subtitle (excerpt) down */
+.page__hero .page__lead {
+  margin-top: 2.5rem;            /* increase to move it further down */
 }
 
-/* (Optional) Lower the whole text block slightly */
-.layout--splash .page__hero--overlay .wrapper {
-  padding-top: 1.5rem;           /* bump up to push text lower */
+/* Push entire text block down slightly */
+.page__hero--overlay .wrapper {
+  padding-top: 1rem;             /* increase to move the text lower */
 }
 
-/* Slightly taller on small screens for readability */
+/* Adjust hero height and framing on small screens */
 @media (max-width: 768px) {
-  .layout--splash .page__hero--overlay {
-    min-height: 45vh;
+  .page__hero--overlay {
+    min-height: 45vh;            /* slightly taller for mobile */
     background-position: center 40%;
   }
 }
