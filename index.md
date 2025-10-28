@@ -24,18 +24,18 @@ excerpt: "Working papers and frameworks on architecture, attention, and the purs
   background-position: center 35% !important;
   background-size: cover !important;
   padding-top: 1.75rem !important;
-  padding-bottom: 1.75rem !important;
+  padding-bottom: 0rem !important;
 }
 
 /* 🎯 Move the subtitle down relative to the title */
 .page__hero--overlay .page__lead {
   margin-top: 16rem !important;      /* increase to push subtitle lower */
-  margin-bottom: 1.75rem !important;   /* adds some space before buttons */
+  margin-bottom: 0rem !important;   /* adds some space before buttons */
 }
 
 /* 🎯 Move the Read the Papers / About James buttons down as a group */
 .page__hero--overlay .page__actions {
-  margin-top: 1.0rem !important;    /* increase if you want more separation */
+  margin-top: 0rem !important;    /* increase if you want more separation */
 }
 
 /* Ensure the buttons stay vertically inside the hero */
