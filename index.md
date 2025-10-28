@@ -23,26 +23,36 @@ excerpt: "<br><br><br><br>Working papers and frameworks on architecture, attenti
   height: auto !important;
   background-position: center 35% !important;
   background-size: cover !important;
-  padding-top: 2.0rem !important;    /* pushes entire block down */
+  padding-top: 0 !important;      /* we'll add spacing with a spacer below */
   padding-bottom: 1.75rem !important;
 }
 
-/* Subtitle (excerpt) spacing under title */
-.page__hero .page__lead {
-  margin-top: 5.5rem !important;     /* increase to slide subtitle down */
+/* 🚀 Add a spacer at the top of the hero content to push everything down */
+.page__hero--overlay .wrapper::before {
+  content: "";
+  display: block;
+  height: 3rem;                   /* increase to push lower (e.g., 4rem, 5rem) */
 }
 
-/* Button row spacing under subtitle */
+/* Subtitle (excerpt) still can have some extra space if desired */
+.page__hero .page__lead {
+  margin-top: 1.5rem !important;  /* fine-tune local gap under the title */
+}
+
+/* Button row spacing under subtitle (optional extra nudge) */
 .page__hero .page__meta,
 .page__hero .page__actions {
-  margin-top: 2.5rem !important;     /* adjust to move buttons down */
+  margin-top: 1.5rem !important;
 }
 
-/* Mobile: slightly taller for readability */
+/* Mobile: a bit taller for readability */
 @media (max-width: 768px) {
   .page__hero--overlay {
     min-height: 52vh !important;
     background-position: center 40% !important;
+  }
+  .page__hero--overlay .wrapper::before {
+    height: 2.25rem;              /* smaller spacer on phones */
   }
 }
 </style>
