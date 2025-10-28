@@ -3,7 +3,7 @@ layout: splash
 title: "Exploring the Edge of Human and Artificial Intelligence"
 permalink: /
 header:
-  overlay_image: /assets/images/sunrise_over_boston.jpg
+  overlay_image: /assets/images/sunrise_over_boston_thin.jpg
   overlay_color: "#000000"   # ensures the filter is applied over black, not theme default
   overlay_filter: 0.15       # lower = brighter image (try 0.15–0.22)
   caption: "Sunrise over the Charles River between Cambridge and Boston"
