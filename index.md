@@ -17,22 +17,19 @@ excerpt: "<br><br><br><br><br><br><br>Working papers and frameworks on architect
 ---
 
 <style>
-/* make hero shallower + better crop */
+/* JM override – inline test */
 .page__hero--overlay {
-  min-height: 38vh !important;           /* try 34–45 */
-  background-position: center 35% !important; /* adjust framing */
+  min-height: 38vh !important;
+  background-position: center 35% !important;
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important;
 }
+.page__hero .page__lead { margin-top: 2.5rem !important; }
+.page__hero--overlay .wrapper { padding-top: 1rem !important; }
 
-/* push subtitle (excerpt) down */
-.page__hero .page__lead {
-  margin-top: 2.5rem !important;         /* increase to lower it further */
-}
-
-/* optionally push the whole text block lower */
-.page__hero--overlay .wrapper {
-  padding-top: 1rem !important;          /* bump up if you want more offset */
+/* optional: lower everything a bit more */
+@media (min-width: 769px) {
+  .page__hero--overlay .wrapper { padding-top: 2rem !important; }
 }
 </style>
 
