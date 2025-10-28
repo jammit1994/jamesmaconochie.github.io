@@ -23,13 +23,13 @@ excerpt: "<br><br><br><br>Working papers and frameworks on architecture, attenti
   height: auto !important;
   background-position: center 35% !important;
   background-size: cover !important;
-  padding-top: 2.5rem !important;    /* pushes entire block down */
+  padding-top: 2.0rem !important;    /* pushes entire block down */
   padding-bottom: 1.75rem !important;
 }
 
 /* Subtitle (excerpt) spacing under title */
 .page__hero .page__lead {
-  margin-top: 3.5rem !important;     /* increase to slide subtitle down */
+  margin-top: 5.5rem !important;     /* increase to slide subtitle down */
 }
 
 /* Button row spacing under subtitle */
