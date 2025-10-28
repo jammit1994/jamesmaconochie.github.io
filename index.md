@@ -13,13 +13,13 @@ header:
       class: "btn--primary"
     - label: "About James"
       url: /about/
-excerpt: "<br><br><br><br><br><br><br>Working papers and frameworks on architecture, attention, and the pursuit of wisdom in machine intelligence."
+excerpt: "<br><br><br>Working papers and frameworks on architecture, attention, and the pursuit of wisdom in machine intelligence."
 ---
 
 <style>
 /* Force a shallower hero and control the crop, even if the theme uses a pseudo-element */
 .page__hero--overlay {
-  height: 38vh !important;         /* explicit height */
+  height: 44vh !important;         /* explicit height */
   min-height: 0 !important;        /* neutralize theme min-height */
   background-position: center 35% !important;  /* adjust framing */
   background-size: cover !important;
