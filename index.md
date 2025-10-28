@@ -19,7 +19,7 @@ excerpt: "<br><br><br><br>Working papers and frameworks on architecture, attenti
 <style>
 /* Force a shallower hero and control the crop, even if the theme uses a pseudo-element */
 .page__hero--overlay {
-  height: 44vh !important;         /* explicit height */
+  height: 48vh !important;         /* explicit height */
   min-height: 0 !important;        /* neutralize theme min-height */
   background-position: center 35% !important;  /* adjust framing */
   background-size: cover !important;
