@@ -13,7 +13,7 @@ header:
       class: "btn--primary"
     - label: "About James"
       url: /about/
-excerpt: "<br><br><br>Working papers and frameworks on architecture, attention, and the pursuit of wisdom in machine intelligence."
+excerpt: "<br><br><br><br>Working papers and frameworks on architecture, attention, and the pursuit of wisdom in machine intelligence."
 ---
 
 <style>
