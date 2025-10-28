@@ -53,7 +53,7 @@ excerpt: "Working papers and frameworks on architecture, attention, and the purs
     padding-bottom: 2rem !important;
   }
   .page__hero--overlay .page__lead {
-    margin-top: 10rem !important;           /* maintain visible gap under title */
+    margin-top: 13rem !important;           /* maintain visible gap under title */
     margin-bottom: 0rem !important;
   }
   .page__hero--overlay .page__actions {
@@ -68,7 +68,7 @@ excerpt: "Working papers and frameworks on architecture, attention, and the purs
     background-position: center 45% !important;
   }
   .page__hero--overlay .page__lead {
-    margin-top: 10rem !important;
+    margin-top: 15rem !important;
   }
 }
 </style>
