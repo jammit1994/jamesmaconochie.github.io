@@ -17,19 +17,44 @@ excerpt: "<br><br><br><br><br><br><br>Working papers and frameworks on architect
 ---
 
 <style>
-/* JM override – inline test */
-.page__hero--overlay {
-  min-height: 38vh !important;
-  background-position: center 35% !important;
+/* TEMP: force hero height + positioning with very broad selectors */
+.page__hero,
+.page__hero--overlay,
+.page__hero--image,
+section.page__hero,
+section.page__hero--overlay {
+  min-height: 38vh !important;        /* make it shallower (try 34–45) */
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important;
+  background-position: center 35% !important; /* adjust crop: 25% (higher), 55% (lower) */
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
 }
-.page__hero .page__lead { margin-top: 2.5rem !important; }
-.page__hero--overlay .wrapper { padding-top: 1rem !important; }
 
-/* optional: lower everything a bit more */
-@media (min-width: 769px) {
-  .page__hero--overlay .wrapper { padding-top: 2rem !important; }
+/* shift the whole text block down slightly */
+.page__hero .wrapper,
+.page__hero--overlay .wrapper {
+  padding-top: 2rem !important;        /* increase to push text lower as a group */
+}
+
+/* push the subtitle (excerpt) down relative to the title */
+.page__hero .page__lead {
+  margin-top: 2.5rem !important;       /* increase to move it further down */
+}
+
+/* add a visible test outline so we KNOW the rule applied; remove later */
+.page__hero--overlay { outline: 3px dashed rgba(0,0,0,.25) !important; }
+
+/* mobile: a bit taller for readability */
+@media (max-width: 768px) {
+  .page__hero,
+  .page__hero--overlay,
+  .page__hero--image,
+  section.page__hero,
+  section.page__hero--overlay {
+    min-height: 45vh !important;
+    background-position: center 40% !important;
+  }
 }
 </style>
 
