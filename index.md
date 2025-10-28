@@ -48,7 +48,7 @@ excerpt: "Working papers and frameworks on architecture, attention, and the purs
 @media (max-width: 992px) {
   .page__hero--overlay {
     min-height: 40vh !important;              /* a bit taller for mobile */
-    background-position: center 40% !important;
+    background-position: center 30% !important;
     padding-top: 1.0rem !important;           /* small breathing space above */
     padding-bottom: 2rem !important;
   }
@@ -65,7 +65,7 @@ excerpt: "Working papers and frameworks on architecture, attention, and the purs
 @media (max-width: 600px) {
   .page__hero--overlay {
     min-height: 40vh !important;              /* ensure room for all text */
-    background-position: center 45% !important;
+    background-position: center 30% !important;
   }
   .page__hero--overlay .page__lead {
     margin-top: 20rem !important;
