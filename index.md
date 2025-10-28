@@ -29,13 +29,13 @@ excerpt: "Working papers and frameworks on architecture, attention, and the purs
 
 /* 🎯 Move the subtitle down relative to the title */
 .page__hero--overlay .page__lead {
-  margin-top: 9rem !important;      /* increase to push subtitle lower */
-  margin-bottom: 2rem !important;   /* adds some space before buttons */
+  margin-top: 12rem !important;      /* increase to push subtitle lower */
+  margin-bottom: 1.75rem !important;   /* adds some space before buttons */
 }
 
 /* 🎯 Move the Read the Papers / About James buttons down as a group */
 .page__hero--overlay .page__actions {
-  margin-top: 1.5rem !important;    /* increase if you want more separation */
+  margin-top: 1.0rem !important;    /* increase if you want more separation */
 }
 
 /* Ensure the buttons stay vertically inside the hero */
