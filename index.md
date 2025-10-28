@@ -17,34 +17,28 @@ excerpt: "<br><br><br><br>Working papers and frameworks on architecture, attenti
 ---
 
 <style>
-/* Shallower hero that still expands to fit its content */
+/* Shallower hero that expands to fit content */
 .page__hero--overlay {
-  min-height: 48vh !important;          /* target height */
-  height: auto !important;               /* allow growth for buttons */
+  min-height: 48vh !important;
+  height: auto !important;
   background-position: center 35% !important;
   background-size: cover !important;
-  padding-top: 1.75rem !important;
+  padding-top: 2.5rem !important;    /* pushes entire block down */
   padding-bottom: 1.75rem !important;
 }
 
-/* remove the earlier ::before hack; let theme handle it normally */
-.page__hero--overlay::before {
-  height: auto !important;
-  padding-top: 0 !important;
-}
-
-/* keep subtitle lower relative to title */
+/* Subtitle (excerpt) spacing under title */
 .page__hero .page__lead {
-  margin-top: 2.5rem !important;
+  margin-top: 3.5rem !important;     /* increase to slide subtitle down */
 }
 
-/* optional: nudge the whole block a touch */
-.page__hero--overlay .wrapper {
-  padding-top: 0.5rem !important;       /* increase to push lower */
-  padding-bottom: 0.5rem !important;
+/* Button row spacing under subtitle */
+.page__hero .page__meta,
+.page__hero .page__actions {
+  margin-top: 2.5rem !important;     /* adjust to move buttons down */
 }
 
-/* mobile: a bit taller for readability */
+/* Mobile: slightly taller for readability */
 @media (max-width: 768px) {
   .page__hero--overlay {
     min-height: 52vh !important;
