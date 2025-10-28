@@ -49,7 +49,7 @@ excerpt: "Working papers and frameworks on architecture, attention, and the purs
   .page__hero--overlay {
     min-height: 40vh !important;              /* a bit taller for mobile */
     background-position: center 30% !important;
-    padding-top: 1.0rem !important;           /* small breathing space above */
+    padding-top: 2.0rem !important;           /* small breathing space above */
     padding-bottom: 2rem !important;
   }
   .page__hero--overlay .page__lead {
