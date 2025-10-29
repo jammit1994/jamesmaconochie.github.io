@@ -9,7 +9,7 @@
 .page__hero--overlay {
   min-height: 25vh !important;
   height: auto !important;
-  background-position: center 35% !important;
+  background-position: center center !important;
   background-size: cover !important;
   padding-top: 1.0rem !important;
   padding-bottom: 0rem !important;
@@ -68,7 +68,7 @@
 .author__avatar img {
   max-width: 180px !important;      /* increase from default ~110px */
   width: 180px !important;
-  height: 240px !important;
+  height: 180px !important;
   border-radius: 50% !important;
   display: block !important;
   margin: 0 auto 1em !important;    /* center horizontally, add space below */
