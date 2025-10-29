@@ -4,5 +4,6 @@
 
 @import "minimal-mistakes/skins/default"; // or your chosen skin
 @import "minimal-mistakes";               // load the theme
+@import "custom/custom";                  // explicitly load custom styles
 
 /* Your custom overrides (from _sass/custom/) will be auto-included by the theme */
