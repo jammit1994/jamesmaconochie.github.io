@@ -68,7 +68,7 @@
 .author__avatar img {
   max-width: 180px !important;      /* increase from default ~110px */
   width: 180px !important;
-  height: 295px !important;
+  height: 240px !important;
   border-radius: 50% !important;
   display: block !important;
   margin: 0 auto 1em !important;    /* center horizontally, add space below */
@@ -88,6 +88,6 @@
 /* Optional: adjust sidebar width on larger screens for better avatar display */
 @media (min-width: 64em) {
   .sidebar {
-    width: calc(280px - 1em) !important;  /* slightly wider than default 200px */
+    width: calc(220px - 1em) !important;  /* slightly wider than default px */
   }
 }
