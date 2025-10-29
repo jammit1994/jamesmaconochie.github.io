@@ -69,7 +69,7 @@ plugins:
 
 author:
   name: "James Maconochie"
-  avatar: # we'll add photo later
+  avatar: "/assets/images/james_maconochie_cliveden_headshot.jpg"
   bio: "Technology leader exploring AI architecture and human-AI collaboration"
   location: "Boston, MA"
   email: "maconochies@comcast.net"
