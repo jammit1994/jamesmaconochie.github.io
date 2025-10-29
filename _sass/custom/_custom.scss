@@ -37,7 +37,6 @@
   .page__hero--overlay {
     min-height: 25vh !important;              /* a bit taller for mobile */
     background-position: 40% 20% !important;
-    background-size: auto 150% !important
     padding-top: 1.0rem !important;           /* small breathing space above */
     padding-bottom: 0.0rem !important;
   }
@@ -55,7 +54,6 @@
   .page__hero--overlay {
     min-height: 25vh !important;              /* ensure room for all text */
     background-position: 40% 40% !important;
-    background-size: auto 150% !important
   }
   .page__hero--overlay .page__lead {
     margin-top: 12rem !important;
