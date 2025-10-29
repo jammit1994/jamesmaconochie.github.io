@@ -7,17 +7,17 @@
 
 /* Keep your shallower hero as before */
 .page__hero--overlay {
-  min-height: 10vh !important;
+  min-height: 25vh !important;
   height: auto !important;
   background-position: center 35% !important;
   background-size: cover !important;
-  padding-top: 1.75rem !important;
+  padding-top: 1.25rem !important;
   padding-bottom: 0rem !important;
 }
 
 /* Move the subtitle down relative to the title */
 .page__hero--overlay .page__lead {
-  margin-top: 16rem !important;      /* increase to push subtitle lower */
+  margin-top: 10rem !important;      /* increase to push subtitle lower */
   margin-bottom: 0rem !important;    /* adds some space before buttons */
 }
 
