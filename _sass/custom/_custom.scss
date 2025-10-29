@@ -68,7 +68,7 @@
 .author__avatar img {
   max-width: 180px !important;      /* increase from default ~110px */
   width: 180px !important;
-  height: 180px !important;
+  height: 295px !important;
   border-radius: 50% !important;
   display: block !important;
   margin: 0 auto 1em !important;    /* center horizontally, add space below */
@@ -76,13 +76,13 @@
 
 /* Center the author name below the avatar */
 .author__name {
-  text-align: center !important;
+  text-align: left !important;
   margin-top: 0.5em !important;
 }
 
 /* Center the author bio text */
 .author__bio {
-  text-align: center !important;
+  text-align: left !important;
 }
 
 /* Optional: adjust sidebar width on larger screens for better avatar display */
