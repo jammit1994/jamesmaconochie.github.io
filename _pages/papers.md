@@ -1,6 +1,7 @@
 ---
 permalink: /papers/
 title: "Working Papers"
+layout: papers-carousel
 ---
 
 I've developed an integrated framework exploring how evolutionary principles can inform artificial intelligence architecture and how AI systems can be designed to augment rather than replace human intelligence.
