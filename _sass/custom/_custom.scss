@@ -11,13 +11,13 @@
   height: auto !important;
   background-position: center 35% !important;
   background-size: cover !important;
-  padding-top: 1.25rem !important;
+  padding-top: 1.0rem !important;
   padding-bottom: 0rem !important;
 }
 
 /* Move the subtitle down relative to the title */
 .page__hero--overlay .page__lead {
-  margin-top: 10rem !important;      /* increase to push subtitle lower */
+  margin-top: 11rem !important;      /* increase to push subtitle lower */
   margin-bottom: 0rem !important;    /* adds some space before buttons */
 }
 
@@ -35,28 +35,28 @@
 /* Tablet & Mobile overrides */
 @media (max-width: 992px) {
   .page__hero--overlay {
-    min-height: 40vh !important;              /* a bit taller for mobile */
+    min-height: 25vh !important;              /* a bit taller for mobile */
     background-position: center 30% !important;
-    padding-top: 2.0rem !important;           /* small breathing space above */
-    padding-bottom: 2rem !important;
+    padding-top: 1.0rem !important;           /* small breathing space above */
+    padding-bottom: 0.0rem !important;
   }
   .page__hero--overlay .page__lead {
-    margin-top: 16rem !important;             /* maintain visible gap under title */
+    margin-top: 11rem !important;             /* maintain visible gap under title */
     margin-bottom: 0rem !important;
   }
   .page__hero--overlay .page__actions {
-    margin-top: 2.25rem !important;           /* keep buttons separated */
+    margin-top: 1.0rem !important;           /* keep buttons separated */
   }
 }
 
 /* Very small screens (e.g., phones <600px) */
 @media (max-width: 600px) {
   .page__hero--overlay {
-    min-height: 40vh !important;              /* ensure room for all text */
+    min-height: 25vh !important;              /* ensure room for all text */
     background-position: center 30% !important;
   }
   .page__hero--overlay .page__lead {
-    margin-top: 20rem !important;
+    margin-top: 12rem !important;
   }
 }
 
