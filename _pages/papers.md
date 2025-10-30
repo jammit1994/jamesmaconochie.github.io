@@ -4,7 +4,7 @@ title: "Working Papers"
 layout: papers-carousel
 ---
 
-I've developed an integrated framework exploring how evolutionary principles can inform artificial intelligence architecture and how AI systems can be designed to augment rather than replace human intelligence.
+I've developed an integrated framework exploring intelligence as a universal phenomenon—from biological evolution to artificial systems to human consciousness. These papers examine the architectural principles that enable systems to model reality, allocate attention, and pursue truth across domains.
 
 ## The Framework
 
@@ -31,7 +31,7 @@ This paper proposes a concrete alternative to pure scaling: a modular AI archite
 ### 3. Attention Is All We Have: What AI's Greatest Breakthrough Can Teach Us About Being Human
 **October 2025**
 
-The 2017 Transformer paper demonstrated that attention mechanisms—selective focus on relevant information—are sufficient for remarkable AI performance. This paper argues that attention is not merely a technical mechanism but a fundamental principle governing both artificial and biological intelligence. Understanding attention as a resource allocation strategy reveals insights for building better AI systems and for living more deliberately as humans.
+The 2017 Transformer paper demonstrated that attention mechanisms, selective focus on relevant information, are sufficient for remarkable AI performance. This paper argues that attention is not merely a technical mechanism but a fundamental principle governing both artificial and biological intelligence. Understanding attention as a resource allocation strategy reveals insights for building better AI systems and for living more deliberately as humans.
 
 [Download PDF](/assets/papers/Attention-Final.pdf)
 
@@ -48,7 +48,7 @@ Modern life offers endless options but limited clarity about what actually matte
 
 ## The Integration
 
-These papers connect through a central thesis: **attention—the selective allocation of limited resources—is the fundamental mechanism enabling intelligence in both biological and artificial systems.** By understanding how evolution optimized this mechanism in the human brain, we can build AI that augments rather than replaces human capability, and we can apply these same principles to living more deliberately.
+These papers connect through a central thesis: **attention (or the selective allocation of limited resources) is the fundamental mechanism enabling intelligence in both biological and artificial systems.** By understanding how evolution optimized this mechanism in the human brain, we can build AI that augments rather than replaces human capability, and we can apply these same principles to living more deliberately.
 
 The framework bridges theory and practice, offering both architectural principles for AI development and actionable frameworks for human decision-making.
 

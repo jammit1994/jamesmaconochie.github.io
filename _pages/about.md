@@ -5,7 +5,18 @@ title: "About"
 
 I'm a technology leader with 25 years of experience implementing complex systems across enterprise organizations. After spending decades in consulting helping companies navigate digital transformation, I'm now focused on a question that matters: how do we build artificial intelligence that augments human capability rather than replaces it?
 
-My work explores the architectural principles that enable effective human-AI collaboration. Drawing on insights from evolutionary neuroscience, cognitive science, and real-world implementation experience, I advocate for AI systems that are modular, interpretable, and designed to complement human judgment.
+## Philosophical Framework
+
+My work explores how intelligent systems (both biological and artificial) construct models of reality and navigate the gap between perception and truth. I examine the continuum from evolutionary computation to human consciousness, focusing on the architectural principles that enable systems to discern signal from noise and allocate limited attention toward what matters.
+
+**Core inquiries driving my research:**
+
+- **Consciousness as Reality Modeling**: How attention mechanisms create the theater of conscious experience, and what this reveals about the nature of subjective reality
+- **Truth in Evolutionary Context**: How biological systems evolved to approximate truth sufficiently for survival, and what constraints this places on human perception  
+- **The Architecture of Understanding**: How systems transform data into meaning, and whether there are universal principles governing this transformation across domains
+- **Wisdom in Attention-Scarce Environments**: How to allocate limited cognitive resources when facing essentially infinite information and possibilities
+
+This framework bridges the evolutionary constraints that shaped biological intelligence with the engineering principles needed to create artificial systems that can augment human understanding without distorting our relationship with reality.
 
 ## Background
 

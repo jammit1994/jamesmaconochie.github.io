@@ -6,7 +6,7 @@ layout: splash
   <div class="carousel-container">
     <!-- Slide 1: Introduction -->
     <div class="carousel-slide active" data-slide="0">
-      <div class="slide-background" style="background-image: url('/assets/images/AGI_Book_Collage_Desktop.jpg');"></div>
+      <div class="slide-background" style="background-image: url('/assets/images/Books_Hero_Final2.jpg');"></div>
       <div class="slide-overlay"></div>
       <div class="slide-content">
         <h1 class="slide-title">Exploring Intelligence: Human and Artificial</h1>
@@ -228,6 +228,19 @@ layout: splash
     font-size: 1rem;
   }
 }
+
+/* Fix aspect ratio cropping for book slide */
+.carousel-slide[data-slide="0"] .slide-background {
+  background-size: contain !important;
+  background-color: #f0f0f0; /* Your gray background color */
+  background-position: center center !important;
+}
+
+/* Optional: Adjust overlay darkness for better text */
+.carousel-slide[data-slide="0"] .slide-overlay {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.7)) !important;
+}
+
 </style>
 
 <script>
