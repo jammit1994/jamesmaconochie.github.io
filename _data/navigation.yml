@@ -6,5 +6,7 @@ main:
     url: /papers/
   - title: "Blog"
     url: /year-archive/
+  - title: "Attributions"
+    url: /attributions/
   - title: "Contact"
     url: /about/#contact
