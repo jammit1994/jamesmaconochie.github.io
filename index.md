@@ -1,6 +1,6 @@
 ---
 layout: splash
-title: "Exploring the Edge of Human and Artificial Intelligence"
+title: "Exploring the Edge of Human and Artificial Intelligence, Decision Making, and Wisdom"
 permalink: /
 header:
   overlay_image: /assets/images/sunrise_over_boston_thin.jpg
@@ -13,7 +13,7 @@ header:
       class: "btn--primary"
     - label: "About James"
       url: /about/
-excerpt: "Working papers and frameworks on architecture, attention, and the pursuit of wisdom in machine intelligence."
+excerpt: "Working papers and frameworks exploring intelligence, consciousness, and the architecture of reality - from evolutionary computation to the nature of human perception."
 ---
 
-Welcome! I build and write about modular, biologically inspired approaches to AI—how systems learn, adapt, and coordinate, and how human attention and meaning should guide what we build. These working papers are living documents: clear enough for practitioners, grounded enough for researchers, and open to revision as the field evolves.
+Welcome! I explore the fundamental architecture of intelligence—how systems learn, adapt, and make sense of reality. These working papers bridge evolutionary biology, cognitive science, and philosophy to understand both artificial and biological intelligence, and what they reveal about consciousness, truth, and human flourishing.
