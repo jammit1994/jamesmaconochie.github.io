@@ -74,6 +74,15 @@
   margin: 0 auto 1em !important;    /* center horizontally, add space below */
 }
 
+/* Fix avatar distortion */
+.author__avatar img {
+  object-fit: cover !important;
+  aspect-ratio: 1 / 1 !important;
+  border-radius: 50% !important;
+  width: 180px !important;
+  height: 180px !important;
+}
+
 /* Center the author name below the avatar */
 .author__name {
   text-align: left !important;
