@@ -35,6 +35,8 @@ My research integrates frameworks across multiple domains:
 - **Attention theory** as a unifying principle across biological and artificial systems
 - **Practical frameworks** for deliberate living in an age of information abundance
 
+[Read about my personal and intellectual journey](/journey/)
+
 ## What I'm Looking For
 
 I'm seeking opportunities to contribute to AI research and development—whether in academic labs, research institutions, or forward-thinking startups—where strategic thinking, systems architecture, and implementation experience can help shape how we build AI that serves humanity.
