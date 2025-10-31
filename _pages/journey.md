@@ -7,13 +7,13 @@ author_profile: True
 
 ## Dedication
 
-This work is dedicated, first and foremost, to Jen, EZMac and HAM, but also to all of my family and good friends with whom I have shared some of these ideas. Thank you sincerely for your patience, support, and understanding in this matter, which is my passion.
+This work is dedicated, first and foremost, to Jen, Ethan and Henry, but also to all of my family and good friends with whom I have shared some of these ideas. Thank you sincerely for your patience, support, and understanding in this matter, which is my passion.
 
 ## Context & Privilege
 
 First of all, I am aware of how fortunate and privileged I am. I have never really struggled in my life in comparison to the majority of people. I had a great childhood, I received a first-class education, and I channeled these into a successful professional career. 
 
-I am happily married (24 years), and my wife (Jen) and we have two sons (Ethan and Henry) in college. We live in a very comfortable home, and I don't believe we will ever face real economic uncertainty. I offer this first for critical context for what I share next.
+I am happily married (24 years), and my wife (Jen) and I have two sons (Ethan and Henry) in college. We live in a very comfortable home, and I don't believe we will ever face real economic uncertainty. I offer this first for critical context for what I share next.
 
 ## The Turning Point
 
@@ -37,7 +37,7 @@ A funny thing happened: after having had massive anxiety about the Thanksgiving 
 
 ## Discovering the Intellectual Path
 
-After the holidays, in early 2024, I formalized an interest (that had been simmering for several years) in human decision-making (now questioning some of my past choices), artificial intelligence (everybody's (still) talking about it), and what each could do to inform/improve the other. 
+After the holidays, in early 2025, I formalized an interest (that had been simmering for several years) in human decision-making (now questioning some of my past choices), artificial intelligence (everybody's (still) talking about it), and what each could do to inform/improve the other. 
 
 I adjusted my listening habits (I listen to books and podcasts every day while walking for 1 to 2 hours) and sought to build a foundational understanding of the development of AI and the underpinnings of human decision-making and behavior. I loved it; it fed my hyper-curious and knowledge-thirsty nature and helped me crystallize an idea about a framework that might enable me (and maybe others) to make choices that result in greater health, happiness, and fulfillment—enter the Mastery of Life (MOL).
 
@@ -49,7 +49,7 @@ I stuck to my guns and, in parallel with my continuing education listening, I de
 
 ## Technical Rabbit Hole
 
-I made rapid progress, but my initial focus was on an application tailored just for me. However, as my conviction in the idea strengthened, I decided it was time to expand the scope to a secure, multi-user, and customizable (to a certain extent) application. It is not at all lost on me that, after 25 years of guiding and advising organizations to be disciplined in their technology initiatives and guard against scope creep, I just blew up my baby. I went down the vibe coding rabbit hole.
+I made rapid progress, but my initial focus was on an application tailored just for me. However, as my conviction in the idea strengthened, I decided it was time to expand the scope to a secure, multi-user, and customizable (to a certain extent) application. It is not at all lost on me that, after 25 years of guiding and advising organizations to be disciplined in their technology initiatives and guard against scope creep, I just blew up my baby and I went down the vibe coding rabbit hole.
 
 Needless to say, my progress slowed drastically. As I focused on implementing registration, user profiles, and the related supporting infrastructure, the near-complete user interface got substantially degraded. After several weeks of only modestly productive churn, I stepped away. I decided to shift the majority of my attention to documenting some of the core ideas that were emerging from my listening, reading, and vibe coding experience.
 
@@ -68,11 +68,11 @@ In March 2025, I began creating (what is now a series of) LinkedIn articles and 
 
 ## From Articles to Framework
 
-LinkedIn posts and articles are intentionally limited in their detail, given the medium. The ideas and concepts I shared in summary form on LinkedIn up until early October were a fraction of the thinking I have done and the supporting evidence I have gathered. Furthermore, my work includes several related ideas that I had yet to share, so I decided it was time to put all of the ideas into a series of four (for now) working papers that you can find on this website.
+LinkedIn posts and articles are intentionally limited in their detail. The ideas and concepts I had shared in summary form on LinkedIn were a fraction of the thinking I had done and the supporting evidence I had gathered. Furthermore, my work included several related ideas that I had not yet shared, so I decided it was time to put all of the ideas into a series of four (for now) working papers that you can find on this website.
 
 ## The Journey Continues
 
-While I've moved beyond traditional consulting, the skills honed over 25 years—translating complex business needs into technical architecture, guiding organizations through digital transformation, and bridging strategic vision with practical implementation—remain incredibly valuable. I'm particularly interested in applying these skills to organizations working on AI safety, human-AI collaboration, or biologically-inspired computing.
+While I've moved beyond traditional consulting, the skills honed over 25 years—translating complex business needs into technical architecture, guiding organizations through digital transformation, and bridging strategic vision with practical implementation remain incredibly valuable. I'm particularly interested in applying these skills to organizations working on AI safety, human-AI collaboration, or biologically-inspired computing.
 
 The consulting world taught me how to solve complex problems at scale; now I'm applying those lessons to what may be humanity's most important challenge: ensuring artificial intelligence develops in ways that enhance rather than replace human capability and wisdom.
 
