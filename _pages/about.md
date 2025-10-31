@@ -39,9 +39,16 @@ My research integrates frameworks across multiple domains:
 
 ## What I'm Looking For
 
-I'm seeking opportunities to contribute to AI research and development—whether in academic labs, research institutions, or forward-thinking startups—where strategic thinking, systems architecture, and implementation experience can help shape how we build AI that serves humanity.
+I'm exploring opportunities where strategic thinking, systems architecture, and implementation experience can shape how we build intelligent systems that serve humanity. This could include:
 
-If you're working on human-AI collaboration, AI safety and alignment, or modular AI architectures, I'd welcome a conversation.
+- **Research collaborations** with academic labs or institutions exploring human-AI interaction
+- **Strategic advisory roles** for organizations navigating AI implementation and ethics
+- **Architecture leadership** in companies building biologically-inspired AI systems
+- **Consulting engagements** focused on AI strategy, organizational adaptation, and human-centered technology design
+
+While my focus has evolved toward AI architecture and human-AI collaboration, the core skills—translating complex requirements into practical systems, guiding organizations through transformation, and bridging technical and strategic perspectives—remain highly relevant across domains.
+
+If you're working on human-AI collaboration, AI safety and alignment, modular AI architectures—or navigating how these technologies transform organizations and industries I would welcome a conversation.
 
 ## Contact
 

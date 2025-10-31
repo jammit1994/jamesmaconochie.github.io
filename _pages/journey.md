@@ -72,7 +72,9 @@ LinkedIn posts and articles are intentionally limited in their detail, given the
 
 ## The Journey Continues
 
-The journey continues, and I will continue to expand this body of work. Making it publicly available will generate comments, feedback, and opportunities for collaboration with other organizations and/or individuals who find these ideas resonant.
+While I've moved beyond traditional consulting, the skills honed over 25 years—translating complex business needs into technical architecture, guiding organizations through digital transformation, and bridging strategic vision with practical implementation—remain incredibly valuable. I'm particularly interested in applying these skills to organizations working on AI safety, human-AI collaboration, or biologically-inspired computing.
+
+The consulting world taught me how to solve complex problems at scale; now I'm applying those lessons to what may be humanity's most important challenge: ensuring artificial intelligence develops in ways that enhance rather than replace human capability and wisdom.
 
 ## Acknowledgements
 
