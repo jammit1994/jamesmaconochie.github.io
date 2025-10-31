@@ -2,7 +2,7 @@
 permalink: /journey/
 title: "My Journey"
 layout: single
-author_profile: false
+author_profile: True
 ---
 
 ## Dedication

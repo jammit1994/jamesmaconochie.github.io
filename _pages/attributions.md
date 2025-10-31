@@ -2,7 +2,7 @@
 permalink: /attributions/
 title: "Image Attributions"
 layout: single
-author_profile: false
+author_profile: True
 ---
 
 ## Image Sources and Attributions
