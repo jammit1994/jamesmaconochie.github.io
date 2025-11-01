@@ -3,7 +3,7 @@ permalink: /about/
 title: "About"
 ---
 
-I'm a technology leader with 25 years of experience implementing complex systems across enterprise organizations. After spending decades in consulting helping companies navigate digital transformation, I'm now focused on a question that matters: how do we build artificial intelligence that augments human capability rather than replaces it?
+I'm a technology leader with 25 years of experience implementing complex systems across enterprise organizations. After two and half decades in consulting helping companies navigate digital transformation, I'm now focused on a question that I believe is one of the most critical of the moment: how do we build artificial intelligence that augments human capability rather than replaces it?
 
 ## Philosophical Framework
 
@@ -27,7 +27,7 @@ This framework bridges the evolutionary constraints that shaped biological intel
 
 ## Current Focus
 
-I'm exploring how principles from biological intelligence—modularity, plasticity, causal reasoning, and efficient attention allocation—can inform the development of artificial intelligence systems. Rather than pursuing artificial general intelligence through pure computational scaling, I'm interested in architectures that enhance human decision-making and preserve human agency.
+I'm exploring how principles from biological intelligence, in particular modularity, plasticity, causal reasoning, and efficient attention allocation might inform the development of artificial intelligence systems. Rather than pursuing artificial general intelligence through pure computational scaling, I'm interested in architectures that enhance human decision-making and preserve human agency.
 
 My research integrates frameworks across multiple domains:
 - **Evolutionary computation** and the constraints that shaped biological intelligence
@@ -35,7 +35,7 @@ My research integrates frameworks across multiple domains:
 - **Attention theory** as a unifying principle across biological and artificial systems
 - **Practical frameworks** for deliberate living in an age of information abundance
 
-[Read about my personal and intellectual journey](/journey/)
+[Read about my journey](/journey/)
 
 ## What I'm Looking For
 
@@ -46,7 +46,7 @@ I'm exploring opportunities where strategic thinking, systems architecture, and 
 - **Architecture leadership** in companies building biologically-inspired AI systems
 - **Consulting engagements** focused on AI strategy, organizational adaptation, and human-centered technology design
 
-While my focus has evolved toward AI architecture and human-AI collaboration, the core skills—translating complex requirements into practical systems, guiding organizations through transformation, and bridging technical and strategic perspectives—remain highly relevant across domains.
+While my focus has evolved toward AI architecture and human-AI collaboration, the core skills gained during my consulting career including translating complex requirements into practical systems, guiding organizations through transformation, and bridging technical and strategic perspectives—remain highly relevant across domains.
 
 If you're working on human-AI collaboration, AI safety and alignment, modular AI architectures—or navigating how these technologies transform organizations and industries I would welcome a conversation.
 

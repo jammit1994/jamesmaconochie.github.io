@@ -22,6 +22,6 @@ The consulting world taught me how to solve complex problems at scale; now I'm a
 
 ## Acknowledgements
 
-I am indebted to the authors, researchers, and thinkers—past, present, and future—whose work has inspired and informed my thinking. The books featured on this site represent just a fraction of the intellectual traditions that have shaped this framework.
+I am indebted to the authors, researchers, and thinkers of the past, present, and future, whose work has inspired and informed my thinking. The books featured on this site represent just a fraction of the intellectual traditions that have shaped this framework.
 
 *This journey remains ongoing, and I welcome conversations with fellow travelers.*
