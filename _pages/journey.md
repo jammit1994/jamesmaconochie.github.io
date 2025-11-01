@@ -16,7 +16,7 @@ Work in progress - come back soon.
 
 ## The Journey Continues
 
-While I've moved beyond traditional consulting for the time being, the skills honed over 25 years—translating complex business needs into technical architecture, guiding organizations through digital transformation, and bridging strategic vision with practical implementation remain incredibly valuable. I'm particularly interested in applying these skills to organizations working on AI safety, human-AI collaboration, or biologically-inspired computing.
+While I've moved beyond traditional consulting for the time being; the skills honed over 25 years—translating complex business needs into technical architecture, guiding organizations through digital transformation, and bridging strategic vision with practical implementation remain incredibly valuable. I'm particularly interested in applying these skills to organizations working on AI safety, human-AI collaboration, or biologically-inspired computing.
 
 The consulting world taught me how to solve complex problems at scale; now I'm applying those lessons to what may be humanity's most important challenge: ensuring artificial intelligence develops in ways that enhance rather than replace human capability and wisdom.
 
