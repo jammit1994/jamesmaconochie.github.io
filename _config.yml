@@ -121,3 +121,9 @@ analytics:
   provider: "google-gtag"
   google:
     tracking_id: "G-PRLHBW8WGB"
+
+algolia:
+  application_id: "Y3MOHOHOMMS"
+  index_name: "jamesmaconochie"
+  search_only_api_key: "70cb1eb95ea87f8b390a201387357bae"
+
