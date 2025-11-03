@@ -1,12 +1,14 @@
 main:
   - title: "About"
     url: /about/
-  - title: "My Journey"
+  - title: "My Journey" 
     url: /journey/
   - title: "Working Papers"
     url: /papers/
   - title: "Blog"
     url: /year-archive/
+  - title: "Search"           # ← Add this line
+    url: /search/             # ← Add this line
   - title: "Attributions"
     url: /attributions/
   - title: "Contact"
