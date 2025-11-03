@@ -16,7 +16,7 @@ The past two years have been the most challenging of my life. After 25 years in 
 
 ## Discovering the Intellectual Path
 
-After a year of reflection and research, I formalized my long-standing interest in human decision-making and artificial intelligence, focusing on how each can inform and improve the other.  I adjusted my listening habits (I listen to books and podcasts every day while walking for 1 to 2 hours) and sought to build a foundational understanding of the development of AI and the underpinnings of human decision-making and behavior. I loved it; it fed my hyper-curious and knowledge-thirsty nature and helped me crystallize an idea about a framework that might enable me (and maybe others) to make choices that result in greater health, happiness, and fulfillment, hence, the Mastery of Life (MOL) framework.
+After a year of reflection and research, I formalized my long-standing interest in human decision-making and artificial intelligence, focusing on how each can inform and improve the other. I adjusted my listening habits (I listen to books and podcasts every day while walking for 1 to 2 hours) and sought to build a foundational understanding of the development of AI and the underpinnings of human decision-making and behavior. I loved it; it fed my hyper-curious and knowledge-thirsty nature and helped me crystallize an idea about a framework that might enable me (and maybe others) to make choices that result in greater health, happiness, and fulfillment, hence, the Mastery of Life (MOL) framework.
 
 ## The "Hippy Dippy" Phase
 
