@@ -21,7 +21,7 @@ description: >-
 twitter_username: jamaconochie
 github_username: jammit1994
 minimal_mistakes_skin: default
-search: true
+search: false
 url: "https://jamesmaconochie.com"
 repository: "jammit1994/jammit1994.github.io"
 
