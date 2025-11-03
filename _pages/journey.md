@@ -23,6 +23,23 @@ After a year of reflection and research, I formalized my long-standing interest 
 I know, I know, I had clearly flipped my lid and had gone all hippy dippy earthy feely. When I initially shared my idea with family and friends, they had a hard time understanding how this successful (albeit currently unemployed) technology professional was now talking Zen and the Art of Motorcycle Maintenance.
 I stuck to my guns and, in parallel with my continuing education listening, I decided it was time to get hands-on with AI and try using it to help me build a web application (a steppingstone to a mobile app) that embodied my emerging MOL framework. I won't be telling anyone who has tried something similar that this is an enlightening and humbling experience.
 
+## From Code to Concepts
+
+In March 2025, I began creating (what is now a series of) LinkedIn articles and posts related to AI, AGI, human intelligence, and the relationship between the two:
+
+- **[Promoting WSJ Opinion](https://www.linkedin.com/posts/jammit_opinion-just-when-we-need-them-the-media-activity-7302661264386719745-NNeS)**{:target="_blank" rel="noopener noreferrer"}
+- **[Don't Sleep, There Are AI Cannibals](https://www.linkedin.com/pulse/dont-sleep-ai-cannibals-james-maconochie-pkfoe/)**{:target="_blank" rel="noopener noreferrer"}
+- **[Comment on Andrew Ng's observation about AI and programming](https://www.linkedin.com/posts/jammit_deepseek-r1-uncensored-qwq-32b-puts-reasoning-activity-7306146053093838848-HpM2)**{:target="_blank" rel="noopener noreferrer"}  
+- **[Is AGI really just around the corner, or are we overlooking something fundamental?](https://www.linkedin.com/posts/jammit_yann-lecun-takes-swipe-at-anthropic-says-activity-7308803955755544576-ZFZR)**{:target="_blank" rel="noopener noreferrer"}  
+- **[AGI — The Human Angle](https://www.linkedin.com/pulse/agi-human-angle-james-maconochie-lkboe/)**{:target="_blank" rel="noopener noreferrer"} 
+- **[BPU vs GPU: Rethinking the Roadmap to AGI](https://www.linkedin.com/pulse/bpu-vs-gpu-rethinking-roadmap-agi-james-maconochie-imane/)**{:target="_blank" rel="noopener noreferrer"}  
+- **[Make your own decision. Don't be on auto-pilot.](https://www.linkedin.com/posts/jammit_a-childhood-friend-who-i-recently-shared-activity-7334402069283450880-lxa_)**{:target="_blank" rel="noopener noreferrer"}  
+- **[Scaling Won't Make AI Wise — Architecture Will](https://www.linkedin.com/pulse/scaling-wont-make-ai-wisearchitecture-james-maconochie-ozm8e/)**{:target="_blank" rel="noopener noreferrer"}
+
+## From Articles to Framework
+
+LinkedIn posts and articles are intentionally limited in their detail. The ideas and concepts I had shared in summary form on LinkedIn were a fraction of the thinking I had done and the supporting evidence I had gathered. Furthermore, my work included several related ideas that I had not yet shared, so I decided it was time to put all of the ideas into a series of four (for now) working papers that you can find on this website.
+
 ## Technical Rabbit Hole
 
 I made rapid progress, but my initial focus was on an application tailored just for me. However, as my conviction in the idea strengthened, I decided it was time to expand the scope to a secure, multi-user, and customizable (to a certain extent) application. It is not at all lost on me that, after 25 years of guiding and advising organizations to be disciplined in their technology initiatives and guard against scope creep, I just blew up my baby and I went down the vibe coding rabbit hole.
