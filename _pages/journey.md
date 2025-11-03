@@ -23,6 +23,13 @@ After a year of reflection and research, I formalized my long-standing interest 
 I know, I know, I had clearly flipped my lid and had gone all hippy dippy earthy feely. When I initially shared my idea with family and friends, they had a hard time understanding how this successful (albeit currently unemployed) technology professional was now talking Zen and the Art of Motorcycle Maintenance.
 I stuck to my guns and, in parallel with my continuing education listening, I decided it was time to get hands-on with AI and try using it to help me build a web application (a steppingstone to a mobile app) that embodied my emerging MOL framework. I won't be telling anyone who has tried something similar that this is an enlightening and humbling experience.
 
+
+## Technical Rabbit Hole
+
+I made rapid progress, but my initial focus was on an application tailored just for me. However, as my conviction in the idea strengthened, I decided it was time to expand the scope to a secure, multi-user, and customizable (to a certain extent) application. It is not at all lost on me that, after 25 years of guiding and advising organizations to be disciplined in their technology initiatives and guard against scope creep, I just blew up my baby and I went down the vibe coding rabbit hole.
+
+Needless to say, my progress slowed drastically. As I focused on implementing registration, user profiles, and the related supporting infrastructure, the near-complete user interface got substantially degraded. After several weeks of only modestly productive churn, I stepped away. I decided to shift the majority of my attention to documenting some of the core ideas that were emerging from my listening, reading, and vibe coding experience.
+
 ## From Code to Concepts
 
 In March 2025, I began creating (what is now a series of) LinkedIn articles and posts related to AI, AGI, human intelligence, and the relationship between the two:
@@ -39,12 +46,6 @@ In March 2025, I began creating (what is now a series of) LinkedIn articles and 
 ## From Articles to Framework
 
 LinkedIn posts and articles are intentionally limited in their detail. The ideas and concepts I had shared in summary form on LinkedIn were a fraction of the thinking I had done and the supporting evidence I had gathered. Furthermore, my work included several related ideas that I had not yet shared, so I decided it was time to put all of the ideas into a series of four (for now) working papers that you can find on this website.
-
-## Technical Rabbit Hole
-
-I made rapid progress, but my initial focus was on an application tailored just for me. However, as my conviction in the idea strengthened, I decided it was time to expand the scope to a secure, multi-user, and customizable (to a certain extent) application. It is not at all lost on me that, after 25 years of guiding and advising organizations to be disciplined in their technology initiatives and guard against scope creep, I just blew up my baby and I went down the vibe coding rabbit hole.
-
-Needless to say, my progress slowed drastically. As I focused on implementing registration, user profiles, and the related supporting infrastructure, the near-complete user interface got substantially degraded. After several weeks of only modestly productive churn, I stepped away. I decided to shift the majority of my attention to documenting some of the core ideas that were emerging from my listening, reading, and vibe coding experience.
 
 ## The Journey Continues
 
