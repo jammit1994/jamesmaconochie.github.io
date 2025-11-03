@@ -6,7 +6,7 @@ main:
   - title: "Working Papers"
     url: /papers/
   - title: "Blog"
-    url: /year-archive/
+    url: /blog/
   - title: "Search"           # ← Add this line
     url: /search/             # ← Add this line
   - title: "Attributions"
