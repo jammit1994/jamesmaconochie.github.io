@@ -21,8 +21,7 @@ description: >-
 twitter_username: jamaconochie
 github_username: jammit1994
 minimal_mistakes_skin: default
-search: true
-search_full_content: true
+search: false
 url: "https://jamesmaconochie.com"
 repository: "jammit1994/jammit1994.github.io"
 
@@ -122,9 +121,3 @@ analytics:
   provider: "google-gtag"
   google:
     tracking_id: "G-PRLHBW8WGB"
-
-algolia:
-  application_id: "Y3MOHOHOMMS"
-  index_name: "jamesmaconochie"
-  search_only_api_key: "70cb1eb95ea87f8b390a201387357bae"
-
