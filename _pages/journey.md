@@ -51,6 +51,8 @@ LinkedIn posts and articles are intentionally limited in their detail. The ideas
 
 While I've moved beyond traditional consulting for the time being; the skills honed over 25 years—translating complex business needs into technical architecture, guiding organizations through digital transformation, and bridging strategic vision with practical implementation remain incredibly valuable. I'm particularly interested in applying these skills to organizations working on AI safety, human-AI collaboration, or biologically-inspired computing.
 
+This journey has also reaffirmed my commitment to public service. The same principles of modular design, attention allocation, and human-centered systems that inform my AI research are equally applicable to modernizing government services, creating equitable digital platforms, and ensuring technology serves all citizens—not just the privileged few.
+
 The consulting world taught me how to solve complex problems at scale; now I'm applying those lessons to what may be humanity's most important challenge: ensuring artificial intelligence develops in ways that enhance rather than replace human capability and wisdom.
 
 ## Acknowledgements
