@@ -13,7 +13,7 @@ header:
       class: "btn--primary"
     - label: "About James"
       url: /about/
-excerpt: "Working papers and frameworks exploring intelligence, consciousness, and the architecture of reality - from evolutionary computation to the nature of human perception."
+excerpt: "Working papers and frameworks exploring intelligence, consciousness, and the architecture of reality, from evolutionary computation to the nature of human perception."
 ---
 
 Welcome! I explore the fundamental architecture of intelligence and how systems learn, adapt, and make sense of reality. These working papers bridge evolutionary biology, cognitive science, and philosophy to understand both artificial and biological intelligence, and what they reveal about consciousness, reality, and human happiness and fulfillment.
