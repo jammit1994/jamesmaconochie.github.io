@@ -2,7 +2,7 @@
 title: "The 30-Million-Fold Efficiency Gap: Why Evolution, Not Computation, is the Key to AGI"
 layout: single
 author_profile: true
-date: 2024-05-28
+date: 2025-11-06
 permalink: /blog/the-30-million-fold-efficiency-gap/
 categories:
   - ai-research
