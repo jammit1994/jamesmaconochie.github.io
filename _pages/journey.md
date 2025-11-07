@@ -38,10 +38,10 @@ In March 2025, I began creating (what is now a series of) LinkedIn articles and 
 - **[Don't Sleep, There Are AI Cannibals](https://www.linkedin.com/pulse/dont-sleep-ai-cannibals-james-maconochie-pkfoe/)**{:target="_blank" rel="noopener noreferrer"}
 - **[Comment on Andrew Ng's observation about AI and programming](https://www.linkedin.com/posts/jammit_deepseek-r1-uncensored-qwq-32b-puts-reasoning-activity-7306146053093838848-HpM2)**{:target="_blank" rel="noopener noreferrer"}  
 - **[Is AGI really just around the corner, or are we overlooking something fundamental?](https://www.linkedin.com/posts/jammit_yann-lecun-takes-swipe-at-anthropic-says-activity-7308803955755544576-ZFZR)**{:target="_blank" rel="noopener noreferrer"}  
-- **[AGI — The Human Angle](https://www.linkedin.com/pulse/agi-human-angle-james-maconochie-lkboe/)**{:target="_blank" rel="noopener noreferrer"} 
+- **[AGI - The Human Angle](https://www.linkedin.com/pulse/agi-human-angle-james-maconochie-lkboe/)**{:target="_blank" rel="noopener noreferrer"} 
 - **[BPU vs GPU: Rethinking the Roadmap to AGI](https://www.linkedin.com/pulse/bpu-vs-gpu-rethinking-roadmap-agi-james-maconochie-imane/)**{:target="_blank" rel="noopener noreferrer"}  
 - **[Make your own decision. Don't be on auto-pilot.](https://www.linkedin.com/posts/jammit_a-childhood-friend-who-i-recently-shared-activity-7334402069283450880-lxa_)**{:target="_blank" rel="noopener noreferrer"}  
-- **[Scaling Won't Make AI Wise — Architecture Will](https://www.linkedin.com/pulse/scaling-wont-make-ai-wisearchitecture-james-maconochie-ozm8e/)**{:target="_blank" rel="noopener noreferrer"}
+- **[Scaling Won't Make AI Wise - Architecture Will](https://www.linkedin.com/pulse/scaling-wont-make-ai-wisearchitecture-james-maconochie-ozm8e/)**{:target="_blank" rel="noopener noreferrer"}
 
 ## From Articles to Framework
 

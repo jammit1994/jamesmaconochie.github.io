@@ -41,14 +41,14 @@ My research integrates frameworks across multiple domains:
 
 I'm exploring opportunities where strategic thinking, systems architecture, and implementation experience can shape how we build intelligent systems that serve humanity. This could include:
 
+- **Architecture leadership** in companies building biologically-inspired AI systems or public-facing technology platforms
 - **Public sector leadership** roles in technology modernization, digital service delivery, or AI strategy for city/state government
 - **Research collaborations** with academic labs or institutions exploring human-AI interaction and public policy
 - **Strategic advisory roles** for organizations navigating AI implementation, ethics, and public impact
-- **Architecture leadership** in companies building biologically-inspired AI systems or public-facing technology platforms
 
-While my current research focuses on AI architecture and human-AI collaboration, my 25+ years of experience spans public and private sectors—from modernizing state credentialing systems to scaling genomic platforms. I'm particularly interested in roles that bridge technical depth with public impact.
+While my current research focuses on AI architecture and human-AI collaboration, my 25+ years of experience spans public and private sectors, from modernizing state credentialing systems to scaling genomic platforms. I'm particularly interested in roles that bridge technical depth with public impact.
 
-If you're working on human-AI collaboration, AI safety and alignment, modular AI architectures—or navigating how these technologies transform organizations and industries I would welcome a conversation.
+If you're working on human-AI collaboration, AI safety and alignment, modular AI architectures, or navigating how these technologies transform organizations and industries I would welcome a conversation.
 
 ## Contact
 

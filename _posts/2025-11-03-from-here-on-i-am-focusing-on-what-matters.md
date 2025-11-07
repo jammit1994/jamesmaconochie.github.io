@@ -41,18 +41,18 @@ Finally, I asked: how do we apply these principles to human happiness and fulfil
 
 Here's what surprised me: these principles apply far beyond AI research.
 
-During my consulting years, I worked with both public and private organizations on digital transformation projects. The same challenges appear everywhere:
+The same challenges appear everywhere, whether building adaptive AI systems, designing government digital services, or creating enterprise technology platforms:
 - How do we allocate limited resources effectively?
 - How do we design systems that adapt to changing needs?
 - How do we ensure technology serves people rather than complicating their lives?
 
-Whether we're talking about AI safety, government service delivery, or personal decision-making, the core challenge remains the same: **intelligent resource allocation in attention-scarce environments**.
+Whether we're talking about AI safety, modular architectures for machine learning, government service delivery, or personal decision-making, the core challenge remains the same: **intelligent resource allocation in attention-scarce environments**.
 
 ## The Path Forward
 
-I'm sharing this work publicly because these conversations matter, and they shouldn't happen only in Silicon Valley boardrooms or academic conferences. We need diverse perspectives from public sector leaders, technologists, researchers, and citizens who actually interact with these systems. I am humble and curious. I told my sons that the most important thing I could teach them is that nobody knows everything, especially their dad, and if someone suggests they do, you probably want to get away from them in short order. 
+I'm sharing this work publicly because these conversations matter, and they shouldn't happen only in Silicon Valley boardrooms or academic conferences. We need diverse perspectives from AI researchers, technologists building these systems, public sector leaders implementing them, and citizens who actually interact with them. I am humble and curious. I told my sons that the most important thing I could teach them is that nobody knows everything, especially their dad, and if someone suggests they do, you probably want to get away from them in short order. 
 
-This work continues to evolve (appropriately enough), and I'm particularly interested in applications that bridge technology and public impact, whether in AI safety, government digital services, or creating more equitable technological systems.
+This work continues to evolve (appropriately enough), and I'm particularly interested in applications across multiple domains: AI architecture and safety, human-AI collaboration systems, government digital services, and creating more equitable technological platforms.
 
 **I'd love your thoughts, critiques, and conversations.** The papers are available at [jamesmaconochie.com/papers](https://jamesmaconochie.com/papers), and I'm actively seeking collaborations with organizations and individuals who find these ideas resonant.
 
