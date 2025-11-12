@@ -24,7 +24,7 @@ minimal_mistakes_skin: default
 search: false
 url: "https://jamesmaconochie.com"
 baseurl: ""  # Leave this empty for local development
-repository: "jammit1994/jammit1994.github.io"
+repository: "jammit1994/jamesmaconochie.github.io"
 
 # Build settings
 markdown: kramdown
