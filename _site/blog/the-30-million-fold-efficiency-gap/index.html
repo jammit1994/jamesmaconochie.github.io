@@ -1,0 +1,654 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>The 30-Million-Fold Efficiency Gap: Why Evolution, Not Computation, is the Key to AGI - James Maconochie</title>
+<meta name="description" content="For years, the dominant narrative in artificial intelligence has been one of scale. The logic seems sound: bigger models, more data, and more GPUs will inevitably lead to greater intelligence. Eric Schmidt recently crystallized this view, stating AGI could arrive by 2030 through continued scaling.">
+
+
+  <meta name="author" content="James Maconochie">
+  
+  <meta property="article:author" content="James Maconochie">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="James Maconochie">
+<meta property="og:title" content="The 30-Million-Fold Efficiency Gap: Why Evolution, Not Computation, is the Key to AGI">
+<meta property="og:url" content="http://localhost:4000/blog/the-30-million-fold-efficiency-gap/">
+
+
+  <meta property="og:description" content="For years, the dominant narrative in artificial intelligence has been one of scale. The logic seems sound: bigger models, more data, and more GPUs will inevitably lead to greater intelligence. Eric Schmidt recently crystallized this view, stating AGI could arrive by 2030 through continued scaling.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2025-11-06T00:00:00-05:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/blog/the-30-million-fold-efficiency-gap/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="James Maconochie Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          James Maconochie
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >About</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/journey/"
+                
+                
+              >My Journey</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/papers/"
+                
+                
+              >Working Papers</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/blog/"
+                
+                
+              >Blog</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/search/"
+                
+                
+              >Search</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/attributions/"
+                
+                
+              >Attributions</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/#contact"
+                
+                
+              >Contact</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/james_maconochie_cliveden_headshot.jpg" alt="James Maconochie" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">James Maconochie</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Technology leader exploring AI architecture and human-AI collaboration</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Boston, MA</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://www.linkedin.com/in/jammit/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/jammit1994" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:maconochies@comcast.net" rel="me" class="u-email">
+            <meta itemprop="email" content="maconochies@comcast.net" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="The 30-Million-Fold Efficiency Gap: Why Evolution, Not Computation, is the Key to AGI">
+    <meta itemprop="description" content="For years, the dominant narrative in artificial intelligence has been one of scale. The logic seems sound: bigger models, more data, and more GPUs will inevitably lead to greater intelligence. Eric Schmidt recently crystallized this view, stating AGI could arrive by 2030 through continued scaling.">
+    <meta itemprop="datePublished" content="2025-11-06T00:00:00-05:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="http://localhost:4000/blog/the-30-million-fold-efficiency-gap/" itemprop="url">The 30-Million-Fold Efficiency Gap: Why Evolution, Not Computation, is the Key to AGI
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          6 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>For years, the dominant narrative in artificial intelligence has been one of scale. The logic seems sound: bigger models, more data, and more GPUs will inevitably lead to greater intelligence. Eric Schmidt recently crystallized this view, stating AGI could arrive by 2030 through continued scaling.</p>
+
+<p>I believe this fundamentally misunderstands the problem.</p>
+
+<p>The real bottleneck isn’t computational scale; it’s an <strong>efficiency chasm</strong> that evolution crossed billions of years ago. In my last article, I quantified the staggering computational scale of the human evolutionary process. But raw FLOPS are only half the story. When we examine the energy required, the results are so stark they demand a new roadmap for AGI.</p>
+
+<h2 id="1-revisiting-the-evolutionary-processing-unit-epu">1. Revisiting the Evolutionary Processing Unit (EPU)</h2>
+
+<p>Let’s briefly recap the thought experiment. The Evolutionary Processing Unit (EPU) represents the cumulative computational effort of all human brains that have ever existed.</p>
+
+<p>Using conservative, mid-range estimates:</p>
+
+<ul>
+  <li><strong>Number of humans who have ever lived:</strong> 117 billion</li>
+  <li><strong>Processing capacity per brain:</strong> ~500 petaFLOPS (5 × 10¹⁷ FLOPS)</li>
+  <li><strong>Average lifespan:</strong> ~70 years (2.2 × 10⁹ seconds)</li>
+</ul>
+
+<p>The calculation is straightforward:</p>
+
+<p><code class="language-plaintext highlighter-rouge">Cumulative EPU Computation = 117e9 humans × 2.2e9 seconds × 5e17 FLOPS ≈ 1.3 × 10³⁸ FLOPS</code></p>
+
+<p>This number, ~1.3 × 10³⁸ brain-FLOPS, is so vast that it would take a modern exascale supercomputer thousands of times the current age of the universe to match it. But this is just the prelude. The real story begins when we ask about the energy bill.</p>
+
+<h2 id="2-the-brains-secret-weapon-unmatched-efficiency">2. The Brain’s Secret Weapon: Unmatched Efficiency</h2>
+
+<p>Digital computers and biological brains are fundamentally different architectures. But energy consumption is a universal, physical metric. It doesn’t care about architecture; it measures the fundamental cost of computation.</p>
+
+<p>The human brain’s efficiency is its crowning achievement. It operates on a mere <strong>~20 watts</strong> of power—less than a standard light bulb. If we accept its processing capacity of ~500 petaFLOPS, its efficiency is staggering:</p>
+
+<p><code class="language-plaintext highlighter-rouge">Efficiency_brain = 5e17 FLOPS / 20 W = 2.5e16 FLOPS/W</code></p>
+
+<p>That is <strong>25 PetaFLOPS per Watt.</strong> Now, let’s calculate the total energy consumed by the EPU:</p>
+
+<p><code class="language-plaintext highlighter-rouge">Energy_EPU = Total FLOPS / Efficiency = (1.3e38 FLOPS) / (2.5e16 FLOPS/W) = 5.2e21 Joules</code></p>
+
+<p>To make this tangible, let’s convert Joules to Terawatt-hours (TWh), the unit used for national energy consumption:</p>
+
+<p><code class="language-plaintext highlighter-rouge">Energy_EPU ≈ 5.2e21 J / 3.6e15 J/TWh ≈ **1.44 Million TWh**</code></p>
+
+<p>Let’s put that number in context. The entire United States consumes about 4,000 TWh of electricity annually. The cumulative energy of the EPU is equivalent to powering the entire modern US for <strong>over 360 years.</strong></p>
+
+<h2 id="3-the-ai-counterpoint-a-drop-in-the-energy-ocean">3. The AI Counterpoint: A Drop in the Energy Ocean</h2>
+
+<p>Now, let’s contrast this with the training of a state-of-the-art AI model, like OpenAI’s GPT-4.</p>
+
+<p>Expert estimates place GPT-4’s training energy at approximately 50-62 GWh. Using the conservative estimate of 50 GWh:</p>
+
+<p><code class="language-plaintext highlighter-rouge">Energy_GPT-4 ≈ 0.05 TWh (50 GWh or 50,000 MWh)</code></p>
+
+<p>This aligns with estimates that training GPT-4 consumed enough energy to power several thousand average US homes for a year. It’s a significant amount, rightly scrutinized for its environmental impact.</p>
+
+<p>But when placed next to the EPU, the comparison becomes almost surreal.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">System</th>
+      <th style="text-align: left">Total Computation (FLOPS)</th>
+      <th style="text-align: left">Total Energy Consumption</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><strong>Evolutionary Processing Unit (EPU)</strong></td>
+      <td style="text-align: left">~1.3 × 10³⁸</td>
+      <td style="text-align: left"><strong>~1,440,000 TWh</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>OpenAI GPT-4 (One Training Run)</strong></td>
+      <td style="text-align: left">~2.2 × 10²⁵</td>
+      <td style="text-align: left"><strong>~0.05 TWh (50 GWh)</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>The energy used by the entire EPU is approximately 30 million times greater than the energy used to train GPT-4.</strong></p>
+
+<p>You could train a model like GPT-4 <strong>30 million times</strong> for the same energy cost evolution “spent” to architect the human brain.</p>
+
+<h2 id="4-the-pre-loaded-architecture-what-were-really-missing">4. The “Pre-Loaded” Architecture: What We’re Really Missing</h2>
+
+<p>This 30-million-fold gap is not a challenge for engineers to overcome with more power plants. It is a definitive sign that we are on the wrong architectural path.</p>
+
+<p>The energy of the EPU wasn’t spent on “training” one giant model. It was spent on <strong>evolution’s R&amp;D</strong> to find the perfect starting architecture. A human infant’s brain is not a blank slate. It is a pre-evolved system that comes pre-loaded with the foundational software for intelligence:</p>
+
+<ul>
+  <li><strong>Embodiment:</strong> The brain is part of a closed-loop system with a body, sensors, and actuators, learning through direct interaction with a physical world.</li>
+  <li><strong>Innate Structure:</strong> Infants possess pre-configured “inductive biases” for causality, object permanence, and social cognition. They don’t learn these from scratch; they learn <em>with</em> them.</li>
+  <li><strong>Subconscious Processing:</strong> The brain seamlessly manages a trillion-cell biological organism, a task of unimaginable complexity that occurs entirely below the level of consciousness.</li>
+</ul>
+
+<p>Evolution invested aeons of energy to discover a learning algorithm that is data-efficient, energy-frugal, and inherently robust. We are trying to skip this R&amp;D phase and jump straight to the final product with an architecture that is, by its very nature, spectacularly inefficient for the task.</p>
+
+<h2 id="45-why-this-actually-strengthens-the-epubpu-argument">4.5 Why This Actually Strengthens the EPU/BPU Argument</h2>
+
+<p>Some might argue: “If we can get impressive results with GPT-4 using just 50 GWh, doesn’t that prove scaling <em>works</em>?”</p>
+
+<p>This misses the point entirely. GPT-4 is impressive at pattern matching and language generation, but it fundamentally lacks:</p>
+
+<ul>
+  <li><strong>Causal reasoning</strong> - It can’t distinguish correlation from causation</li>
+  <li><strong>Grounded understanding</strong> - It has no model of physical reality</li>
+  <li><strong>Continuous learning</strong> - It’s frozen after training</li>
+  <li><strong>Energy efficiency at inference</strong> - Running GPT-4 costs millions per day; your brain runs on 20 watts continuously</li>
+</ul>
+
+<p>The 30-million-fold gap isn’t about training one model—it’s about the R&amp;D cost of discovering the <em>right architecture</em>. Evolution didn’t just train one brain; it spent 1.44 million TWh discovering an architecture that:</p>
+
+<ul>
+  <li>Learns continuously from minimal data</li>
+  <li>Operates at 25 PetaFLOPS per watt</li>
+  <li>Handles causal reasoning, not just correlation</li>
+  <li>Adapts to novel situations without retraining</li>
+</ul>
+
+<p>We’re celebrating getting partial intelligence from 50 GWh, while ignoring that evolution discovered <em>complete</em> intelligence through an architecture that required 30 million times more energy to <em>develop</em>—but now runs on the power of a light bulb.</p>
+
+<p>The efficiency gap proves we haven’t found the right architecture yet. We’re brute-forcing our way to narrow capabilities while evolution found a generalizable solution.</p>
+
+<h2 id="5-a-new-roadmap-for-agi-learning-from-the-epu">5. A New Roadmap for AGI: Learning from the EPU</h2>
+
+<p>The conclusion is inescapable. Attempting to achieve AGI by scaling current transformer-based architectures is not just impractical; it is a fundamental misreading of how intelligence arises.</p>
+
+<p>The path forward is not to out-compute evolution, but to learn from its 4-billion-year-old blueprint. As I’ve argued before, we must shift our focus from scale to architecture. This means:</p>
+
+<ol>
+  <li><strong>Developmental AI:</strong> Building systems that learn in stages like a child, not in single, massive training runs.</li>
+  <li><strong>Embodied Cognition:</strong> Prioritizing AI that interacts with the real world through robotics and simulations, grounding its learning in physics and cause-and-effect.</li>
+  <li><strong>Modular &amp; Orchestrated Systems:</strong> Moving beyond monolithic models to federations of specialized systems (for reasoning, memory, perception) coordinated by a central executive, much like the brain’s own structure.</li>
+  <li><strong>Innate Inductive Biases:</strong> Designing network architectures with built-in priors for physics, causality, and social reasoning, rather than expecting it all to be learned from data alone.</li>
+</ol>
+
+<h2 id="conclusion-the-blueprint-not-the-brute-force">Conclusion: The Blueprint, Not the Brute Force</h2>
+
+<p>The 30-million-fold efficiency gap is more than a staggering statistic. It’s a roadmap.</p>
+
+<p>Evolution spent 1.44 million TWh—the equivalent of 360 years of total US energy consumption—not on training a single brain, but on R&amp;D. On discovering the architectural principles that make intelligence possible: embodiment, modularity, causal grounding, continuous plasticity, and ruthless energy efficiency.</p>
+
+<p>We’re taking shortcuts. We’re trying to skip the R&amp;D phase and jump straight to AGI with an architecture (transformers) that was never designed for general intelligence. Yes, we’ve achieved remarkable things—GPT-4 is a technological marvel. But marveling at GPT-4’s language abilities while pursuing AGI through scaling is like celebrating that we can build faster cars and assuming that will eventually get us to Mars.</p>
+
+<p>The path to AGI isn’t hidden in the next training run or the next data center. It’s encoded in the architecture that evolution spent four billion years optimizing. The future belongs not to those who can afford the most GPUs, but to those humble enough to learn from biology’s billion-year head start.</p>
+
+<p>AGI will not be built by brute force. It will be reverse-engineered from the only blueprint that works: the one evolution already gave us.</p>
+
+<p>The efficiency gap isn’t a problem to overcome—it’s a lesson to learn from.</p>
+
+<hr />
+
+<p><em>What biological principle do you think is most critical for AI to learn next? Join the conversation on [Link to your LinkedIn Post].</em></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#ai-research" class="page__taxonomy-item p-category" rel="tag">ai-research</a><span class="sep">, </span>
+    
+      <a href="/categories/#evolutionary-biology" class="page__taxonomy-item p-category" rel="tag">evolutionary-biology</a><span class="sep">, </span>
+    
+      <a href="/categories/#neuroscience" class="page__taxonomy-item p-category" rel="tag">neuroscience</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2025-11-06T00:00:00-05:00">November 6, 2025</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  <h4 class="page__share-title">Share on</h4>
+
+  <a href="https://x.com/intent/tweet?text=The+30-Million-Fold+Efficiency+Gap%3A+Why+Evolution%2C+Not+Computation%2C+is+the+Key+to+AGI%20http%3A%2F%2Flocalhost%3A4000%2Fblog%2Fthe-30-million-fold-efficiency-gap%2F" class="btn btn--x" aria-label="Share on X" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on X">
+    <i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i><span> X</span>
+  </a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fblog%2Fthe-30-million-fold-efficiency-gap%2F" class="btn btn--facebook" aria-label="Share on Facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook">
+    <i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span>
+  </a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/blog/the-30-million-fold-efficiency-gap/" class="btn btn--linkedin" aria-label="Share on LinkedIn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
+    <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span>
+  </a>
+
+  <a href="https://bsky.app/intent/compose?text=The+30-Million-Fold+Efficiency+Gap%3A+Why+Evolution%2C+Not+Computation%2C+is+the+Key+to+AGI%20http%3A%2F%2Flocalhost%3A4000%2Fblog%2Fthe-30-million-fold-efficiency-gap%2F" class="btn btn--bluesky" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Bluesky">
+    <i class="fab fa-fw fa-bluesky" aria-hidden="true"></i><span> Bluesky</span>
+  </a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/blog/from-here-on-i-am-focusing-on-what-matters/" class="pagination--pager" title="From Here On, I Am Focusing on What Matters">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    
+<div class="page__related">
+  
+  <h2 class="page__related-title">You May Also Enjoy</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/from-here-on-i-am-focusing-on-what-matters/" rel="permalink">From Here On, I Am Focusing on What Matters
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Two years ago I was helping organizations navigate digital transformation, the kind of work I’d done for 25 years across public and private sectors. Today, I...</p>
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://www.linkedin.com/in/jammit/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://github.com/jammit1994" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">James Maconochie</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

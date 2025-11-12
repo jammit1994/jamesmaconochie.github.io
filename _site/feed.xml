@@ -1,50 +1,199 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://jamesmaconochie.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jamesmaconochie.com/" rel="alternate" type="text/html" /><updated>2025-11-03T16:53:40-05:00</updated><id>https://jamesmaconochie.com/feed.xml</id><title type="html">James Maconochie</title><subtitle>Technology leader exploring AI architecture and human-AI collaboration. 25 years implementing complex systems. Based in Boston, MA.</subtitle><author><name>James Maconochie</name><email>maconochies@comcast.net</email></author><entry><title type="html">From Here On, I Am Focusing on What Matters</title><link href="https://jamesmaconochie.com/blog/from-here-on-i-am-focusing-on-what-matters/" rel="alternate" type="text/html" title="From Here On, I Am Focusing on What Matters" /><published>2025-11-03T00:00:00-05:00</published><updated>2025-11-03T00:00:00-05:00</updated><id>https://jamesmaconochie.com/blog/from-here-on-i-am-focusing-on-what-matters</id><content type="html" xml:base="https://jamesmaconochie.com/blog/from-here-on-i-am-focusing-on-what-matters/"><![CDATA[<p>Two years ago, I was helping organizations navigate digital transformation—the kind of work I’d done for 25 years across public and private sectors. Today, I’m publishing a framework that connects evolutionary biology, artificial intelligence, and human consciousness.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-11-12T11:43:10-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">James Maconochie</title><subtitle>Technology leader exploring AI architecture and human-AI collaboration. 25 years implementing complex systems. Based in Boston, MA.</subtitle><author><name>James Maconochie</name><email>maconochies@comcast.net</email></author><entry><title type="html">The 30-Million-Fold Efficiency Gap: Why Evolution, Not Computation, is the Key to AGI</title><link href="http://localhost:4000/blog/the-30-million-fold-efficiency-gap/" rel="alternate" type="text/html" title="The 30-Million-Fold Efficiency Gap: Why Evolution, Not Computation, is the Key to AGI" /><published>2025-11-06T00:00:00-05:00</published><updated>2025-11-06T00:00:00-05:00</updated><id>http://localhost:4000/blog/the-30-million-fold-efficiency-gap</id><content type="html" xml:base="http://localhost:4000/blog/the-30-million-fold-efficiency-gap/"><![CDATA[<p>For years, the dominant narrative in artificial intelligence has been one of scale. The logic seems sound: bigger models, more data, and more GPUs will inevitably lead to greater intelligence. Eric Schmidt recently crystallized this view, stating AGI could arrive by 2030 through continued scaling.</p>
+
+<p>I believe this fundamentally misunderstands the problem.</p>
+
+<p>The real bottleneck isn’t computational scale; it’s an <strong>efficiency chasm</strong> that evolution crossed billions of years ago. In my last article, I quantified the staggering computational scale of the human evolutionary process. But raw FLOPS are only half the story. When we examine the energy required, the results are so stark they demand a new roadmap for AGI.</p>
+
+<h2 id="1-revisiting-the-evolutionary-processing-unit-epu">1. Revisiting the Evolutionary Processing Unit (EPU)</h2>
+
+<p>Let’s briefly recap the thought experiment. The Evolutionary Processing Unit (EPU) represents the cumulative computational effort of all human brains that have ever existed.</p>
+
+<p>Using conservative, mid-range estimates:</p>
+
+<ul>
+  <li><strong>Number of humans who have ever lived:</strong> 117 billion</li>
+  <li><strong>Processing capacity per brain:</strong> ~500 petaFLOPS (5 × 10¹⁷ FLOPS)</li>
+  <li><strong>Average lifespan:</strong> ~70 years (2.2 × 10⁹ seconds)</li>
+</ul>
+
+<p>The calculation is straightforward:</p>
+
+<p><code class="language-plaintext highlighter-rouge">Cumulative EPU Computation = 117e9 humans × 2.2e9 seconds × 5e17 FLOPS ≈ 1.3 × 10³⁸ FLOPS</code></p>
+
+<p>This number, ~1.3 × 10³⁸ brain-FLOPS, is so vast that it would take a modern exascale supercomputer thousands of times the current age of the universe to match it. But this is just the prelude. The real story begins when we ask about the energy bill.</p>
+
+<h2 id="2-the-brains-secret-weapon-unmatched-efficiency">2. The Brain’s Secret Weapon: Unmatched Efficiency</h2>
+
+<p>Digital computers and biological brains are fundamentally different architectures. But energy consumption is a universal, physical metric. It doesn’t care about architecture; it measures the fundamental cost of computation.</p>
+
+<p>The human brain’s efficiency is its crowning achievement. It operates on a mere <strong>~20 watts</strong> of power—less than a standard light bulb. If we accept its processing capacity of ~500 petaFLOPS, its efficiency is staggering:</p>
+
+<p><code class="language-plaintext highlighter-rouge">Efficiency_brain = 5e17 FLOPS / 20 W = 2.5e16 FLOPS/W</code></p>
+
+<p>That is <strong>25 PetaFLOPS per Watt.</strong> Now, let’s calculate the total energy consumed by the EPU:</p>
+
+<p><code class="language-plaintext highlighter-rouge">Energy_EPU = Total FLOPS / Efficiency = (1.3e38 FLOPS) / (2.5e16 FLOPS/W) = 5.2e21 Joules</code></p>
+
+<p>To make this tangible, let’s convert Joules to Terawatt-hours (TWh), the unit used for national energy consumption:</p>
+
+<p><code class="language-plaintext highlighter-rouge">Energy_EPU ≈ 5.2e21 J / 3.6e15 J/TWh ≈ **1.44 Million TWh**</code></p>
+
+<p>Let’s put that number in context. The entire United States consumes about 4,000 TWh of electricity annually. The cumulative energy of the EPU is equivalent to powering the entire modern US for <strong>over 360 years.</strong></p>
+
+<h2 id="3-the-ai-counterpoint-a-drop-in-the-energy-ocean">3. The AI Counterpoint: A Drop in the Energy Ocean</h2>
+
+<p>Now, let’s contrast this with the training of a state-of-the-art AI model, like OpenAI’s GPT-4.</p>
+
+<p>Expert estimates place GPT-4’s training energy at approximately 50-62 GWh. Using the conservative estimate of 50 GWh:</p>
+
+<p><code class="language-plaintext highlighter-rouge">Energy_GPT-4 ≈ 0.05 TWh (50 GWh or 50,000 MWh)</code></p>
+
+<p>This aligns with estimates that training GPT-4 consumed enough energy to power several thousand average US homes for a year. It’s a significant amount, rightly scrutinized for its environmental impact.</p>
+
+<p>But when placed next to the EPU, the comparison becomes almost surreal.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">System</th>
+      <th style="text-align: left">Total Computation (FLOPS)</th>
+      <th style="text-align: left">Total Energy Consumption</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><strong>Evolutionary Processing Unit (EPU)</strong></td>
+      <td style="text-align: left">~1.3 × 10³⁸</td>
+      <td style="text-align: left"><strong>~1,440,000 TWh</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>OpenAI GPT-4 (One Training Run)</strong></td>
+      <td style="text-align: left">~2.2 × 10²⁵</td>
+      <td style="text-align: left"><strong>~0.05 TWh (50 GWh)</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>The energy used by the entire EPU is approximately 30 million times greater than the energy used to train GPT-4.</strong></p>
+
+<p>You could train a model like GPT-4 <strong>30 million times</strong> for the same energy cost evolution “spent” to architect the human brain.</p>
+
+<h2 id="4-the-pre-loaded-architecture-what-were-really-missing">4. The “Pre-Loaded” Architecture: What We’re Really Missing</h2>
+
+<p>This 30-million-fold gap is not a challenge for engineers to overcome with more power plants. It is a definitive sign that we are on the wrong architectural path.</p>
+
+<p>The energy of the EPU wasn’t spent on “training” one giant model. It was spent on <strong>evolution’s R&amp;D</strong> to find the perfect starting architecture. A human infant’s brain is not a blank slate. It is a pre-evolved system that comes pre-loaded with the foundational software for intelligence:</p>
+
+<ul>
+  <li><strong>Embodiment:</strong> The brain is part of a closed-loop system with a body, sensors, and actuators, learning through direct interaction with a physical world.</li>
+  <li><strong>Innate Structure:</strong> Infants possess pre-configured “inductive biases” for causality, object permanence, and social cognition. They don’t learn these from scratch; they learn <em>with</em> them.</li>
+  <li><strong>Subconscious Processing:</strong> The brain seamlessly manages a trillion-cell biological organism, a task of unimaginable complexity that occurs entirely below the level of consciousness.</li>
+</ul>
+
+<p>Evolution invested aeons of energy to discover a learning algorithm that is data-efficient, energy-frugal, and inherently robust. We are trying to skip this R&amp;D phase and jump straight to the final product with an architecture that is, by its very nature, spectacularly inefficient for the task.</p>
+
+<h2 id="45-why-this-actually-strengthens-the-epubpu-argument">4.5 Why This Actually Strengthens the EPU/BPU Argument</h2>
+
+<p>Some might argue: “If we can get impressive results with GPT-4 using just 50 GWh, doesn’t that prove scaling <em>works</em>?”</p>
+
+<p>This misses the point entirely. GPT-4 is impressive at pattern matching and language generation, but it fundamentally lacks:</p>
+
+<ul>
+  <li><strong>Causal reasoning</strong> - It can’t distinguish correlation from causation</li>
+  <li><strong>Grounded understanding</strong> - It has no model of physical reality</li>
+  <li><strong>Continuous learning</strong> - It’s frozen after training</li>
+  <li><strong>Energy efficiency at inference</strong> - Running GPT-4 costs millions per day; your brain runs on 20 watts continuously</li>
+</ul>
+
+<p>The 30-million-fold gap isn’t about training one model—it’s about the R&amp;D cost of discovering the <em>right architecture</em>. Evolution didn’t just train one brain; it spent 1.44 million TWh discovering an architecture that:</p>
+
+<ul>
+  <li>Learns continuously from minimal data</li>
+  <li>Operates at 25 PetaFLOPS per watt</li>
+  <li>Handles causal reasoning, not just correlation</li>
+  <li>Adapts to novel situations without retraining</li>
+</ul>
+
+<p>We’re celebrating getting partial intelligence from 50 GWh, while ignoring that evolution discovered <em>complete</em> intelligence through an architecture that required 30 million times more energy to <em>develop</em>—but now runs on the power of a light bulb.</p>
+
+<p>The efficiency gap proves we haven’t found the right architecture yet. We’re brute-forcing our way to narrow capabilities while evolution found a generalizable solution.</p>
+
+<h2 id="5-a-new-roadmap-for-agi-learning-from-the-epu">5. A New Roadmap for AGI: Learning from the EPU</h2>
+
+<p>The conclusion is inescapable. Attempting to achieve AGI by scaling current transformer-based architectures is not just impractical; it is a fundamental misreading of how intelligence arises.</p>
+
+<p>The path forward is not to out-compute evolution, but to learn from its 4-billion-year-old blueprint. As I’ve argued before, we must shift our focus from scale to architecture. This means:</p>
+
+<ol>
+  <li><strong>Developmental AI:</strong> Building systems that learn in stages like a child, not in single, massive training runs.</li>
+  <li><strong>Embodied Cognition:</strong> Prioritizing AI that interacts with the real world through robotics and simulations, grounding its learning in physics and cause-and-effect.</li>
+  <li><strong>Modular &amp; Orchestrated Systems:</strong> Moving beyond monolithic models to federations of specialized systems (for reasoning, memory, perception) coordinated by a central executive, much like the brain’s own structure.</li>
+  <li><strong>Innate Inductive Biases:</strong> Designing network architectures with built-in priors for physics, causality, and social reasoning, rather than expecting it all to be learned from data alone.</li>
+</ol>
+
+<h2 id="conclusion-the-blueprint-not-the-brute-force">Conclusion: The Blueprint, Not the Brute Force</h2>
+
+<p>The 30-million-fold efficiency gap is more than a staggering statistic. It’s a roadmap.</p>
+
+<p>Evolution spent 1.44 million TWh—the equivalent of 360 years of total US energy consumption—not on training a single brain, but on R&amp;D. On discovering the architectural principles that make intelligence possible: embodiment, modularity, causal grounding, continuous plasticity, and ruthless energy efficiency.</p>
+
+<p>We’re taking shortcuts. We’re trying to skip the R&amp;D phase and jump straight to AGI with an architecture (transformers) that was never designed for general intelligence. Yes, we’ve achieved remarkable things—GPT-4 is a technological marvel. But marveling at GPT-4’s language abilities while pursuing AGI through scaling is like celebrating that we can build faster cars and assuming that will eventually get us to Mars.</p>
+
+<p>The path to AGI isn’t hidden in the next training run or the next data center. It’s encoded in the architecture that evolution spent four billion years optimizing. The future belongs not to those who can afford the most GPUs, but to those humble enough to learn from biology’s billion-year head start.</p>
+
+<p>AGI will not be built by brute force. It will be reverse-engineered from the only blueprint that works: the one evolution already gave us.</p>
+
+<p>The efficiency gap isn’t a problem to overcome—it’s a lesson to learn from.</p>
+
+<hr />
+
+<p><em>What biological principle do you think is most critical for AI to learn next? Join the conversation on [Link to your LinkedIn Post].</em></p>]]></content><author><name>James Maconochie</name><email>maconochies@comcast.net</email></author><category term="ai-research" /><category term="neuroscience" /><category term="evolutionary-biology" /><summary type="html"><![CDATA[For years, the dominant narrative in artificial intelligence has been one of scale. The logic seems sound: bigger models, more data, and more GPUs will inevitably lead to greater intelligence. Eric Schmidt recently crystallized this view, stating AGI could arrive by 2030 through continued scaling.]]></summary></entry><entry><title type="html">From Here On, I Am Focusing on What Matters</title><link href="http://localhost:4000/blog/from-here-on-i-am-focusing-on-what-matters/" rel="alternate" type="text/html" title="From Here On, I Am Focusing on What Matters" /><published>2025-11-03T00:00:00-05:00</published><updated>2025-11-03T00:00:00-05:00</updated><id>http://localhost:4000/blog/from-here-on-i-am-focusing-on-what-matters</id><content type="html" xml:base="http://localhost:4000/blog/from-here-on-i-am-focusing-on-what-matters/"><![CDATA[<p>Two years ago I was helping organizations navigate digital transformation, the kind of work I’d done for 25 years across public and private sectors. Today, I’m publishing a framework that connects evolutionary biology, artificial intelligence, and human consciousness.</p>
 
 <p>The journey between those two points wasn’t linear, but it revealed something important: the same principles that make biological intelligence so efficient and adaptive can help us build better AI systems, better government services, and frankly, live more meaningful lives.</p>
 
 <h2 id="the-unplanned-pivot">The Unplanned Pivot</h2>
 
-<p>In September 2023, a reduction-in-force ended my consulting career unexpectedly. For the first time in decades, I had space to ask: “What actually excites me? What problems feel worth the next 15 years of my professional life?”</p>
+<p>In September 2023, a reduction-in-force stalled my consulting career unexpectedly. For the first time in decades, I had space to ask: “What actually excites me? What problems feel worth the next 15 years of my professional life?”</p>
 
-<p>The answer surprised even me. It wasn’t about finding another consulting role or chasing the latest tech trend. It was about understanding intelligence itself—not just artificial intelligence, but the kind that evolution spent 4 billion years perfecting.</p>
+<p>The answer surprised even me. It wasn’t about finding another consulting role or chasing the latest tech trend. It was about understanding intelligence itself, and not just artificial intelligence, but the kind that evolution spent 4 billion years perfecting.</p>
 
-<p>What started as career uncertainty became the most intellectually rich period of my life. I devoured research on neuroscience, cognitive science, and AI architecture. I started seeing patterns everywhere: in how toddlers learn, in how government services could be designed, in how we all navigate endless modern choices.</p>
+<p>What started as career uncertainty became the most intellectually rich period of my life. I read/listened to books on neuroscience, cognitive science, and AI architecture. I started seeing patterns everywhere: in how toddlers learn, in how government services could be designed, in how we all navigate endless modern choices.</p>
 
 <h2 id="the-framework-that-emerged">The Framework That Emerged</h2>
 
 <p>This exploration crystallized into an integrated framework spanning four working papers:</p>
 
 <h3 id="1-beyond-flops-the-evolutionary-processing-unit">1. Beyond FLOPS: The Evolutionary Processing Unit</h3>
-<p>Evolution isn’t just about survival—it’s the most sophisticated computational process we know. The “Evolutionary Processing Unit” represents 4 billion years of optimization that created modular, plastic, incredibly efficient biological intelligence. Rather than replicating this through brute-force computation, we should understand the architectural principles evolution discovered.</p>
+<p>Evolution isn’t just about survival, it’s the most sophisticated computational process we know. The “Evolutionary Processing Unit” represents 4 billion years of optimization that created modular, plastic, incredibly efficient biological intelligence. Rather than replicating this through brute-force computation, we should understand the architectural principles evolution discovered.</p>
 
 <h3 id="2-attention-is-all-we-have">2. Attention Is All We Have</h3>
-<p>The 2017 Transformer paper revealed attention as AI’s breakthrough mechanism. But attention isn’t just technical—it’s the fundamental resource allocation strategy that evolution optimized across biological systems. Understanding how attention works reveals insights for both building better AI and living more deliberately as humans.</p>
+<p>The 2017 Transformer paper revealed attention as AI’s breakthrough mechanism. But attention isn’t just technical, it’s the fundamental resource allocation strategy that evolution optimized across biological systems. Understanding how attention works reveals insights for both building better AI and living more deliberately as humans.</p>
 
 <h3 id="3-beyond-scale-a-modular-architecture-for-adaptive-ai">3. Beyond Scale: A Modular Architecture for Adaptive AI</h3>
 <p>Instead of endlessly scaling large language models, we can build AI systems inspired by evolutionary neuroscience: modular components, continuous adaptation, and built-in value alignment. This approach is more efficient, interpretable, and better suited for human collaboration.</p>
 
 <h3 id="4-the-mastery-of-life-framework">4. The Mastery of Life Framework</h3>
-<p>Finally, I asked: how do we apply these principles to human happiness and fulfillment? The Mastery of Life framework treats deliberate living as an attention allocation problem—helping individuals and organizations focus on what actually matters in a world of endless options.</p>
+<p>Finally, I asked: how do we apply these principles to human happiness and fulfillment? The Mastery of Life framework treats deliberate living as an attention allocation problem and thereby helping individuals and organizations focus on what actually matters in a world of endless options.</p>
 
 <h2 id="why-this-matters-beyond-academia">Why This Matters Beyond Academia</h2>
 
 <p>Here’s what surprised me: these principles apply far beyond AI research.</p>
 
-<p>During my consulting years, I worked with state agencies on digital transformation projects. The same challenges appear everywhere:</p>
+<p>The same challenges appear everywhere, whether building adaptive AI systems, designing government digital services, or creating enterprise technology platforms:</p>
 <ul>
   <li>How do we allocate limited resources effectively?</li>
   <li>How do we design systems that adapt to changing needs?</li>
   <li>How do we ensure technology serves people rather than complicating their lives?</li>
 </ul>
 
-<p>Whether we’re talking about AI safety, government service delivery, or personal decision-making, the core challenge remains the same: <strong>intelligent resource allocation in attention-scarce environments</strong>.</p>
+<p>Whether we’re talking about AI safety, modular architectures for machine learning, government service delivery, or personal decision-making, the core challenge remains the same: <strong>intelligent resource allocation in attention-scarce environments</strong>.</p>
 
 <h2 id="the-path-forward">The Path Forward</h2>
 
-<p>I’m sharing this work publicly because these conversations matter—and they shouldn’t happen only in Silicon Valley boardrooms or academic conferences. We need diverse perspectives from public sector leaders, technologists, researchers, and citizens who actually interact with these systems.</p>
+<p>I’m sharing this work publicly because these conversations matter, and they shouldn’t happen only in Silicon Valley boardrooms or academic conferences. We need diverse perspectives from AI researchers, technologists building these systems, public sector leaders implementing them, and citizens who actually interact with them. I am humble and curious. I told my sons that the most important thing I could teach them is that nobody knows everything, especially their dad, and if someone suggests they do, you probably want to get away from them in short order.</p>
 
-<p>This work continues to evolve (appropriately enough), and I’m particularly interested in applications that bridge technology and public impact—whether in AI safety, government digital services, or creating more equitable technological systems.</p>
+<p>This work continues to evolve (appropriately enough), and I’m particularly interested in applications across multiple domains: AI architecture and safety, human-AI collaboration systems, government digital services, and creating more equitable technological platforms.</p>
 
 <p><strong>I’d love your thoughts, critiques, and conversations.</strong> The papers are available at <a href="https://jamesmaconochie.com/papers">jamesmaconochie.com/papers</a>, and I’m actively seeking collaborations with organizations and individuals who find these ideas resonant.</p>
 
-<p>The most intelligent systems, whether biological or artificial, are those that learn, adapt, and collaborate. I’m excited to see what we can build together.</p>]]></content><author><name>James Maconochie</name><email>maconochies@comcast.net</email></author><category term="personal-journey" /><category term="ai-research" /><summary type="html"><![CDATA[Two years ago, I was helping organizations navigate digital transformation—the kind of work I’d done for 25 years across public and private sectors. Today, I’m publishing a framework that connects evolutionary biology, artificial intelligence, and human consciousness.]]></summary></entry></feed>
+<p>The most intelligent systems, whether biological or artificial, are those that learn, adapt, and collaborate. I’m excited to see what we can build together.</p>]]></content><author><name>James Maconochie</name><email>maconochies@comcast.net</email></author><category term="personal-journey" /><category term="ai-research" /><summary type="html"><![CDATA[Two years ago I was helping organizations navigate digital transformation, the kind of work I’d done for 25 years across public and private sectors. Today, I’m publishing a framework that connects evolutionary biology, artificial intelligence, and human consciousness.]]></summary></entry></feed>
