@@ -10,6 +10,8 @@ categories:
   - evolutionary-biology
 ---
 
+![Evolution, brain architecture, and compute efficiency triptych](/assets/images/brain_hero_1500by500.png)
+
 For years, the dominant narrative in artificial intelligence has been one of scale. The logic seems sound: bigger models, more data, and more GPUs will inevitably lead to greater intelligence. Eric Schmidt recently crystallized this view, stating AGI could arrive by 2030 through continued scaling.
 
 I believe this fundamentally misunderstands the problem.
