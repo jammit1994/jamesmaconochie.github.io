@@ -1,6 +1,8 @@
 ---
-permalink: /about/
 title: "About"
+layout: single
+permalink: /about/
+author_profile: true
 ---
 
 I'm a technology leader with 25 years of experience implementing complex systems across enterprise organizations. After two and half decades in consulting helping companies navigate digital transformation, I'm now focused on a question that I believe is one of the most critical of the moment: how do we build artificial intelligence that augments human capability rather than replaces it?
