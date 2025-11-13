@@ -123,3 +123,10 @@ analytics:
     tracking_id: "G-PRLHBW8WGB"
 
 future: true
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      header: null

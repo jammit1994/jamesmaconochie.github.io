@@ -7,12 +7,9 @@ permalink: /blog/from-here-on-i-am-focusing-on-what-matters/
 categories:
   - personal-journey
   - ai-research
-
-header:
-  overlay_image: /assets/images/hero_from_here_on_3000x1000.jpg
-  overlay_filter: 0.20
-  caption: ""
 ---
+
+![Wonder, navigation, and growth triptych](/assets/images/hero_from_here_on_3000x1000.jpg)
 
 Two years ago I was helping organizations navigate digital transformation, the kind of work I'd done for 25 years across public and private sectors. Today, I'm publishing a framework that connects evolutionary biology, artificial intelligence, and human consciousness. 
 
