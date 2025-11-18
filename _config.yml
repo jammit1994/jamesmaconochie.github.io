@@ -73,6 +73,12 @@ author:
   location: "Boston, MA"
   email: "maconochies@comcast.net"
   links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-x-twitter"
+      url: "https://twitter.com/jamaconochie"
+    - label: "Substack"
+      icon: "fas fa-fw fa-envelope-open-text"
+      url: "https://jamesmaconochie.substack.com"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/jammit/"
@@ -82,6 +88,12 @@ author:
 
 footer:
   links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-x-twitter"
+      url: "https://twitter.com/jamaconochie"
+    - label: "Substack"
+      icon: "fas fa-fw fa-envelope-open-text"
+      url: "https://jamesmaconochie.substack.com"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/jammit/"

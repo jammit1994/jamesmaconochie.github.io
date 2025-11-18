@@ -42,7 +42,7 @@ In the full post on my Substack, I expand on these ideas to explore:
 
 *   **The Frameworks:** How principles from evolutionary biology and cognitive neuroscience can inform more capable and aligned AI.
 *   **The Distinction:** Why the architectural choice between AHI and AGI is the most important decision we face.
-*   **The Practical Payoff:** How a modular approach dramatically lowers infrastructure barriers, making sophisticated AI accessible beyond organizations that can afford billion-dollar training runs.
+*   **The Practical Payoff:** How a modular approach dramatically lowers infrastructure barriers, making sophisticated AI accessible beyond organizations that can afford multi-million-dollar training runs.
 *   **What to Expect:** A series of posts diving into the technical, philosophical, and practical aspects of building intelligence that truly serves humanity.
 
 <a href="https://jamesmaconochie.substack.com/p/why-im-exploring-the-architecture" style="display: inline-block; background-color: #FF6719; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold; margin: 10px 0;">Subscribe & Read the Full Post Here</a>
