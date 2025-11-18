@@ -2,7 +2,7 @@
 title: "Why I'm Exploring the Architecture of Attention"
 layout: single
 author_profile: true
-date: 2024-05-21
+date: 2025-11-18
 permalink: /blog/why-im-exploring-the-architecture-of-attention/
 categories:
   - ai-research
