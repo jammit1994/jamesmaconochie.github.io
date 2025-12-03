@@ -38,7 +38,7 @@ Transformers changed everything with a deceptively simple idea: let the model de
 
 When processing the word "bank," does it mean riverbank or financial institution? The attention mechanism looks at surrounding context, "deposit," "loan," "account," and weights those words more heavily. It doesn't process all input equally. It prioritizes.  
 
-This wasn't just an incremental improvement. It was a phase transition, a sudden change in behavior that rewrote what was possible. Models could now handle longer contexts, understand deeper relationships, and scale to problems that were previously intractable.  
+This wasn't just an incremental improvement. It was a paradigm shift, a sudden change in behavior that rewrote what was possible. Models could now handle longer contexts, understand deeper relationships, and scale to problems that were previously intractable.  
 
 But here's what matters: the breakthrough came from **architectural constraint**, not raw power. By forcing the system to allocate limited attention strategically, the researchers discovered something profound.  
 
@@ -48,7 +48,7 @@ Selective focus isn't a limitation to overcome. It's the mechanism that makes in
 
 ## Nature's Version  
 
-The human brain processes roughly 11 million bits of sensory information per second. Your eyes, ears, skin, and proprioception deliver a constant flood of data.  
+The human brain processes roughly 11 million bits of sensory information per second. Your eyes, ears, skin, and other sensory systems deliver a constant flood of data.  
 
 Your conscious awareness? About 50 bits per second.  
 
