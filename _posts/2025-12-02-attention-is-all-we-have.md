@@ -10,7 +10,7 @@ categories:
   - evolutionary-biology
 ---
 
-![A conceptual triptych contrasting showing the progression of focus, from a Radio Telescope to a Microscope.](/assets/images/attention_hero_1500by500.png)
+![A conceptual triptych contrasting showing the progression of focus, from a Radio Telescope to a Microscope.](/assets/images/attention_is_all_we_have_hero_1500by500.png)
 
 ### Why Intelligence, Artificial and Human, Depends on What We Choose to Ignore  
 
@@ -132,8 +132,6 @@ For AI, this means moving beyond brute-force scaling toward architectures that a
 For humans, it means recognizing that our attention is both our most valuable resource and our most vulnerable point of influence. We can't opt out of the attention economy, but we can build better defenses and invest in better tools.  
 
 This architectural thinking applies beyond AI systems. About twelve months ago, after a reduction in force, I caught myself pursuing a like-for-like role replacement. I was allocating attention reactively instead of deliberately. That realization led to the **Mastery of Life** framework, treating fulfillment as an optimization problem where competing domains (health, relationships, growth, contribution) vie for finite attention.  
-
-Just as the transformer learns to assign attention weights to data, we can learn to assign value weights to experience. We'll explore this in more detail in **Week 7.**  
 
 The question isn't whether we have enough attention to solve our problems. We never will.  
 
