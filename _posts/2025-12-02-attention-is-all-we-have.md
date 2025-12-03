@@ -143,13 +143,6 @@ That's the architecture challenge of our generation.
 
 ---
 
-**Next week:** How modular systems coordinate attention across specialized components, and why this matters for both AI safety and capability.  
-
----
-
 [^1]: Vaswani, A., et al. (2017). *Attention Is All You Need.* *Advances in Neural Information Processing Systems,* 30. [arxiv.org/abs/1706.03762](https://arxiv.org/abs/1706.03762)
 
 For a deeper exploration of how attention mechanisms constrain and enable intelligence across biological and artificial systems, see my whitepaper: [*Attention Is All We Have*](https://jamesmaconochie.com/assets/papers/Attention-Final.pdf)
-
-*This is part of an eight-week series exploring how biological principles can inform better AI architecture.  
-If you're interested in systems thinking, AI development, or the intersection of human and artificial intelligence, [subscribe here].*
