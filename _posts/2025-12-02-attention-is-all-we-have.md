@@ -17,6 +17,7 @@ categories:
 > "My experience is what I agree to attend to." — William James  
 
 In 2017, a group of Google researchers published a paper with an audacious title: *Attention Is All You Need.*  
+
 It introduced the transformer architecture that powers every major AI system today: ChatGPT, Claude, GPT-N, all of them.  
 
 The breakthrough wasn't more data or bigger models. It was **selective focus**: teaching systems to dynamically weight which parts of input matter most for the task at hand.  
