@@ -150,7 +150,7 @@ And wisdom, as it turns out, requires something scaling can never provide: feedb
 
 ## Notes & Further Reading
 
-The entire argument, including a framework for evaluating information systems and detailed AHI design principles, appears in my white paper, [*The Attention Crisis: Language, Meaning, and the Architecture of Augmented Human Intelligence*](https://jamesmaconochie.com/assets/papers/Attention-Crisis-Final.pdf).
+The entire argument, including a framework for evaluating information systems and detailed AHI design principles, appears in my white paper, [*The Attention Crisis: Language, Meaning, and the Architecture of Augmented Human Intelligence*](https://jamesmaconochie.com/assets/papers/attention_crisis_final.pdf).
 
 The three-layer model of reality comes from Yuval Noah Harari's *Sapiens: A Brief History of Humankind*.
 

@@ -203,9 +203,9 @@ And wisdom, as it turns out, requires something scaling can never provide: feedb
 
 ## Notes & Further Reading
 
-For a more complete technical architecture and phased development roadmap, see my research paper [*Beyond Scale: Towards Biologically Inspired Modular Architectures for Adaptive AI*](https://jamesmaconochie.com/assets/papers/Beyond-Scale-Final.pdf).
+For a more complete technical architecture and phased development roadmap, see my research paper [*Beyond Scale: Towards Biologically Inspired Modular Architectures for Adaptive AI*](https://jamesmaconochie.com/assets/papers/beyond-scale-modular-ai-maconochie.pdf).
 
-The foundational argument about why scaling alone won't work appears in my Week 1 post [*The Brain's Modular Wisdom*](/blog/attention_is_all_we_have/).
+The foundational argument about why scaling alone won't work appears in my research paper [*Attention Is All We Have: What AI's Greatest Breakthrough Can Teach Up About Being Human*](https://jamesmaconochie.com/assets/papers/Attention-Final.pdf).
 
 Judea Pearl's "ladder of causation" is detailed in his book *The Book of Why: The New Science of Cause and Effect*.
 
