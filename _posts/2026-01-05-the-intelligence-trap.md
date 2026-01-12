@@ -10,7 +10,8 @@ categories:
   - governance
 ---
 
-![A conceptual image representing the gap between AI definitions and reality.](/assets/images/intelligence_trap_hero_1500by500.png)
+![A conceptual image representing the gap between AI definitions and reality.](/assets/images/the_i
+ntelligence_trap_hero_1500by500.png)
 
 ### How Misdefining AI Undermines Control
 

@@ -11,7 +11,7 @@ categories:
   - democracy
 ---
 
-![A conceptual image representing the collision between algorithmic attention capture and democratic deliberation.](/assets/images/attention_economy_democracy_hero_1500by500.png)
+![A conceptual image representing the collision between algorithmic attention capture and democratic deliberation.](/assets/images/attention_eats_democracy_hero_1500by500.png)
 
 ### Executive Capture and the Collapse of Deliberation
 

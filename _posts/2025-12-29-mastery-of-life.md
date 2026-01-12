@@ -10,7 +10,7 @@ categories:
   - personal-development
 ---
 
-![A conceptual image representing the intersection of AI architecture and deliberate living.](/assets/images/mastery_of_life_hero_1500by500.png)
+![A conceptual image representing the intersection of AI architecture and deliberate living.](/assets/images/mastery_of_life_hero_1500by500_2.png)
 
 ### Architecture, feedback, and adjustment will always trump pure compute, in AI and in living.
 
