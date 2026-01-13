@@ -229,3 +229,23 @@
     min-width: 200px !important;
   }
 }
+
+/* ==========================================================================
+   TITLE ALIGNMENT & RIGHT SIDEBAR FIX
+   ========================================================================== */
+
+/* Align page title with content */
+.page__title {
+  padding-left: 2rem !important;
+}
+
+/* Remove unused right sidebar space and let content expand */
+.page {
+  float: none !important;
+  width: 100% !important;
+}
+
+/* On pages with author sidebar, constrain content width for readability */
+.page__content {
+  max-width: 800px !important;
+}
