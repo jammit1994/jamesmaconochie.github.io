@@ -205,3 +205,27 @@
   color: #666;
   margin: 0;
 }
+
+/* ==========================================================================
+   SIDEBAR SPACING FIX
+   ========================================================================== */
+
+/* Maintain gap between sidebar and content at medium widths */
+@media (min-width: 50em) {
+  .sidebar {
+    padding-right: 1.5rem !important;
+  }
+  
+  .page__content,
+  .archive {
+    padding-left: 2rem !important;
+  }
+}
+
+/* Ensure sidebar stays fixed width longer */
+@media (min-width: 50em) and (max-width: 64em) {
+  .sidebar {
+    width: 200px !important;
+    min-width: 200px !important;
+  }
+}
