@@ -100,3 +100,124 @@
     width: calc(220px - 1em) !important;  /* slightly wider than default px */
   }
 }
+
+/* ==========================================================================
+   BLOG CARD GRID LAYOUT
+   ========================================================================== */
+
+/* Grid container for blog cards */
+.archive .list__item {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(33.333% - 1.5rem);
+  margin-right: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Two columns on tablet */
+@media (max-width: 1024px) {
+  .archive .list__item {
+    width: calc(50% - 1rem);
+  }
+}
+
+/* Single column on mobile */
+@media (max-width: 600px) {
+  .archive .list__item {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+/* Blog card styling */
+.blog-card {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  height: 100%;
+}
+
+.blog-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.blog-card__link {
+  display: block;
+  padding: 1.25rem;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+
+.blog-card__link:hover {
+  text-decoration: none;
+}
+
+/* Header with title and date */
+.blog-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.blog-card__title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0;
+  color: #494e52;
+  flex: 1;
+}
+
+.blog-card:hover .blog-card__title {
+  color: #52aab8;
+}
+
+.blog-card__date {
+  font-size: 0.8rem;
+  color: #888;
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding-top: 0.15rem;
+}
+
+/* Mobile: stack title and date */
+@media (max-width: 600px) {
+  .blog-card__header {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  .blog-card__date {
+    padding-top: 0;
+  }
+}
+
+/* Thumbnail image */
+.blog-card__image {
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.blog-card__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 3 / 1;
+  object-fit: cover;
+}
+
+/* Description text */
+.blog-card__description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #666;
+  margin: 0;
+}
