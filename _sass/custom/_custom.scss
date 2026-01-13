@@ -244,3 +244,26 @@
 .layout--posts .archive__nav {
   padding-left: 2rem !important;
 }
+
+/* ==========================================================================
+   ARCHIVE PAGE TITLE ALIGNMENT FIX
+   ========================================================================== */
+
+/* Align Blog Archive title with cards */
+.archive + .entries-list,
+.page__content > .archive {
+  margin-left: 0 !important;
+}
+
+/* Match title padding to content padding */
+@media (min-width: 50em) {
+  #page-title {
+    padding-left: 2rem !important;
+  }
+  
+  /* Year section headers */
+  .taxonomy__section h2,
+  .archive__subtitle {
+    padding-left: 2rem !important;
+  }
+}
