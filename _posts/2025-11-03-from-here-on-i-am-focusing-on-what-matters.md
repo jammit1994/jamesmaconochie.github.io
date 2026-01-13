@@ -11,7 +11,7 @@ description: "After a career shift, the author develops a framework that links e
 image: /assets/images/assets/images/from_now_on_im_focusing_on_what_matters_1500by500.png
 ---
 
-![Wonder, navigation, and growth triptych](/assets/images/hero_from_here_on_3000x1000.jpg)
+![Wonder, navigation, and growth triptych](/assets/images/assets/images/from_now_on_im_focusing_on_what_matters_1500by500.png)
 
 Two years ago I was helping organizations navigate digital transformation, the kind of work I'd done for 25 years across public and private sectors. Today, I'm publishing a framework that connects evolutionary biology, artificial intelligence, and human consciousness. 
 
