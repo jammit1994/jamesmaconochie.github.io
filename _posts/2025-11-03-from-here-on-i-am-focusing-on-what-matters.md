@@ -7,6 +7,8 @@ permalink: /blog/from-here-on-i-am-focusing-on-what-matters/
 categories:
   - personal-journey
   - ai-research
+description: "After a career shift, the author develops a framework that links evolutionary biology, AI, and human consciousness, arguing that principles such as attention and modularity can lead to better technology and more meaningful lives."
+image: /assets/images/hero_from_here_on_3000x1000.jpg
 ---
 
 ![Wonder, navigation, and growth triptych](/assets/images/hero_from_here_on_3000x1000.jpg)

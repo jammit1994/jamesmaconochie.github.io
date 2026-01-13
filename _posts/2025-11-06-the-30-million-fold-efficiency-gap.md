@@ -8,6 +8,8 @@ categories:
   - ai-research
   - neuroscience
   - evolutionary-biology
+description: "Evolution’s energy-efficient brain architecture shows that scaling alone won’t lead to AGI; we must learn from biology’s modular, embodied, and causal design"
+image: /assets/images/brain_hero_1500by500.png
 ---
 
 ![Evolution, brain architecture, and compute efficiency triptych](/assets/images/brain_hero_1500by500.png)

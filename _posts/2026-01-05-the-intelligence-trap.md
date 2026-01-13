@@ -8,6 +8,8 @@ categories:
   - ai-research
   - philosophy
   - governance
+description: Misdefining AI as “intelligent” leads to governance failures; we should instead build Augmented Human Intelligence systems designed for human partnership rather than autonomy."
+image: /assets/images/the_intelligence_trap_hero_1500by500.png
 ---
 
 ![A conceptual image representing the gap between AI definitions and reality.](/assets/images/the_i

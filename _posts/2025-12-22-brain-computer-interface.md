@@ -8,6 +8,8 @@ categories:
   - ai-research
   - neurotechnology
   - philosophy
+description: "BCIs could enable real-time cognitive support by detecting biased thinking as it occurs, though current technology remains limited to medical applications and is far from consumer-ready cognitive augmentation."
+image: /assets/images/brain_computer_interfaces_hero_1500by500.png
 ---
 
 ![A conceptual image representing the intersection of brain-computer interfaces and cognitive augmentation.](/assets/images/brain_computer_interfaces_hero_1500by500.png)

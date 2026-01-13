@@ -2,12 +2,14 @@
 title: "From Wonder to Wisdom"
 layout: single
 author_profile: true
-date: 2025-12-15
+date: 2025-12-15/
 permalink: /blog/from_wonder_to_wisdom/
 categories:
   - ai-research
   - philosophy
   - systems-thinking
+description: "True progress in AI requires moving from seductive, linear projections of scale to an iterative development chain built on modular architecture, feedback loops, and human-machine partnership, where wisdom emerges from correction and co-evolution, not from computation alone."
+image: /assets/images/wonder_to_wisdom_hero_1500by500.png
 ---
 
 ![A conceptual image representing the journey from imagination to understanding through feedback loops.](/assets/images/wonder_to_wisdom_hero_1500by500.png)

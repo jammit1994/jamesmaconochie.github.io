@@ -8,6 +8,8 @@ categories:
   - ai-research
   - neuroscience
   - evolutionary-biology
+description: "Attention is the core constraint on all intelligence; we need systems, both AI and personal, that help us focus on what matters rather than distract us from it."
+image: /assets/images/attention_is_all_we_have_hero_1500by500.png
 ---
 
 ![A conceptual triptych contrasting showing the progression of focus, from a Radio Telescope to a Microscope.](/assets/images/attention_is_all_we_have_hero_1500by500.png)

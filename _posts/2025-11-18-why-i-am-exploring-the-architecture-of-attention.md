@@ -8,6 +8,8 @@ categories:
   - ai-research
   - neuroscience
   - evolutionary-biology
+description: "Intelligence stems from the attention architecture, not compute scale; the future of AI should be modular systems that augment human judgment, not monolithic models that replace it."
+image: /assets/images/three_bridge_hero_1500by500.png)
 ---
 
 ![A conceptual triptych contrasting monolithic AI compute with the modular, efficient architecture of biological intelligence.](/assets/images/three_bridge_hero_1500by500.png)

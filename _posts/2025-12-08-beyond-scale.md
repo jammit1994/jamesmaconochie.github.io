@@ -8,6 +8,8 @@ categories:
   - ai-research
   - evolutionary-biology
   - architecture
+description: "The pursuit of AI through scaling alone has reached diminishing returns; true intelligence requires a modular architecture inspired by evolution, specialized systems orchestrated by an executive function for adaptability, efficiency, and human partnership, not autonomy."
+image: /assets/images/beyond_scale_hero_1500by500.png
 ---
 
 ![A conceptual image representing modular AI architecture inspired by biological systems.](/assets/images/beyond_scale_hero_1500by500.png)

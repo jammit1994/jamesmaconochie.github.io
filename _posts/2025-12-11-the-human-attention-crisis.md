@@ -8,6 +8,8 @@ categories:
   - ai-research
   - attention
   - society
+description: "Humanity now produces more language than we can process, destabilizing our shared reality; to navigate this, we must build Augmented Human Intelligence systems that strengthen human attention and judgment rather than replace them with centralized oracles."
+image: /assets/images/attention_crisis_hero_1500by500.png
 ---
 
 ![A conceptual image representing the tension between infinite language production and finite human attention.](/assets/images/attention_crisis_hero_1500by500.png)

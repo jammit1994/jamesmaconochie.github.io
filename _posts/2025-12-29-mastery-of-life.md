@@ -8,6 +8,8 @@ categories:
   - ai-research
   - philosophy
   - personal-development
+description: The author applies AI’s modular architecture to personal life, proposing a framework for deliberately allocating attention across seven life domains, turning living into a practice of conscious orchestration rather than reactive survival."
+image: /assets/images/mastery_of_life_hero_1500by500_2.png
 ---
 
 ![A conceptual image representing the intersection of AI architecture and deliberate living.](/assets/images/mastery_of_life_hero_1500by500_2.png)
