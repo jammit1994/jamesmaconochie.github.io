@@ -10,7 +10,7 @@ categories:
   - attention
   - democracy
 description: "Algorithmic attention capture undermines democracy by hijacking executive function and fragmenting shared reality, requiring new architectures that support collective deliberation rather than engagement-driven fragmentation."
-image: /assets/images/attention_eats_democracy_hero_1500by500.png)
+image: /assets/images/attention_eats_democracy_hero_1500by500.png
 ---
 
 ![A conceptual image representing the collision between algorithmic attention capture and democratic deliberation.](/assets/images/attention_eats_democracy_hero_1500by500.png)

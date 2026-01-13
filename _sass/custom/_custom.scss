@@ -107,26 +107,10 @@
 
 /* Grid container for blog cards */
 .archive .list__item {
-  display: inline-block;
-  vertical-align: top;
-  width: calc(33.333% - 1.5rem);
-  margin-right: 1rem;
+  display: block;
+  width: 100%;
+  max-width: 700px;
   margin-bottom: 1.5rem;
-}
-
-/* Two columns on tablet */
-@media (max-width: 1024px) {
-  .archive .list__item {
-    width: calc(50% - 1rem);
-  }
-}
-
-/* Single column on mobile */
-@media (max-width: 600px) {
-  .archive .list__item {
-    width: 100%;
-    margin-right: 0;
-  }
 }
 
 /* Blog card styling */
