@@ -234,8 +234,8 @@
    TITLE ALIGNMENT & RIGHT SIDEBAR FIX
    ========================================================================== */
 
-/* Align page title with content */
-.page__title {
+/* Align page title with content - archive pages only */
+.archive .page__title {
   padding-left: 2rem !important;
 }
 
