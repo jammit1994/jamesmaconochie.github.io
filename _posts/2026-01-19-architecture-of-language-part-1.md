@@ -10,7 +10,7 @@ categories:
   - language
   - epistemology
 description: "Language functions as civilization's operating system, stabilized for millennia by four external constraints—throughput, bottlenecks, locality, and friction—all of which have been systematically dismantled by digital technology."
-image: /assets/images/architecture_language_1_hero_1500by500.png
+image: /assets/images/language_lost_constraints_hero_1500by500.png
 ---
 
 ![A conceptual image representing the architectural constraints that once stabilized language.](/assets/images/language_lost_constraints_hero_1500by500.png)

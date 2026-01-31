@@ -10,7 +10,7 @@ categories:
   - language
   - epistemology
 description: "Our linguistic infrastructure is experiencing serviceability failure—fracturing shared reality, overwhelming attention, creating authenticity paradoxes, and widening the gap between knowledge and wisdom, with LLMs accelerating the crisis by eliminating the last friction in language production."
-image: /assets/images/architecture_language_2_hero_1500by500.png
+image: /assets/images/serviceability_hero_1500by500.png
 ---
 
 ![A conceptual image representing the serviceability failure of our linguistic infrastructure.](/assets/images/serviceability_hero_1500by500.png)

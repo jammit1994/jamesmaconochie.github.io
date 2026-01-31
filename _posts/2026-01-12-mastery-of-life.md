@@ -9,7 +9,7 @@ categories:
   - attention
   - personal-development
 description: "A daily reflection practice and web app for discovering what actually matters in your life, building the muscle to notice, reflect, and adjust through constrained, minimal check-ins."
-image: /assets/images/mastery_of_life_hero_1500by500.png
+image: /assets/images/mastery_of_life_hero_1500by500_final.png
 ---
 
 ![A conceptual image representing the Mastery of Life framework and daily reflection practice.](/assets/images/mastery_of_life_hero_1500by500_final.png)
