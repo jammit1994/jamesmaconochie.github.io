@@ -9,7 +9,7 @@ categories:
   - philosophy
   - language
   - epistemology
-description: "Our linguistic infrastructure is experiencing serviceability failure—fracturing shared reality, overwhelming attention, creating authenticity paradoxes, and widening the gap between knowledge and wisdom, with LLMs accelerating the crisis by eliminating the last friction in language production."
+description: "Our linguistic infrastructure is experiencing serviceability failure, fracturing shared reality, overwhelming attention, creating authenticity paradoxes, and widening the gap between knowledge and wisdom, with LLMs accelerating the crisis by eliminating the last friction in language production."
 image: /assets/images/serviceability_hero_1500by500.png
 ---
 
