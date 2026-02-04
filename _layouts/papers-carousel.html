@@ -334,6 +334,7 @@ layout: splash
   align-items: center;
   height: 100%;
   padding: 2rem;
+  padding-bottom: 5rem; /* Extra space above navigation dots */
   text-align: center;
   color: white;
   max-width: 900px;
@@ -361,16 +362,23 @@ layout: splash
   padding: 0.75rem 2rem;
   background-color: rgba(255,255,255,0.2);
   border: 2px solid white;
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
+  color: white !important;
+  text-decoration: none !important;
+  font-weight: 700;
   border-radius: 4px;
   transition: all 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.slide-link:visited,
+.slide-link:active {
+  color: white !important;
 }
 
 .slide-link:hover {
   background-color: white;
-  color: #333;
+  color: #333 !important;
+  text-shadow: none;
 }
 
 .carousel-dots {
@@ -407,13 +415,23 @@ layout: splash
     height: 60vh;
     min-height: 400px;
   }
-  
+
+  .slide-content {
+    padding-bottom: 6rem; /* More space on mobile for dots */
+  }
+
   .slide-title {
     font-size: 1.75rem;
   }
-  
+
   .slide-text {
     font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .slide-link {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.95rem;
   }
 }
 
