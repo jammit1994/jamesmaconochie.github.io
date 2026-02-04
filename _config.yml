@@ -14,6 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: "James Maconochie"
+logo: "/assets/images/A&A_logo_108x108.png"
 email: maconochies@comcast.net
 description: >- 
   Technology leader exploring AI architecture and human-AI collaboration.
@@ -21,7 +22,8 @@ description: >-
 twitter_username: jamaconochie
 github_username: jammit1994
 minimal_mistakes_skin: default
-search: false
+search: true
+search_full_content: true
 url: "https://jamesmaconochie.com"
 baseurl: ""  # Leave this empty for local development
 repository: "jammit1994/jamesmaconochie.github.io"

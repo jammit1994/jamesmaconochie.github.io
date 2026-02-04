@@ -2,6 +2,27 @@
    CUSTOM STYLES
    ========================================================================== */
 
+/* ==========================================================================
+   MASTHEAD LOGO STYLING
+   ========================================================================== */
+
+.masthead .site-logo img {
+  max-height: 50px !important;
+  width: auto !important;
+  margin-right: 0.5rem !important;
+}
+
+/* Ensure logo and title align nicely */
+.masthead__inner-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.site-title {
+  display: flex;
+  align-items: center;
+}
+
 /* Landing Page Hero Styling
    ========================================================================== */
 
@@ -246,6 +267,23 @@
 }
 
 /* ==========================================================================
+   SINGLE PAGE TITLE ALIGNMENT (About, Journey, Search, Attributions)
+   ========================================================================== */
+
+/* Align page titles with content on single layout pages with sidebar */
+@media (min-width: 50em) {
+  .layout--single .page__title,
+  .layout--single .page__meta {
+    padding-left: 2rem !important;
+  }
+
+  .layout--single .page__content {
+    /* Ensure content starts at the same position as title */
+    padding-left: 2rem !important;
+  }
+}
+
+/* ==========================================================================
    ARCHIVE PAGE TITLE ALIGNMENT FIX
    ========================================================================== */
 
@@ -262,4 +300,67 @@
 /* Remove padding from cards since parent has it */
 .blog-card__link {
   padding-left: 1.25rem !important;
+}
+
+/* ==========================================================================
+   SEARCH PAGE STYLING (Lunr.js)
+   ========================================================================== */
+
+/* Search input field */
+.search-content .search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1.1rem;
+  border: 2px solid #e8e8e8;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-content .search-input:focus {
+  outline: none;
+  border-color: #52aab8;
+  box-shadow: 0 0 0 3px rgba(82, 170, 184, 0.15);
+}
+
+/* Search results list */
+.search-content .results__found {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.search-content .archive__item {
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.search-content .archive__item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+}
+
+.search-content .archive__item-title {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.05rem;
+}
+
+.search-content .archive__item-title a {
+  color: #494e52;
+  text-decoration: none;
+}
+
+.search-content .archive__item-title a:hover {
+  color: #52aab8;
+}
+
+.search-content .archive__item-excerpt {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
 }

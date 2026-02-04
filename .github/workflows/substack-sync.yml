@@ -1,0 +1,205 @@
+name: Sync Substack to Blog
+
+on:
+  schedule:
+    # Runs every Wednesday at 10:00 AM UTC (5:00 AM EST / 6:00 AM EDT)
+    - cron: '0 10 * * 3'
+  workflow_dispatch:  # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install feedparser python-dateutil requests
+
+      - name: Sync Substack posts
+        run: |
+          python << 'EOF'
+          import feedparser
+          import os
+          import re
+          from datetime import datetime, timedelta, timezone
+          from dateutil import parser as date_parser
+          import html
+          import requests
+
+          SUBSTACK_FEED = "https://jamesmaconochie.substack.com/feed"
+          POSTS_DIR = "_posts"
+          DELAY_DAYS = 7  # Posts appear on blog 7 days after Substack
+
+          def slugify(title):
+              """Convert title to URL-friendly slug."""
+              slug = title.lower()
+              slug = re.sub(r'[^\w\s-]', '', slug)
+              slug = re.sub(r'[-\s]+', '-', slug)
+              return slug.strip('-')
+
+          def get_existing_posts():
+              """Get set of existing post slugs to avoid duplicates."""
+              existing = set()
+              if os.path.exists(POSTS_DIR):
+                  for filename in os.listdir(POSTS_DIR):
+                      if filename.endswith('.md'):
+                          # Extract slug from filename (YYYY-MM-DD-slug.md)
+                          parts = filename[:-3].split('-', 3)
+                          if len(parts) >= 4:
+                              existing.add(parts[3])
+              return existing
+
+          def clean_html(text):
+              """Remove HTML tags and decode entities."""
+              text = re.sub(r'<[^>]+>', '', text)
+              text = html.unescape(text)
+              return text.strip()
+
+          def extract_excerpt(content, max_length=300):
+              """Extract a clean excerpt from post content."""
+              clean = clean_html(content)
+              if len(clean) > max_length:
+                  clean = clean[:max_length].rsplit(' ', 1)[0] + '...'
+              return clean
+
+          def create_post(entry, pub_date):
+              """Create a Jekyll post from RSS entry."""
+              title = entry.get('title', 'Untitled')
+              slug = slugify(title)
+              link = entry.get('link', '')
+
+              # Get content/summary
+              content = ''
+              if 'content' in entry:
+                  content = entry.content[0].value
+              elif 'summary' in entry:
+                  content = entry.summary
+
+              excerpt = extract_excerpt(content)
+
+              # Format date for Jekyll
+              date_str = pub_date.strftime('%Y-%m-%d')
+
+              # Create filename
+              filename = f"{date_str}-{slug}.md"
+              filepath = os.path.join(POSTS_DIR, filename)
+
+              # Create front matter and content
+              post_content = f'''---
+          title: "{title}"
+          date: {pub_date.strftime('%Y-%m-%d %H:%M:%S %z')}
+          categories:
+            - blog
+          tags:
+            - substack
+          excerpt: "{excerpt.replace('"', '\\"')}"
+          link: {link}
+          ---
+
+          *This post was originally published on [Substack]({link}).*
+
+          {clean_html(content)}
+
+          ---
+
+          [Read the original post on Substack]({link})
+          '''
+
+              with open(filepath, 'w', encoding='utf-8') as f:
+                  f.write(post_content)
+
+              return filename, title
+
+          def main():
+              print(f"Fetching Substack feed: {SUBSTACK_FEED}")
+              feed = feedparser.parse(SUBSTACK_FEED)
+
+              if feed.bozo:
+                  print(f"Warning: Feed parsing had issues: {feed.bozo_exception}")
+
+              print(f"Found {len(feed.entries)} entries in feed")
+
+              existing = get_existing_posts()
+              print(f"Found {len(existing)} existing posts")
+
+              now = datetime.now(timezone.utc)
+              cutoff = now - timedelta(days=DELAY_DAYS)
+
+              created = []
+              skipped = []
+
+              for entry in feed.entries:
+                  title = entry.get('title', 'Untitled')
+                  slug = slugify(title)
+
+                  # Parse publish date
+                  pub_date = None
+                  if 'published_parsed' in entry and entry.published_parsed:
+                      pub_date = datetime(*entry.published_parsed[:6], tzinfo=timezone.utc)
+                  elif 'published' in entry:
+                      pub_date = date_parser.parse(entry.published)
+                      if pub_date.tzinfo is None:
+                          pub_date = pub_date.replace(tzinfo=timezone.utc)
+
+                  if not pub_date:
+                      print(f"Skipping '{title}': No publish date")
+                      continue
+
+                  # Check if post is old enough
+                  if pub_date > cutoff:
+                      days_until = (pub_date - cutoff).days + 1
+                      print(f"Skipping '{title}': Published {pub_date.strftime('%Y-%m-%d')}, "
+                            f"will sync in {days_until} days")
+                      skipped.append(title)
+                      continue
+
+                  # Check if already exists
+                  if slug in existing:
+                      print(f"Skipping '{title}': Already exists")
+                      continue
+
+                  # Create the post
+                  filename, title = create_post(entry, pub_date)
+                  created.append(title)
+                  print(f"Created: {filename}")
+
+              print(f"\nSummary: Created {len(created)} posts, "
+                    f"skipped {len(skipped)} (too recent)")
+
+              if created:
+                  print("\nNew posts created:")
+                  for title in created:
+                      print(f"  - {title}")
+
+          if __name__ == "__main__":
+              main()
+          EOF
+
+      - name: Check for changes
+        id: check
+        run: |
+          if [ -n "$(git status --porcelain _posts/)" ]; then
+            echo "changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "changes=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push
+        if: steps.check.outputs.changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _posts/
+          git commit -m "Auto-sync posts from Substack
+
+          Co-Authored-By: GitHub Actions <github-actions[bot]@users.noreply.github.com>"
+          git push
