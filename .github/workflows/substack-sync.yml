@@ -362,10 +362,25 @@ jobs:
                   print("=== DRY RUN MODE ===\n")
 
               print(f"Fetching Substack feed: {SUBSTACK_FEED}")
-              feed = feedparser.parse(SUBSTACK_FEED)
+
+              # Fetch feed with requests first, then sanitize XML before parsing.
+              # Substack feeds contain characters that break strict XML parsing,
+              # so we strip invalid XML chars before handing to feedparser.
+              resp = requests.get(SUBSTACK_FEED, timeout=30)
+              resp.raise_for_status()
+              raw_feed = resp.text
+
+              # Remove XML-invalid characters (control chars except tab, newline, carriage return)
+              raw_feed = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]", "", raw_feed)
+
+              feed = feedparser.parse(raw_feed)
 
               if feed.bozo:
                   print(f"Warning: Feed parsing had issues: {feed.bozo_exception}")
+
+              if not feed.entries:
+                  print("ERROR: Feed returned 0 entries. Aborting.")
+                  sys.exit(1)
 
               print(f"Found {len(feed.entries)} entries in feed\n")
 
