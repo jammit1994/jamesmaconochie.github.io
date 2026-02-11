@@ -50,6 +50,7 @@ jobs:
           from dateutil import parser as date_parser
           from pathlib import Path
           from urllib.parse import urlparse
+          from urllib.request import Request, urlopen
 
           import requests
           from bs4 import BeautifulSoup
@@ -363,14 +364,15 @@ jobs:
 
               print(f"Fetching Substack feed: {SUBSTACK_FEED}")
 
-              # Fetch feed with requests first, then sanitize XML before parsing.
-              # Substack feeds contain characters that break strict XML parsing,
-              # so we strip invalid XML chars before handing to feedparser.
-              # We set a feed-reader User-Agent because Substack blocks raw python-requests.
-              headers = {"User-Agent": "feedparser/6.0 +https://github.com/kurtmckee/feedparser"}
-              resp = requests.get(SUBSTACK_FEED, timeout=30, headers=headers)
-              resp.raise_for_status()
-              raw_feed = resp.text
+              # Fetch feed with urllib (same library feedparser uses internally)
+              # then sanitize invalid XML chars before parsing. Substack feeds
+              # contain control characters that break the XML parser, and Substack
+              # blocks the python-requests User-Agent with a 403.
+              req = Request(SUBSTACK_FEED)
+              req.add_header("User-Agent", feedparser.USER_AGENT)
+              with urlopen(req, timeout=60) as response:
+                  raw_feed = response.read().decode("utf-8", errors="replace")
+              print(f"Feed fetched: {len(raw_feed)} chars")
 
               # Remove XML-invalid characters (control chars except tab, newline, carriage return)
               raw_feed = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]", "", raw_feed)
