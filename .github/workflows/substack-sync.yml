@@ -477,12 +477,13 @@ jobs:
 
           if [ "$DRY_RUN" = "true" ]; then
             echo "=== DRY RUN — skipping PR creation ==="
-            python3 -c "
+            python3 << 'DRY_EOF'
           import json
-          posts = json.load(open('$MANIFEST'))
+          posts = json.load(open("/tmp/new_posts_manifest.json"))
           for p in posts:
-              print(f\"Would create PR: 'New Substack post: {p[\"title\"]}'  branch: substack-sync/{p[\"date\"]}-{p[\"slug\"]}\")
-          "
+              t, d, s = p["title"], p["date"], p["slug"]
+              print(f"Would create PR: 'New Substack post: {t}'  branch: substack-sync/{d}-{s}")
+          DRY_EOF
             exit 0
           fi
 
@@ -490,12 +491,13 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           # Process each new post
-          python3 -c "
-          import json, sys
-          posts = json.load(open('$MANIFEST'))
+          python3 << 'EMIT_EOF' | while IFS='|' read -r DATE SLUG TITLE FILEPATH IMAGE_PATH; do
+          import json
+          posts = json.load(open("/tmp/new_posts_manifest.json"))
           for p in posts:
-              print(f\"{p['date']}|{p['slug']}|{p['title']}|{p['filepath']}|{p['image_path'] or ''}\")
-          " | while IFS='|' read -r DATE SLUG TITLE FILEPATH IMAGE_PATH; do
+              img = p["image_path"] or ""
+              print(f"{p['date']}|{p['slug']}|{p['title']}|{p['filepath']}|{img}")
+          EMIT_EOF
 
             BRANCH="substack-sync/${DATE}-${SLUG}"
 
