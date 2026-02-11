@@ -4,10 +4,20 @@ on:
   schedule:
     # Runs every Wednesday at 10:00 AM UTC (5:00 AM EST / 6:00 AM EDT)
     - cron: '0 10 * * 3'
-  workflow_dispatch:  # Allow manual trigger
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run (log actions without creating PRs)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   sync:
@@ -15,6 +25,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -22,185 +34,534 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install feedparser python-dateutil requests
+        run: pip install feedparser python-dateutil requests markdownify beautifulsoup4
 
       - name: Sync Substack posts
+        env:
+          DRY_RUN: ${{ inputs.dry_run || 'false' }}
         run: |
-          python << 'EOF'
+          python << 'PYTHON_EOF'
           import feedparser
+          import json
           import os
           import re
+          import sys
           from datetime import datetime, timedelta, timezone
           from dateutil import parser as date_parser
-          import html
+          from pathlib import Path
+          from urllib.parse import urlparse
+
           import requests
+          from bs4 import BeautifulSoup
+          from markdownify import markdownify as md
 
           SUBSTACK_FEED = "https://jamesmaconochie.substack.com/feed"
           POSTS_DIR = "_posts"
-          DELAY_DAYS = 7  # Posts appear on blog 7 days after Substack
+          IMAGES_DIR = "assets/images"
+          DELAY_DAYS = 7
+          MANIFEST_PATH = "/tmp/new_posts_manifest.json"
+
+          # ── Helpers ──────────────────────────────────────────────────────────
+
+          ROMAN_MAP = [
+              ("XVIII", "18"), ("XVII", "17"), ("XVI", "16"), ("XV", "15"),
+              ("XIV", "14"), ("XIII", "13"), ("XII", "12"), ("XI", "11"),
+              ("X", "10"), ("IX", "9"), ("VIII", "8"), ("VII", "7"),
+              ("VI", "6"), ("V", "5"), ("IV", "4"), ("III", "3"),
+              ("II", "2"), ("I", "1"),
+          ]
+
+
+          def normalize_title(title):
+              """Normalize a title for fuzzy duplicate matching.
+
+              Lowercases, strips subtitles after colons, converts Roman numeral
+              part numbers to Arabic, and removes punctuation.
+              """
+              t = title.lower()
+              # Strip subtitle after colon
+              t = t.split(":")[0]
+              # Roman → Arabic for part numbers (e.g. "part ii" → "part 2")
+              for roman, arabic in ROMAN_MAP:
+                  t = re.sub(
+                      rf"\bpart\s+{roman.lower()}\b",
+                      f"part {arabic}",
+                      t,
+                  )
+              # Remove punctuation (keep letters, digits, whitespace)
+              t = re.sub(r"[^\w\s]", "", t)
+              # Collapse whitespace
+              t = re.sub(r"\s+", " ", t).strip()
+              return t
+
 
           def slugify(title):
               """Convert title to URL-friendly slug."""
               slug = title.lower()
-              slug = re.sub(r'[^\w\s-]', '', slug)
-              slug = re.sub(r'[-\s]+', '-', slug)
-              return slug.strip('-')
+              slug = re.sub(r"[^\w\s-]", "", slug)
+              slug = re.sub(r"[-\s]+", "-", slug)
+              return slug.strip("-")
+
+
+          # ── Duplicate Detection ─────────────────────────────────────────────
 
           def get_existing_posts():
-              """Get set of existing post slugs to avoid duplicates."""
-              existing = set()
-              if os.path.exists(POSTS_DIR):
-                  for filename in os.listdir(POSTS_DIR):
-                      if filename.endswith('.md'):
-                          # Extract slug from filename (YYYY-MM-DD-slug.md)
-                          parts = filename[:-3].split('-', 3)
-                          if len(parts) >= 4:
-                              existing.add(parts[3])
-              return existing
+              """Parse front matter of all _posts/*.md and build lookup indices.
 
-          def clean_html(text):
-              """Remove HTML tags and decode entities."""
-              text = re.sub(r'<[^>]+>', '', text)
-              text = html.unescape(text)
-              return text.strip()
+              Returns (substack_urls: set, normalized_titles: set).
+              """
+              substack_urls = set()
+              normalized_titles = set()
 
-          def extract_excerpt(content, max_length=300):
-              """Extract a clean excerpt from post content."""
-              clean = clean_html(content)
-              if len(clean) > max_length:
-                  clean = clean[:max_length].rsplit(' ', 1)[0] + '...'
-              return clean
+              posts_path = Path(POSTS_DIR)
+              if not posts_path.exists():
+                  return substack_urls, normalized_titles
+
+              for filepath in posts_path.glob("*.md"):
+                  try:
+                      text = filepath.read_text(encoding="utf-8")
+                  except Exception:
+                      continue
+
+                  # Quick front-matter parse (between first two ---)
+                  if not text.startswith("---"):
+                      continue
+                  end = text.find("---", 3)
+                  if end == -1:
+                      continue
+                  front = text[3:end]
+
+                  for line in front.splitlines():
+                      line = line.strip()
+                      if line.startswith("title:"):
+                          raw_title = line[len("title:"):].strip().strip('"').strip("'")
+                          normalized_titles.add(normalize_title(raw_title))
+                      elif line.startswith("substack_url:"):
+                          url = line[len("substack_url:"):].strip().strip('"').strip("'")
+                          if url:
+                              substack_urls.add(url)
+
+              return substack_urls, normalized_titles
+
+
+          def is_duplicate(entry_title, entry_link, substack_urls, normalized_titles):
+              """Check if an RSS entry already exists in _posts.
+
+              Returns (is_dup: bool, reason: str).
+              """
+              # 1. Exact substack_url match
+              if entry_link and entry_link in substack_urls:
+                  return True, f"substack_url match: {entry_link}"
+
+              # 2. Normalized title match
+              norm = normalize_title(entry_title)
+              if norm in normalized_titles:
+                  return True, f"title match: '{norm}'"
+
+              return False, ""
+
+
+          # ── HTML → Markdown Conversion ─────────────────────────────────────
+
+          def clean_html(raw_html):
+              """Pre-process Substack HTML before markdown conversion.
+
+              - Strips subscription widgets, paywall, share dialogs
+              - Removes the first hero <figure> (handled separately)
+              - Simplifies <picture> srcset to plain <img>
+              """
+              soup = BeautifulSoup(raw_html, "html.parser")
+
+              # Remove Substack widgets
+              for selector in [
+                  "div.subscription-widget-wrap",
+                  "div.paywall",
+                  "div.share-dialog",
+                  "div.subscribe-widget",
+                  "div.footer",
+                  "div.post-footer",
+              ]:
+                  tag_name, _, class_name = selector.partition(".")
+                  for el in soup.find_all(tag_name, class_=class_name):
+                      el.decompose()
+
+              # Remove first figure (hero image handled via enclosure)
+              first_figure = soup.find("figure")
+              if first_figure:
+                  first_figure.decompose()
+
+              # Simplify <picture> → <img>
+              for picture in soup.find_all("picture"):
+                  img = picture.find("img")
+                  if img:
+                      picture.replace_with(img)
+
+              return str(soup)
+
+
+          def html_to_markdown(raw_html):
+              """Convert Substack HTML content to clean Markdown."""
+              cleaned = clean_html(raw_html)
+
+              # Convert to markdown with ATX headings
+              result = md(
+                  cleaned,
+                  heading_style="ATX",
+                  strip=["script", "style"],
+                  newline_style="backslash",
+              )
+
+              # Post-process: collapse excessive blank lines
+              result = re.sub(r"\n{4,}", "\n\n\n", result)
+              # Trim trailing whitespace per line
+              result = "\n".join(line.rstrip() for line in result.splitlines())
+              return result.strip()
+
+
+          # ── Hero Image Download ────────────────────────────────────────────
+
+          def download_hero_image(entry, slug):
+              """Download hero image from RSS <enclosure> element.
+
+              Returns the relative path (e.g. assets/images/slug_hero_substack.png)
+              or None if unavailable.
+              """
+              # Substack provides the hero image as an enclosure
+              enclosure_url = None
+              for link in entry.get("links", []):
+                  if link.get("rel") == "enclosure" and link.get("href"):
+                      enclosure_url = link["href"]
+                      break
+
+              if not enclosure_url:
+                  # Fallback: try media_content
+                  media = entry.get("media_content", [])
+                  if media and media[0].get("url"):
+                      enclosure_url = media[0]["url"]
+
+              if not enclosure_url:
+                  print(f"  No hero image found for '{slug}'")
+                  return None
+
+              # Determine extension from URL
+              parsed = urlparse(enclosure_url)
+              path_ext = Path(parsed.path).suffix.lower()
+              ext = path_ext if path_ext in (".png", ".jpg", ".jpeg", ".webp", ".gif") else ".png"
+
+              image_filename = f"{slug}_hero_substack{ext}"
+              image_path = os.path.join(IMAGES_DIR, image_filename)
+
+              try:
+                  resp = requests.get(enclosure_url, timeout=30)
+                  resp.raise_for_status()
+                  os.makedirs(IMAGES_DIR, exist_ok=True)
+                  with open(image_path, "wb") as f:
+                      f.write(resp.content)
+                  size_kb = len(resp.content) / 1024
+                  print(f"  Downloaded hero image: {image_path} ({size_kb:.0f} KB)")
+                  return image_path
+              except Exception as e:
+                  print(f"  Failed to download hero image: {e}")
+                  return None
+
+
+          # ── Post File Generation ───────────────────────────────────────────
 
           def create_post(entry, pub_date):
-              """Create a Jekyll post from RSS entry."""
-              title = entry.get('title', 'Untitled')
+              """Create a Jekyll post file from an RSS entry.
+
+              Returns dict with post metadata for the manifest.
+              """
+              title = entry.get("title", "Untitled")
               slug = slugify(title)
-              link = entry.get('link', '')
+              link = entry.get("link", "")
+              subtitle = entry.get("subtitle", entry.get("summary", ""))
+              # Clean subtitle: strip HTML if present
+              if subtitle:
+                  subtitle = BeautifulSoup(subtitle, "html.parser").get_text().strip()
+                  # Truncate if excessively long
+                  if len(subtitle) > 250:
+                      subtitle = subtitle[:247] + "..."
 
-              # Get content/summary
-              content = ''
-              if 'content' in entry:
-                  content = entry.content[0].value
-              elif 'summary' in entry:
-                  content = entry.summary
-
-              excerpt = extract_excerpt(content)
-              escaped_excerpt = excerpt.replace('"', '\\"')
-
-              # Format date for Jekyll
-              date_str = pub_date.strftime('%Y-%m-%d')
-
-              # Create filename
+              date_str = pub_date.strftime("%Y-%m-%d")
               filename = f"{date_str}-{slug}.md"
               filepath = os.path.join(POSTS_DIR, filename)
 
-              # Create front matter and content
-              post_content = f'''---
-          title: "{title}"
-          date: {pub_date.strftime('%Y-%m-%d %H:%M:%S %z')}
-          categories:
-            - blog
-          tags:
-            - substack
-          excerpt: "{escaped_excerpt}"
-          link: {link}
-          ---
+              # Get content
+              raw_html = ""
+              if "content" in entry:
+                  raw_html = entry.content[0].value
+              elif "summary" in entry:
+                  raw_html = entry.summary
 
-          *This post was originally published on [Substack]({link}).*
+              # Convert HTML → Markdown
+              markdown_content = html_to_markdown(raw_html)
 
-          {clean_html(content)}
+              # Download hero image
+              image_path = download_hero_image(entry, slug)
+              image_ref = f"/{image_path}" if image_path else ""
 
-          ---
+              # Escape title for YAML (wrap in quotes, escape inner quotes)
+              yaml_title = title.replace('"', '\\"')
+              yaml_desc = subtitle.replace('"', '\\"') if subtitle else ""
 
-          [Read the original post on Substack]({link})
-          '''
+              # Build front matter matching existing post format
+              lines = [
+                  "---",
+                  f'title: "{yaml_title}"',
+                  "layout: single",
+                  "author_profile: true",
+                  f"date: {date_str}",
+                  f"permalink: /blog/{slug}/",
+                  "categories:",
+                  "  - substack-sync",
+                  f'description: "{yaml_desc}"',
+                  f'substack_url: "{link}"',
+              ]
+              if image_ref:
+                  lines.append(f"image: {image_ref}")
+              lines.append("---")
+              lines.append("")
 
-              with open(filepath, 'w', encoding='utf-8') as f:
+              # Hero image in content
+              if image_ref:
+                  lines.append(f"![{title}]({image_ref})")
+                  lines.append("")
+
+              # Main content
+              lines.append(markdown_content)
+              lines.append("")
+              lines.append("---")
+              lines.append("")
+              lines.append(f"*Originally published on [Substack]({link}).*")
+              lines.append("")
+
+              post_content = "\n".join(lines)
+
+              os.makedirs(POSTS_DIR, exist_ok=True)
+              with open(filepath, "w", encoding="utf-8") as f:
                   f.write(post_content)
 
-              return filename, title
+              print(f"  Created post: {filepath}")
+
+              return {
+                  "title": title,
+                  "slug": slug,
+                  "date": date_str,
+                  "filename": filename,
+                  "filepath": filepath,
+                  "image_path": image_path,
+              }
+
+
+          # ── Main ───────────────────────────────────────────────────────────
 
           def main():
+              dry_run = os.environ.get("DRY_RUN", "false").lower() == "true"
+              if dry_run:
+                  print("=== DRY RUN MODE ===\n")
+
               print(f"Fetching Substack feed: {SUBSTACK_FEED}")
               feed = feedparser.parse(SUBSTACK_FEED)
 
               if feed.bozo:
                   print(f"Warning: Feed parsing had issues: {feed.bozo_exception}")
 
-              print(f"Found {len(feed.entries)} entries in feed")
+              print(f"Found {len(feed.entries)} entries in feed\n")
 
-              existing = get_existing_posts()
-              print(f"Found {len(existing)} existing posts")
+              substack_urls, normalized_titles = get_existing_posts()
+              print(f"Existing posts indexed: {len(normalized_titles)} titles, "
+                    f"{len(substack_urls)} substack URLs\n")
 
               now = datetime.now(timezone.utc)
               cutoff = now - timedelta(days=DELAY_DAYS)
 
-              created = []
-              skipped = []
+              new_posts = []
+              skipped_recent = []
+              skipped_dup = []
 
               for entry in feed.entries:
-                  title = entry.get('title', 'Untitled')
-                  slug = slugify(title)
+                  title = entry.get("title", "Untitled")
+                  link = entry.get("link", "")
 
                   # Parse publish date
                   pub_date = None
-                  if 'published_parsed' in entry and entry.published_parsed:
+                  if "published_parsed" in entry and entry.published_parsed:
                       pub_date = datetime(*entry.published_parsed[:6], tzinfo=timezone.utc)
-                  elif 'published' in entry:
+                  elif "published" in entry:
                       pub_date = date_parser.parse(entry.published)
                       if pub_date.tzinfo is None:
                           pub_date = pub_date.replace(tzinfo=timezone.utc)
 
                   if not pub_date:
-                      print(f"Skipping '{title}': No publish date")
+                      print(f"SKIP '{title}': no publish date")
                       continue
 
-                  # Check if post is old enough
+                  # Check 7-day delay
                   if pub_date > cutoff:
-                      days_until = (pub_date - cutoff).days + 1
-                      print(f"Skipping '{title}': Published {pub_date.strftime('%Y-%m-%d')}, "
-                            f"will sync in {days_until} days")
-                      skipped.append(title)
+                      days_remaining = (pub_date - cutoff).days + 1
+                      print(f"SKIP '{title}': only {days_remaining} day(s) old "
+                            f"(published {pub_date.strftime('%Y-%m-%d')})")
+                      skipped_recent.append(title)
                       continue
 
-                  # Check if already exists
-                  if slug in existing:
-                      print(f"Skipping '{title}': Already exists")
+                  # Check duplicates
+                  dup, reason = is_duplicate(title, link, substack_urls, normalized_titles)
+                  if dup:
+                      print(f"SKIP '{title}': duplicate ({reason})")
+                      skipped_dup.append(title)
                       continue
 
-                  # Create the post
-                  filename, title = create_post(entry, pub_date)
-                  created.append(title)
-                  print(f"Created: {filename}")
+                  # New post
+                  print(f"NEW  '{title}' (published {pub_date.strftime('%Y-%m-%d')})")
 
-              print(f"\nSummary: Created {len(created)} posts, "
-                    f"skipped {len(skipped)} (too recent)")
+                  if dry_run:
+                      print("  [dry run] Would create post and PR")
+                      new_posts.append({
+                          "title": title,
+                          "slug": slugify(title),
+                          "date": pub_date.strftime("%Y-%m-%d"),
+                          "filename": f"{pub_date.strftime('%Y-%m-%d')}-{slugify(title)}.md",
+                          "filepath": None,
+                          "image_path": None,
+                      })
+                  else:
+                      post_info = create_post(entry, pub_date)
+                      new_posts.append(post_info)
 
-              if created:
-                  print("\nNew posts created:")
-                  for title in created:
-                      print(f"  - {title}")
+              # Summary
+              print(f"\n{'='*50}")
+              print(f"Summary: {len(new_posts)} new, "
+                    f"{len(skipped_dup)} duplicates, "
+                    f"{len(skipped_recent)} too recent")
+
+              if new_posts:
+                  print("\nNew posts:")
+                  for p in new_posts:
+                      print(f"  - {p['title']} ({p['date']})")
+
+              # Write manifest for the PR creation step
+              with open(MANIFEST_PATH, "w") as f:
+                  json.dump(new_posts, f, indent=2)
+              print(f"\nManifest written to {MANIFEST_PATH}")
+
 
           if __name__ == "__main__":
               main()
-          EOF
+          PYTHON_EOF
 
-      - name: Check for changes
-        id: check
+      - name: Create pull requests for new posts
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DRY_RUN: ${{ inputs.dry_run || 'false' }}
         run: |
-          if [ -n "$(git status --porcelain _posts/)" ]; then
-            echo "changes=true" >> $GITHUB_OUTPUT
-          else
-            echo "changes=false" >> $GITHUB_OUTPUT
+          set -euo pipefail
+
+          MANIFEST="/tmp/new_posts_manifest.json"
+          if [ ! -f "$MANIFEST" ]; then
+            echo "No manifest found — nothing to do."
+            exit 0
           fi
 
-      - name: Commit and push
-        if: steps.check.outputs.changes == 'true'
-        run: |
+          COUNT=$(python3 -c "import json; print(len(json.load(open('$MANIFEST'))))")
+          if [ "$COUNT" = "0" ]; then
+            echo "No new posts in manifest — nothing to do."
+            exit 0
+          fi
+
+          if [ "$DRY_RUN" = "true" ]; then
+            echo "=== DRY RUN — skipping PR creation ==="
+            python3 -c "
+          import json
+          posts = json.load(open('$MANIFEST'))
+          for p in posts:
+              print(f\"Would create PR: 'New Substack post: {p[\"title\"]}'  branch: substack-sync/{p[\"date\"]}-{p[\"slug\"]}\")
+          "
+            exit 0
+          fi
+
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add _posts/
-          git commit -m "Auto-sync posts from Substack
 
-          Co-Authored-By: GitHub Actions <github-actions[bot]@users.noreply.github.com>"
-          git push
+          # Process each new post
+          python3 -c "
+          import json, sys
+          posts = json.load(open('$MANIFEST'))
+          for p in posts:
+              print(f\"{p['date']}|{p['slug']}|{p['title']}|{p['filepath']}|{p['image_path'] or ''}\")
+          " | while IFS='|' read -r DATE SLUG TITLE FILEPATH IMAGE_PATH; do
+
+            BRANCH="substack-sync/${DATE}-${SLUG}"
+
+            # Check if branch already exists (prevents duplicate PRs on re-runs)
+            if git ls-remote --exit-code --heads origin "$BRANCH" >/dev/null 2>&1; then
+              echo "Branch '$BRANCH' already exists — skipping '$TITLE'"
+              continue
+            fi
+
+            echo ""
+            echo "Creating PR for: $TITLE"
+            echo "  Branch: $BRANCH"
+            echo "  Post:   $FILEPATH"
+            echo "  Image:  $IMAGE_PATH"
+
+            # Create branch from main
+            git checkout -b "$BRANCH" main
+
+            # Stage the post file
+            git add "$FILEPATH"
+
+            # Stage the hero image if present
+            if [ -n "$IMAGE_PATH" ] && [ -f "$IMAGE_PATH" ]; then
+              git add "$IMAGE_PATH"
+            fi
+
+            # Commit
+            git commit -m "$(cat <<COMMIT_EOF
+          Add Substack post: ${TITLE}
+
+          Auto-synced from Substack RSS feed.
+          Co-Authored-By: GitHub Actions <github-actions[bot]@users.noreply.github.com>
+          COMMIT_EOF
+          )"
+
+            # Push
+            git push origin "$BRANCH"
+
+            # Create PR with review checklist
+            gh pr create \
+              --base main \
+              --head "$BRANCH" \
+              --title "New Substack post: ${TITLE}" \
+              --body "$(cat <<PR_EOF
+          ## New Substack Post
+
+          **${TITLE}** has been synced from [Substack](https://jamesmaconochie.substack.com) and is ready for review.
+
+          ## Review Checklist
+
+          Before merging, please check:
+
+          - [ ] **Categories** — update \`substack-sync\` to appropriate categories (e.g. \`ai-research\`, \`philosophy\`)
+          - [ ] **Permalink** — verify \`/blog/${SLUG}/\` is the desired URL
+          - [ ] **Description** — review and refine the meta description
+          - [ ] **Hero image** — resize to 1500x500 and rename from \`_substack\` to \`_1500by500\`
+          - [ ] **Content formatting** — check headings, links, bold/italic rendered correctly
+          - [ ] **Section breaks** — add \`---\` horizontal rules between major sections if needed
+          - [ ] **Footnotes** — verify any footnotes or citations transferred correctly
+
+          ---
+
+          *Auto-generated by Substack Sync workflow*
+          PR_EOF
+          )"
+
+            echo "  PR created successfully."
+
+            # Return to main for next iteration
+            git checkout main
+
+          done
+
+          echo ""
+          echo "Done. All PRs created."
