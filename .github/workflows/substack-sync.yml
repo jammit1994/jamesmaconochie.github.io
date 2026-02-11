@@ -105,6 +105,40 @@ jobs:
               return slug.strip("-")
 
 
+          # ── Substack Tags via Archive API ──────────────────────────────────
+
+          SUBSTACK_ARCHIVE_URL = "https://jamesmaconochie.substack.com/api/v1/archive"
+
+
+          def fetch_substack_tags(limit=20):
+              """Fetch post tags from Substack's archive API.
+
+              Unlike the RSS feed, this API is not behind Cloudflare and can be
+              called directly. Returns a dict mapping canonical_url → list of
+              tag slugs (e.g. ['ai', 'attention-economy', 'wisdom']).
+              """
+              tags_by_url = {}
+              try:
+                  resp = requests.get(
+                      SUBSTACK_ARCHIVE_URL,
+                      params={"limit": limit},
+                      timeout=30,
+                  )
+                  resp.raise_for_status()
+                  posts = resp.json()
+                  for post in posts:
+                      url = post.get("canonical_url", "")
+                      post_tags = post.get("postTags", [])
+                      if url and post_tags:
+                          slugs = [t["slug"] for t in post_tags if t.get("slug")]
+                          tags_by_url[url] = slugs
+                  print(f"Fetched tags for {len(tags_by_url)} posts from Substack API")
+              except Exception as e:
+                  print(f"WARNING: Could not fetch Substack tags: {e}")
+                  print("  Falling back to 'substack-sync' category")
+              return tags_by_url
+
+
           # ── Duplicate Detection ─────────────────────────────────────────────
 
           def get_existing_posts():
@@ -281,8 +315,11 @@ jobs:
 
           # ── Post File Generation ───────────────────────────────────────────
 
-          def create_post(item, pub_date):
+          def create_post(item, pub_date, categories=None):
               """Create a Jekyll post file from an rss2json item.
+
+              categories: list of tag slugs from Substack API, or None to
+              fall back to ['substack-sync'].
 
               Returns dict with post metadata for the manifest.
               """
@@ -327,6 +364,9 @@ jobs:
               yaml_title = title.replace('"', '\\"')
               yaml_desc = description.replace('"', '\\"') if description else ""
 
+              # Resolve categories: use Substack tags if available, else fallback
+              cats = categories if categories else ["substack-sync"]
+
               # Build front matter matching existing post format
               lines = [
                   "---",
@@ -336,7 +376,10 @@ jobs:
                   f"date: {date_str}",
                   f"permalink: /blog/{slug}/",
                   "categories:",
-                  "  - substack-sync",
+              ]
+              for cat in cats:
+                  lines.append(f"  - {cat}")
+              lines += [
                   f'description: "{yaml_desc}"',
                   f'substack_url: "{link}"',
               ]
@@ -413,6 +456,9 @@ jobs:
               print(f"Existing posts indexed: {len(normalized_titles)} titles, "
                     f"{len(substack_urls)} substack URLs\n")
 
+              # Fetch tags from Substack archive API (not behind Cloudflare)
+              tags_by_url = fetch_substack_tags(limit=20)
+
               now = datetime.now(timezone.utc)
               cutoff = now - timedelta(days=DELAY_DAYS)
 
@@ -454,6 +500,13 @@ jobs:
                   # New post
                   print(f"NEW  '{title}' (published {pub_date.strftime('%Y-%m-%d')})")
 
+                  # Look up tags for this post by its Substack URL
+                  post_categories = tags_by_url.get(link, None)
+                  if post_categories:
+                      print(f"  Tags from Substack: {', '.join(post_categories)}")
+                  else:
+                      print(f"  No tags found — will use 'substack-sync'")
+
                   if dry_run:
                       print("  [dry run] Would create post and PR")
                       new_posts.append({
@@ -465,7 +518,7 @@ jobs:
                           "image_path": None,
                       })
                   else:
-                      post_info = create_post(item, pub_date)
+                      post_info = create_post(item, pub_date, categories=post_categories)
                       new_posts.append(post_info)
 
               # Summary
@@ -583,7 +636,7 @@ jobs:
 
           Before merging, please check:
 
-          - [ ] **Categories** — update \`substack-sync\` to appropriate categories (e.g. \`ai-research\`, \`philosophy\`)
+          - [ ] **Categories** — verify auto-imported Substack tags are appropriate
           - [ ] **Permalink** — verify \`/blog/${SLUG}/\` is the desired URL
           - [ ] **Description** — review and refine the meta description
           - [ ] **Hero image** — resize to 1500x500 and rename from \`_substack\` to \`_1500by500\`

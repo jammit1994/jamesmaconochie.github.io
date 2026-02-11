@@ -5,7 +5,11 @@ author_profile: true
 date: 2026-02-03
 permalink: /blog/the-architecture-of-language-part-iii/
 categories:
-  - substack-sync
+  - architecture-and-attention
+  - wisdom
+  - attention-economy
+  - ai
+  - epistemic-humility
 description: "If external constraints can no longer stabilize the linguistic interface, then the stabilizing function must move inward: from the environment to the mind, from architecture to practice, from imposed limits to cultivated awareness. The word for this is wisdom."
 substack_url: "https://jamesmaconochie.substack.com/p/the-architecture-of-language-part-fd6"
 image: /assets/images/the-architecture-of-language-part-iii_hero_substack.png
