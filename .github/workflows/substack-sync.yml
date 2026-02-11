@@ -85,6 +85,7 @@ jobs:
                   content = entry.summary
 
               excerpt = extract_excerpt(content)
+              escaped_excerpt = excerpt.replace('"', '\\"')
 
               # Format date for Jekyll
               date_str = pub_date.strftime('%Y-%m-%d')
@@ -101,7 +102,7 @@ jobs:
             - blog
           tags:
             - substack
-          excerpt: "{excerpt.replace('"', '\\"')}"
+          excerpt: "{escaped_excerpt}"
           link: {link}
           ---
 
