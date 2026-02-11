@@ -34,14 +34,13 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install feedparser python-dateutil requests markdownify beautifulsoup4
+        run: pip install python-dateutil requests markdownify beautifulsoup4
 
       - name: Sync Substack posts
         env:
           DRY_RUN: ${{ inputs.dry_run || 'false' }}
         run: |
           python << 'PYTHON_EOF'
-          import feedparser
           import json
           import os
           import re
@@ -49,14 +48,16 @@ jobs:
           from datetime import datetime, timedelta, timezone
           from dateutil import parser as date_parser
           from pathlib import Path
-          from urllib.parse import urlparse
-          import subprocess
+          from urllib.parse import urlparse, quote
 
           import requests
           from bs4 import BeautifulSoup
           from markdownify import markdownify as md
 
-          SUBSTACK_FEED = "https://jamesmaconochie.substack.com/feed"
+          # rss2json proxies the feed from their servers, bypassing Cloudflare
+          # bot protection that blocks all direct requests from GitHub Actions IPs.
+          SUBSTACK_RSS = "https://jamesmaconochie.substack.com/feed"
+          RSS2JSON_URL = f"https://api.rss2json.com/v1/api.json?rss_url={quote(SUBSTACK_RSS, safe='')}"
           POSTS_DIR = "_posts"
           IMAGES_DIR = "assets/images"
           DELAY_DAYS = 7
@@ -221,31 +222,29 @@ jobs:
 
           # ── Hero Image Download ────────────────────────────────────────────
 
-          def download_hero_image(entry, slug):
-              """Download hero image from RSS <enclosure> element.
+          def download_hero_image(item, slug):
+              """Download hero image from rss2json item.
 
-              Returns the relative path (e.g. assets/images/slug_hero_substack.png)
-              or None if unavailable.
+              Tries the enclosure link first (direct S3 URL), then the thumbnail
+              (Substack CDN URL). Returns the relative path or None.
               """
-              # Substack provides the hero image as an enclosure
-              enclosure_url = None
-              for link in entry.get("links", []):
-                  if link.get("rel") == "enclosure" and link.get("href"):
-                      enclosure_url = link["href"]
-                      break
+              image_url = None
 
-              if not enclosure_url:
-                  # Fallback: try media_content
-                  media = entry.get("media_content", [])
-                  if media and media[0].get("url"):
-                      enclosure_url = media[0]["url"]
+              # Prefer enclosure (direct S3 link)
+              enclosure = item.get("enclosure", {})
+              if isinstance(enclosure, dict) and enclosure.get("link"):
+                  image_url = enclosure["link"]
 
-              if not enclosure_url:
+              # Fallback: thumbnail (Substack CDN)
+              if not image_url:
+                  image_url = item.get("thumbnail", "")
+
+              if not image_url:
                   print(f"  No hero image found for '{slug}'")
                   return None
 
               # Determine extension from URL
-              parsed = urlparse(enclosure_url)
+              parsed = urlparse(image_url)
               path_ext = Path(parsed.path).suffix.lower()
               ext = path_ext if path_ext in (".png", ".jpg", ".jpeg", ".webp", ".gif") else ".png"
 
@@ -253,7 +252,7 @@ jobs:
               image_path = os.path.join(IMAGES_DIR, image_filename)
 
               try:
-                  resp = requests.get(enclosure_url, timeout=30)
+                  resp = requests.get(image_url, timeout=30)
                   resp.raise_for_status()
                   os.makedirs(IMAGES_DIR, exist_ok=True)
                   with open(image_path, "wb") as f:
@@ -268,15 +267,15 @@ jobs:
 
           # ── Post File Generation ───────────────────────────────────────────
 
-          def create_post(entry, pub_date):
-              """Create a Jekyll post file from an RSS entry.
+          def create_post(item, pub_date):
+              """Create a Jekyll post file from an rss2json item.
 
               Returns dict with post metadata for the manifest.
               """
-              title = entry.get("title", "Untitled")
+              title = item.get("title", "Untitled")
               slug = slugify(title)
-              link = entry.get("link", "")
-              subtitle = entry.get("subtitle", entry.get("summary", ""))
+              link = item.get("link", "")
+              subtitle = item.get("description", "")
               # Clean subtitle: strip HTML if present
               if subtitle:
                   subtitle = BeautifulSoup(subtitle, "html.parser").get_text().strip()
@@ -288,12 +287,8 @@ jobs:
               filename = f"{date_str}-{slug}.md"
               filepath = os.path.join(POSTS_DIR, filename)
 
-              # Get content
-              raw_html = ""
-              if "content" in entry:
-                  raw_html = entry.content[0].value
-              elif "summary" in entry:
-                  raw_html = entry.summary
+              # Get content (rss2json provides content as a plain string)
+              raw_html = item.get("content", "")
 
               # Convert HTML → Markdown
               markdown_content = html_to_markdown(raw_html)
@@ -362,50 +357,24 @@ jobs:
               if dry_run:
                   print("=== DRY RUN MODE ===\n")
 
-              print(f"Fetching Substack feed: {SUBSTACK_FEED}")
+              print(f"Fetching feed via rss2json proxy...")
+              print(f"  Source: {SUBSTACK_RSS}")
 
-              # Fetch feed with curl. Substack aggressively blocks datacenter IPs,
-              # so we use a browser User-Agent, write HTTP status to stderr via
-              # -w, and omit --fail so we still get the response body on 403.
-              result = subprocess.run(
-                  [
-                      "curl", "-sS", "-L", "--max-time", "60",
-                      "-H", "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                      "-H", "Accept: application/rss+xml, application/xml, text/xml, */*",
-                      "-w", "\n%{http_code}",
-                      SUBSTACK_FEED,
-                  ],
-                  capture_output=True, text=True, timeout=90,
-              )
-              if result.returncode != 0:
-                  print(f"ERROR: curl failed (exit {result.returncode}): {result.stderr}")
+              resp = requests.get(RSS2JSON_URL, timeout=60)
+              resp.raise_for_status()
+              data = resp.json()
+
+              if data.get("status") != "ok":
+                  print(f"ERROR: rss2json returned status '{data.get('status')}'")
+                  print(f"  Message: {data.get('message', 'unknown')}")
                   sys.exit(1)
 
-              # Split response body from HTTP status code written by -w
-              output = result.stdout
-              last_newline = output.rfind("\n")
-              raw_feed = output[:last_newline]
-              http_status = output[last_newline + 1:].strip()
-              print(f"Feed fetched: {len(raw_feed)} chars, HTTP {http_status}")
-
-              if not raw_feed.strip().startswith("<?xml") and not raw_feed.strip().startswith("<rss"):
-                  print(f"ERROR: Response is not RSS/XML (HTTP {http_status}). First 500 chars:")
-                  print(raw_feed[:500])
+              items = data.get("items", [])
+              if not items:
+                  print("ERROR: Feed returned 0 items. Aborting.")
                   sys.exit(1)
 
-              # Remove XML-invalid characters (control chars except tab, newline, carriage return)
-              raw_feed = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]", "", raw_feed)
-
-              feed = feedparser.parse(raw_feed)
-
-              if feed.bozo:
-                  print(f"Warning: Feed parsing had issues: {feed.bozo_exception}")
-
-              if not feed.entries:
-                  print("ERROR: Feed returned 0 entries after parsing. Aborting.")
-                  sys.exit(1)
-
-              print(f"Found {len(feed.entries)} entries in feed\n")
+              print(f"Found {len(items)} entries in feed\n")
 
               substack_urls, normalized_titles = get_existing_posts()
               print(f"Existing posts indexed: {len(normalized_titles)} titles, "
@@ -418,16 +387,15 @@ jobs:
               skipped_recent = []
               skipped_dup = []
 
-              for entry in feed.entries:
-                  title = entry.get("title", "Untitled")
-                  link = entry.get("link", "")
+              for item in items:
+                  title = item.get("title", "Untitled")
+                  link = item.get("link", "")
 
-                  # Parse publish date
+                  # Parse publish date (rss2json format: "YYYY-MM-DD HH:MM:SS")
                   pub_date = None
-                  if "published_parsed" in entry and entry.published_parsed:
-                      pub_date = datetime(*entry.published_parsed[:6], tzinfo=timezone.utc)
-                  elif "published" in entry:
-                      pub_date = date_parser.parse(entry.published)
+                  pub_str = item.get("pubDate", "")
+                  if pub_str:
+                      pub_date = date_parser.parse(pub_str)
                       if pub_date.tzinfo is None:
                           pub_date = pub_date.replace(tzinfo=timezone.utc)
 
@@ -464,7 +432,7 @@ jobs:
                           "image_path": None,
                       })
                   else:
-                      post_info = create_post(entry, pub_date)
+                      post_info = create_post(item, pub_date)
                       new_posts.append(post_info)
 
               # Summary
