@@ -17,8 +17,6 @@ image: /assets/images/the-architecture-of-language-part-iii_hero_substack.png
 
 The instinctive response to a system in crisis is to restore what was lost.
 
-Thanks for reading James Maconochie | Architecture & Attention! Subscribe for free to receive new posts and support my work.
-
 If the problem is that gatekeepers are gone, rebuild the gates. If the problem is that anyone can publish anything, create centralized fact-checking regulators. If the problem is that we’re drowning in noise, retreat to informational bunkers where only trusted sources are allowed.
 
 These responses are understandable. They’re also insufficient. They attempt to rebuild walls in an open field, to reimpose external constraints on a system that has already evolved beyond them. The gates cannot be closed. The friction cannot be restored by fiat. The global, instantaneous, algorithmically-driven flow of language is not a temporary condition we can reverse; it’s the environment we now inhabit.
@@ -27,7 +25,7 @@ So what do we do?
 
 The answer, I think, lies in a shift of locus. If external constraints can no longer stabilize the linguistic interface, then the stabilizing function must move inward: from the environment to the mind, from architecture to practice, from imposed limits to cultivated awareness.
 
-The word for this is wisdom. But we need to define it carefully.\
+The word for this is wisdom. But we need to define it carefully.
 
 ## Wisdom Redefined
 
@@ -45,7 +43,7 @@ Third, voluntarily simulating constraints. This is the practical core. If extern
 
 This reframing clarifies an ancient distinction. Knowledge is the accumulation of facts and models; LLMs scale it infinitely. Intelligence is pattern recognition and inferential speed; LLMs simulate it convincingly. Wisdom is the regulation of knowledge and intelligence in light of their limits. It asks: given that my interface is partial, my information is infinite, and my time is finite, how should I direct my attention and shape my judgments?
 
-Wisdom is not anti-technology. It’s the skill that makes technology usable without being overwhelmed by it.\
+Wisdom is not anti-technology. It’s the skill that makes technology usable without being overwhelmed by it.
 
 ## Four Practices
 
@@ -87,7 +85,7 @@ With friction eliminated (and LLMs reducing the cognitive cost of generation to 
 
 When using LLMs, this means treating them as tools for exploration and questioning rather than as oracles. It means maintaining your own judgment rather than outsourcing it to fluent-sounding output.
 
-The practice: before speaking (or posting, or generating), ask whether this adds signal or noise. Develop comfort with silence.\
+The practice: before speaking (or posting, or generating), ask whether this adds signal or noise. Develop comfort with silence.
 
 ## The Social Dimension
 
@@ -101,7 +99,7 @@ Educational models that teach epistemic humility alongside factual content. Know
 
 Interfaces that reveal uncertainty rather than hiding it. Current information systems present polished, confident outputs. A constraint-aware design would show process, surface disagreement, and make the partiality of any perspective visible rather than concealed.
 
-The goal is not to make the world simple again. It’s to build tools and norms that help us be thoughtful in a world of overwhelming complexity.\
+The goal is not to make the world simple again. It’s to build tools and norms that help us be thoughtful in a world of overwhelming complexity.
 
 ## The Ultimate Constraint
 
@@ -113,7 +111,7 @@ Constraint-awareness, at its core, is the stewardship of attention. It’s the r
 
 This is where the structural argument becomes personal. The crisis of language is, in the end, a crisis of attention. The question “what should I believe?” is downstream of the question “what should I attend to?” And that question is answered not once, in some grand philosophical moment, but thousands of times a day, in small choices that compound.
 
-Wisdom, therefore, becomes the practice of allocating attention in ways that repair rather than fracture the shared interface. It’s the application of finite consciousness to infinite language with discernment, care, and recognition of profound limits.\
+Wisdom, therefore, becomes the practice of allocating attention in ways that repair rather than fracture the shared interface. It’s the application of finite consciousness to infinite language with discernment, care, and recognition of profound limits.
 
 ## Not Retreat, But Ascent
 
@@ -131,13 +129,11 @@ The constraints are gone. Our awareness must now take its place.
 
 The question we’re left with is simple to state and difficult to answer: Can a species that used language to build civilization now learn to use wisdom to preserve it?
 
-I don’t know. But I think the attempt is worth making, one attentive choice at a time.\
+I don’t know. But I think the attempt is worth making, one attentive choice at a time.
 
 *This is the final essay in a three-part series on language, constraints, and the crisis of shared meaning.*
 
 *Next week: a confession. I've been writing about generative restraint while feeling the platform's pull to do the opposite. What happens when you recognize yourself as part of the problem you're diagnosing?*
-
-Thanks for reading James Maconochie | Architecture & Attention! Subscribe for free to receive new posts and support my work.
 
 ---
 
