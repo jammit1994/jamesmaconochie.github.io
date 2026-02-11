@@ -210,11 +210,14 @@ jobs:
                   cleaned,
                   heading_style="ATX",
                   strip=["script", "style"],
-                  newline_style="backslash",
               )
 
               # Post-process: collapse excessive blank lines
               result = re.sub(r"\n{4,}", "\n\n\n", result)
+              # Remove trailing backslashes (markdownify line-break artifacts)
+              result = re.sub(r"\\\s*$", "", result, flags=re.MULTILINE)
+              # Strip Substack CTA lines
+              result = re.sub(r"(?m)^Thanks for reading.*?Subscribe for free.*$\n?", "", result)
               # Trim trailing whitespace per line
               result = "\n".join(line.rstrip() for line in result.splitlines())
               return result.strip()
