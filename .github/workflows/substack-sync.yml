@@ -366,7 +366,9 @@ jobs:
               # Fetch feed with requests first, then sanitize XML before parsing.
               # Substack feeds contain characters that break strict XML parsing,
               # so we strip invalid XML chars before handing to feedparser.
-              resp = requests.get(SUBSTACK_FEED, timeout=30)
+              # We set a feed-reader User-Agent because Substack blocks raw python-requests.
+              headers = {"User-Agent": "feedparser/6.0 +https://github.com/kurtmckee/feedparser"}
+              resp = requests.get(SUBSTACK_FEED, timeout=30, headers=headers)
               resp.raise_for_status()
               raw_feed = resp.text
 
