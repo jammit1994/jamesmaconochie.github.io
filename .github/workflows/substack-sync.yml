@@ -294,7 +294,7 @@ jobs:
               markdown_content = html_to_markdown(raw_html)
 
               # Download hero image
-              image_path = download_hero_image(entry, slug)
+              image_path = download_hero_image(item, slug)
               image_ref = f"/{image_path}" if image_path else ""
 
               # Escape title for YAML (wrap in quotes, escape inner quotes)
