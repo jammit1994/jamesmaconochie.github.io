@@ -228,19 +228,30 @@ jobs:
           def download_hero_image(item, slug):
               """Download hero image from rss2json item.
 
-              Tries the enclosure link first (direct S3 URL), then the thumbnail
-              (Substack CDN URL). Returns the relative path or None.
+              Prefers the thumbnail (contains the 1500x500 hero via Substack CDN),
+              extracting the original S3 URL when possible. Falls back to enclosure
+              (which is typically the smaller 1200x630 social/OG image).
               """
+              from urllib.parse import unquote as url_unquote
               image_url = None
 
-              # Prefer enclosure (direct S3 link)
-              enclosure = item.get("enclosure", {})
-              if isinstance(enclosure, dict) and enclosure.get("link"):
-                  image_url = enclosure["link"]
+              # Prefer thumbnail — contains the actual 1500x500 hero image
+              thumb = item.get("thumbnail", "")
+              if thumb and "substack-post-media.s3.amazonaws.com" in thumb:
+                  # Extract original S3 URL from CDN wrapper
+                  idx = thumb.find("https%3A%2F%2Fsubstack-post-media")
+                  if idx > 0:
+                      image_url = url_unquote(thumb[idx:])
+                  else:
+                      image_url = thumb
+              elif thumb:
+                  image_url = thumb
 
-              # Fallback: thumbnail (Substack CDN)
+              # Fallback: enclosure (typically 1200x630 social image)
               if not image_url:
-                  image_url = item.get("thumbnail", "")
+                  enclosure = item.get("enclosure", {})
+                  if isinstance(enclosure, dict) and enclosure.get("link"):
+                      image_url = enclosure["link"]
 
               if not image_url:
                   print(f"  No hero image found for '{slug}'")
@@ -296,13 +307,25 @@ jobs:
               # Convert HTML → Markdown
               markdown_content = html_to_markdown(raw_html)
 
+              # Extract first paragraph for description (if subtitle is short)
+              description = subtitle
+              if len(subtitle) < 80:
+                  # Subtitle is just a tagline; use first real paragraph instead
+                  for para in markdown_content.split("\n\n"):
+                      clean = para.strip().lstrip("#").strip()
+                      if len(clean) > 80 and not clean.startswith("*") and not clean.startswith("!"):
+                          description = clean
+                          if len(description) > 300:
+                              description = description[:297] + "..."
+                          break
+
               # Download hero image
               image_path = download_hero_image(item, slug)
               image_ref = f"/{image_path}" if image_path else ""
 
               # Escape title for YAML (wrap in quotes, escape inner quotes)
               yaml_title = title.replace('"', '\\"')
-              yaml_desc = subtitle.replace('"', '\\"') if subtitle else ""
+              yaml_desc = description.replace('"', '\\"') if description else ""
 
               # Build front matter matching existing post format
               lines = [
@@ -325,6 +348,13 @@ jobs:
               # Hero image in content
               if image_ref:
                   lines.append(f"![{title}]({image_ref})")
+                  lines.append("")
+
+              # Subtitle heading (matching existing post format)
+              if subtitle:
+                  lines.append(f"### {subtitle}")
+                  lines.append("")
+                  lines.append("---")
                   lines.append("")
 
               # Main content

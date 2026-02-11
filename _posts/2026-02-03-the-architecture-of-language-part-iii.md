@@ -6,14 +6,18 @@ date: 2026-02-03
 permalink: /blog/the-architecture-of-language-part-iii/
 categories:
   - substack-sync
-description: "Wisdom in an Infinite-Language World"
+description: "If external constraints can no longer stabilize the linguistic interface, then the stabilizing function must move inward: from the environment to the mind, from architecture to practice, from imposed limits to cultivated awareness. The word for this is wisdom."
 substack_url: "https://jamesmaconochie.substack.com/p/the-architecture-of-language-part-fd6"
 image: /assets/images/the-architecture-of-language-part-iii_hero_substack.png
 ---
 
-![The Architecture of Language, Part III](/assets/images/the-architecture-of-language-part-iii_hero_substack.png)
+![A conceptual image representing wisdom as the new constraint in an infinite-language world.](/assets/images/the-architecture-of-language-part-iii_hero_substack.png)
 
-*This is Part III of a three-part series. Part I: [The Constraints We Lost](https://jamesmaconochie.substack.com/p/the-architecture-of-language-part), [Part II: Serviceability Failure](https://jamesmaconochie.substack.com/p/the-architecture-of-language-part-241?r=5270g6)*
+### Wisdom in an Infinite-Language World
+
+---
+
+*This is Part III of a three-part series. Part I: [The Constraints We Lost](/blog/architecture_of_language_part_1/), [Part II: Serviceability Failure](/blog/architecture_of_language_part_2/)*
 
 The instinctive response to a system in crisis is to restore what was lost.
 
