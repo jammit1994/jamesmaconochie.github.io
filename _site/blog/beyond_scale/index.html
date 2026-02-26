@@ -1,0 +1,658 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Beyond Scale: Architecture as the Real Path to Intelligence - James Maconochie</title>
+<meta name="description" content="The pursuit of AI through scaling alone has reached diminishing returns; true intelligence requires a modular architecture inspired by evolution, specialized systems orchestrated by an executive function for adaptability, efficiency, and human partnership, not autonomy.">
+
+
+  <meta name="author" content="James Maconochie">
+  
+  <meta property="article:author" content="James Maconochie">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="James Maconochie">
+<meta property="og:title" content="Beyond Scale: Architecture as the Real Path to Intelligence">
+<meta property="og:url" content="http://localhost:4000/blog/beyond_scale/">
+
+
+  <meta property="og:description" content="The pursuit of AI through scaling alone has reached diminishing returns; true intelligence requires a modular architecture inspired by evolution, specialized systems orchestrated by an executive function for adaptability, efficiency, and human partnership, not autonomy.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2025-12-08T00:00:00-05:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/blog/beyond_scale/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="James Maconochie Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/A&A_logo_108x108.png" alt="James Maconochie"></a>
+        
+        <a class="site-title" href="/">
+          James Maconochie
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >About</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/journey/"
+                
+                
+              >My Journey</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/papers/"
+                
+                
+              >Working Papers</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/blog/"
+                
+                
+              >Blog</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/search/"
+                
+                
+              >Search</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/attributions/"
+                
+                
+              >Attributions</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/#contact"
+                
+                
+              >Contact</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/james_maconochie_cliveden_headshot.jpg" alt="James Maconochie" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">James Maconochie</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Technology leader exploring AI architecture and human-AI collaboration</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Boston, MA</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://twitter.com/jamaconochie" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://jamesmaconochie.substack.com" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-envelope-open-text" aria-hidden="true"></i><span class="label">Substack</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/jammit/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/jammit1994" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:maconochies@comcast.net" rel="me" class="u-email">
+            <meta itemprop="email" content="maconochies@comcast.net" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Beyond Scale: Architecture as the Real Path to Intelligence">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="2025-12-08T00:00:00-05:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="http://localhost:4000/blog/beyond_scale/" itemprop="url">Beyond Scale: Architecture as the Real Path to Intelligence
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p><img src="/assets/images/beyond_scale_hero_1500by500.png" alt="A conceptual image representing modular AI architecture inspired by biological systems." /></p>
+
+<h3 id="lessons-from-evolution-for-a-smarter-kind-of-ai">Lessons from Evolution for a Smarter Kind of AI</h3>
+
+<p>A medical AI reviews a chest X-ray and flags a suspicious shadow. The radiologist asks, “Why did you highlight this area?”</p>
+
+<p>The system responds: “Abnormality detected, confidence 0.87.”</p>
+
+<p>That’s not an answer. That’s a probability.</p>
+
+<p>What the radiologist actually needs is reasoning: Did you see calcification patterns? Does this match pneumonia cases from your training data? Or is this just that imaging artifact we keep seeing from the new equipment?</p>
+
+<p>The system can’t answer because it doesn’t think in modules. Perception isn’t separate from memory, which isn’t separate from causal reasoning. It has parameters. Billions of them, all entangled in ways even their creators can’t untangle.</p>
+
+<p>After 18 months of studying how evolution built intelligence, here’s what I’ve come to understand: this isn’t a limitation of scale. It’s a limitation of architecture.</p>
+
+<hr />
+
+<h2 id="the-scaling-paradox">The Scaling Paradox</h2>
+
+<p>For years, the race toward artificial intelligence has been defined by scale: bigger models, more data, ever more powerful GPUs. Each generation promises a leap toward general intelligence. Yet as the systems grow, their adaptability, reasoning, and efficiency remain stubbornly limited. Energy use grows exponentially while real understanding stays flat.</p>
+
+<p>Which raises an obvious question: if intelligence were just about scale, wouldn’t we be there by now?</p>
+
+<p>Evolution found a different path. It achieved intelligence not by building a larger brain, but by discovering a smarter architecture. The biological brain is not a single processor that scaled up over time. It’s a network of specialized systems, each optimized for a different purpose, all coordinated by a dynamic executive function.</p>
+
+<p>This orchestration, not sheer size, is what made intelligence adaptive.</p>
+
+<p>And here’s what keeps me up at night: we’re racing ahead with our silicon brains while ignoring an older truth that evolution already solved.</p>
+
+<hr />
+
+<h2 id="lessons-from-the-biological-processing-unit">Lessons from the Biological Processing Unit</h2>
+
+<p>Four billion years of evolution serve as a masterclass in constrained design. The human brain consumes about 20 watts of power (less than a light bulb), yet it learns continuously, recovers from errors, and remains remarkably flexible.</p>
+
+<p>Evolution’s secret was architectural, not computational.</p>
+
+<p>It discovered four enduring principles that define adaptive intelligence:</p>
+
+<p><strong>Executive Orchestration:</strong> A dynamic coordination layer, the prefrontal cortex, that routes attention, integrates inputs, and balances speed with reflection. Think of it as a conductor who knows which sections of the orchestra to bring forward at different moments.</p>
+
+<p><strong>Continuous Plasticity:</strong> Learning that never stops, with mechanisms for remembering, forgetting, and adapting in real time. Your motor cortex refines a tennis serve over weeks while your prefrontal cortex updates its model of a colleague’s reliability based on a single conversation. Different modules, different timescales, all learning simultaneously.</p>
+
+<p><strong>Architectural Bias Correction:</strong> Built-in checks that detect and compensate for the shortcuts and blind spots of intuition. This is what Daniel Kahneman describes: System 1 thinks fast, System 2 thinks slow, and the prefrontal cortex decides when to override instinct with deliberation.</p>
+
+<p><strong>Integrated Value Alignment:</strong> Ethical reasoning and trade-off awareness embedded at the core, not added later as guardrails. The brain doesn’t process decisions and then check them against values. Values shape the processing itself.</p>
+
+<p>Each of these principles isn’t just a metaphor for intelligence. It’s an engineering strategy. They explain how to achieve adaptability without constant retraining, transparency without regression, and value alignment without afterthought.</p>
+
+<p>These same principles can guide the next generation of artificial systems. Instead of scaling a single monolithic network, we can design orchestrated, modular architectures that evolve with experience and context.</p>
+
+<p>The question is: will we?</p>
+
+<hr />
+
+<h2 id="the-human-architecture-of-intelligence">The Human Architecture of Intelligence</h2>
+
+<p>Here’s what I find most striking about the brain’s design: it’s not a hierarchy of commands. It’s a federation of specialized systems. Vision, language, memory, emotion, each performing a distinct function. Intelligence emerges not from any one part, but from how they work together.</p>
+
+<p>Think about how you navigate a busy intersection:</p>
+
+<ul>
+  <li>Your visual system tracks vehicles, pedestrians, and traffic signals</li>
+  <li>Your memory system recalls traffic rules and past experiences</li>
+  <li>Your prediction system models where that cyclist is heading</li>
+  <li>Your emotional system flags the approaching ambulance as urgent</li>
+  <li>Your motor system prepares your foot to brake or accelerate</li>
+  <li>Your executive function weighs all these inputs and decides when to cross</li>
+</ul>
+
+<p>This happens in milliseconds. But it’s not a single calculation. It’s a coordinated symphony of specialized modules, each contributing its expertise.</p>
+
+<p>The prefrontal cortex acts as executive orchestrator, allocating attention and deciding when to rely on instinct and when to slow down and reason deliberately. This isn’t a top-down dictatorship. It’s learned coordination, adapting based on experience and context.</p>
+
+<p>Where humans are limited by fatigue and bias, machines could complement us by recognizing when to switch modes. An AI architecture that understands these human dynamics could serve as a cognitive partner rather than a replacement. It would amplify judgment, not automate it.</p>
+
+<p>This is a confederated architecture: a system in which intelligence emerges from the orchestration of specialized models, rather than a single massive model.</p>
+
+<hr />
+
+<h2 id="language-causality-and-abstraction">Language, Causality, and Abstraction</h2>
+
+<p>Language is more than a communication tool. It’s humanity’s first true invention, a shared framework for reasoning about what does not yet exist.</p>
+
+<p>Judea Pearl describes this as the “ladder of causation”: from seeing, to doing, to imagining what could have been.</p>
+
+<p>Current AI models excel at the first rung. They’re remarkably good at seeing patterns in data. But they struggle with the higher rungs. Understanding how interventions change outcomes (doing) and reasoning about counterfactuals (imagining) remain largely out of reach.</p>
+
+<p>A truly intelligent system must climb this ladder, linking perception to intervention to “what if” reasoning.</p>
+
+<p>Language isn’t just for describing things; it’s the tool we use to build new ideas. It creates a space where thoughts can meet, clash, and grow into something more complex.</p>
+
+<p>This is what current monolithic models miss. They can generate language, but they don’t yet think in language the way we do. They can’t use it to model causation, to imagine alternatives, to reason about things that haven’t happened yet.</p>
+
+<hr />
+
+<h2 id="toward-modular-and-adaptive-ai">Toward Modular and Adaptive AI</h2>
+
+<p>So what would a biologically-inspired architecture actually look like?</p>
+
+<p>Imagine a community of specialized systems coordinated by an executive layer that learns which modules to trust for which problems. Not one vast model, but a confederated system.</p>
+
+<p>Each module contributes unique strengths:</p>
+
+<p><strong>Perception modules</strong> handle sensory input and context: vision, language, audio. Optimized for pattern recognition, just like your visual cortex.</p>
+
+<p><strong>Memory modules</strong> store and retrieve both episodic experiences (what happened) and semantic knowledge (what things mean). Some memories persist for years, others fade in minutes.</p>
+
+<p><strong>Causal reasoning modules</strong> explore why events occur and what would change outcomes. This is where the system climbs Pearl’s ladder, moving beyond correlation to actually model cause and effect.</p>
+
+<p><strong>Value assessment modules</strong> weigh ethical trade-offs and uncertainty. Not trained implicitly through data, but explicitly programmed with principles that can be inspected and debated.</p>
+
+<p>The executive orchestrator sits at the center, allocating attention, integrating results, and updating its strategy through feedback. It doesn’t process information itself. It coordinates those who do.</p>
+
+<p>This modular design solves three persistent problems in today’s large models: opacity (because decisions can be traced through modules), fragility (because learning happens locally, not globally), and inefficiency (because the system allocates compute only where it’s needed).</p>
+
+<p>Continuous plasticity ensures the system learns from each experience without forgetting past lessons. Bias correction mechanisms monitor performance and recalibrate when overconfidence or drift appears.</p>
+
+<p>This design replaces brittle retraining cycles with ongoing adaptation. Intelligence that evolves rather than resets.</p>
+
+<hr />
+
+<h2 id="can-we-build-this-today">Can We Build This Today?</h2>
+
+<p>Not completely. But we can start.</p>
+
+<p><strong>Phase 1</strong> is modular decomposition. We separate current models into specialized components and build simple orchestrators that route queries. Proof of concept: a medical AI with distinct diagnosis, prognosis, and treatment modules that can explain which module contributed to which part of its recommendation.</p>
+
+<p><strong>Phase 2</strong> is adaptive orchestration. We enable the coordinator to learn from experience, allowing it to discover and refine superior coordination strategies over time.</p>
+
+<p><strong>Phase 3</strong> is causal grounding, and it’s the hard part. Integrating true causal inference frameworks so the system can answer “what if” questions by modeling causation, not just retrieving similar examples.</p>
+
+<p><strong>Phase 4</strong> is ongoing value alignment. We make ethical frameworks explicit, inspectable, and improvable through human oversight.</p>
+
+<p>This isn’t science fiction. The research directions are clear. The question is whether we’ll invest in architecture as much as we’ve invested in scale.</p>
+
+<hr />
+
+<h2 id="from-scale-to-wisdom">From Scale to Wisdom</h2>
+
+<p>Scaling will consistently deliver more output, but not necessarily more insight. Architecture is what turns power into purpose.</p>
+
+<p>Evolution proved that intelligence emerged from constraint, not abundance. The brain achieves more with twenty watts than our largest models do with megawatts, not through brute force, but through smart design.</p>
+
+<p>The lesson for AI is the same: smarter coordination, not more compute.</p>
+
+<p>This is why the goal shouldn’t be artificial general intelligence in isolation. It should be augmented human intelligence (AHI), systems that extend our perception, challenge our assumptions, and help us see the world more clearly.</p>
+
+<p>The difference matters.</p>
+
+<p>AGI aims for autonomy, or, to put it another way, the creation of an artificial mind that can operate independently of us.</p>
+
+<p>AHI, by contrast, aims for partnership, in which systems are designed to amplify human insight, reasoning, and ethical judgment while keeping us at the center of decision-making.</p>
+
+<p>A confederated architecture naturally supports this partnership. The orchestrator can flag uncertainty, request human input, and explain its reasoning in terms humans can understand and override.</p>
+
+<p>This isn’t settling for less capable AI. It’s building AI that’s <em>more</em> capable precisely because it’s designed to complement human judgment rather than replace it.</p>
+
+<hr />
+
+<h2 id="why-this-matters-now">Why This Matters Now</h2>
+
+<p>We’re at an inflection point. The scaling paradigm shows diminishing returns. Each new generation requires exponentially more resources for incrementally better performance.</p>
+
+<p>Meanwhile, AI energy consumption threatens to overwhelm power grids. Training GPT-4 used roughly 50 GWh. At current growth rates, AI could consume 10% of global electricity by 2030.</p>
+
+<p>The modular approach offers a path out: efficiency through specialization, sustainability through targeted updates, transparency through explainable reasoning, and alignment through explicit values.</p>
+
+<p>But perhaps most importantly, modular architectures acknowledge that intelligence isn’t a single thing to be achieved through brute force. It’s an emergent property of well-designed systems working together.</p>
+
+<p>Evolution’s great lesson isn’t scale; it’s emergence: intelligence born of specialization, coordination, and feedback.</p>
+
+<p>That’s the lesson evolution spent four billion years teaching us.</p>
+
+<p>The question is whether we’re listening.</p>
+
+<hr />
+
+<h2 id="whats-next">What’s Next</h2>
+
+<p>We’ve talked about what to build: modular architectures inspired by evolution’s four-billion-year R&amp;D project.</p>
+
+<p>But there’s a deeper question underneath all of this: how do we know what to build?</p>
+
+<p>How do we move from wonder at what’s possible to wisdom about what matters? How do we follow curiosity without getting lost in the seduction of pure computation?</p>
+
+<p>Next week, I’ll explore the path from imagination to understanding. Because the real challenge isn’t just building smarter AI. It’s building AI wisely.</p>
+
+<p>And wisdom, as it turns out, requires something scaling can never provide: feedback.</p>
+
+<hr />
+
+<h2 id="notes--further-reading">Notes &amp; Further Reading</h2>
+
+<p>For a more complete technical architecture and phased development roadmap, see my research paper <a href="https://jamesmaconochie.com/assets/papers/beyond-scale-modular-ai-maconochie.pdf"><em>Beyond Scale: Towards Biologically Inspired Modular Architectures for Adaptive AI</em></a>.</p>
+
+<p>The foundational argument about why scaling alone won’t work appears in my research paper <a href="https://jamesmaconochie.com/assets/papers/Attention-Final.pdf"><em>Attention Is All We Have: What AI’s Greatest Breakthrough Can Teach Up About Being Human</em></a>.</p>
+
+<p>Judea Pearl’s “ladder of causation” is detailed in his book <em>The Book of Why: The New Science of Cause and Effect</em>.</p>
+
+<p>Daniel Kahneman’s System 1/System 2 framework comes from <em>Thinking, Fast and Slow</em>.</p>
+
+<p>For Gary Marcus’s critique of the scaling paradigm, see <em>Rebooting AI: Building Artificial Intelligence We Can Trust</em>.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#ai-research" class="page__taxonomy-item p-category" rel="tag">ai-research</a><span class="sep">, </span>
+    
+      <a href="/categories/#architecture" class="page__taxonomy-item p-category" rel="tag">architecture</a><span class="sep">, </span>
+    
+      <a href="/categories/#evolutionary-biology" class="page__taxonomy-item p-category" rel="tag">evolutionary-biology</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2025-12-08T00:00:00-05:00">December 8, 2025</time></p>
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/blog/attention_is_all_we_have/" class="pagination--pager" title="Attention Is All We Have">Previous</a>
+    
+    
+      <a href="/blog/the_human_attention_crisis/" class="pagination--pager" title="The Human Attention Crisis">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/jamaconochie" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://jamesmaconochie.substack.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-open-text" aria-hidden="true"></i> Substack</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/jammit/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://github.com/jammit1994" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2026 <a href="http://localhost:4000">James Maconochie</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+  </body>
+</html>
