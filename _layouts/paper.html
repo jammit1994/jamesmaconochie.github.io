@@ -1,0 +1,28 @@
+---
+layout: single
+---
+
+<div class="paper-detail">
+  {% if page.description %}
+  <p class="paper-description">{{ page.description }}</p>
+  {% endif %}
+
+  {{ content }}
+
+  {% if page.pdf_url %}
+  <div class="paper-actions" style="margin-top: 2rem;">
+    <a href="{{ page.pdf_url }}" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer">
+      Download Full Paper (PDF)
+    </a>
+  </div>
+  {% endif %}
+
+  {% if page.categories.size > 0 %}
+  <div class="paper-meta" style="margin-top: 2rem; color: #666;">
+    <strong>Topics:</strong>
+    {% for cat in page.categories %}
+      <span>{{ cat }}{% unless forloop.last %}, {% endunless %}</span>
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>

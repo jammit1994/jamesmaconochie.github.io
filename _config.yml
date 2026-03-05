@@ -44,6 +44,11 @@ sass:
 # Optional but recommended if using a skin:
 minimal_mistakes_skin: default
 
+collections:
+  papers:
+    output: true
+    permalink: /papers/:slug/
+
 include:
   - _pages
 
@@ -109,12 +114,13 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: post  # ← CHANGE THIS from 'single' to 'post'
+      layout: post
       author_profile: true
       read_time: true
       comments: true
       share: true
       related: true
+      header: null
 
   # _pages
   - scope:
@@ -123,6 +129,15 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+  # _papers
+  - scope:
+      path: "_papers"
+      type: papers
+    values:
+      layout: paper
+      author_profile: true
+      share: true
 
 category_archive:
   type: liquid
@@ -137,10 +152,3 @@ analytics:
     tracking_id: "G-PRLHBW8WGB"
 
 future: true
-
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      header: null

@@ -652,6 +652,9 @@ jobs:
 
             echo "  PR created successfully."
 
+            # Auto-merge the PR (try --auto first, fall back to immediate merge)
+            gh pr merge "$BRANCH" --merge --auto 2>/dev/null || gh pr merge "$BRANCH" --merge || echo "  Warning: could not auto-merge PR"
+
             # Return to main for next iteration
             git checkout main
 
