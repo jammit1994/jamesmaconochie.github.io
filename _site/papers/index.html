@@ -27,7 +27,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="James Maconochie">
 <meta property="og:title" content="Working Papers">
-<meta property="og:url" content="https://jamesmaconochie.com/papers/">
+<meta property="og:url" content="http://localhost:4000/papers/">
 
 
   <meta property="og:description" content="Technology leader exploring AI architecture and human-AI collaboration. 25 years implementing complex systems. Based in Boston, MA.">
@@ -45,7 +45,7 @@
 
 
 
-<link rel="canonical" href="https://jamesmaconochie.com/papers/">
+<link rel="canonical" href="http://localhost:4000/papers/">
 
 
 
@@ -308,6 +308,20 @@
         <a href="/assets/papers/ahi-case-for-augmented-human-intelligence.pdf" class="slide-link" target="_blank" rel="noopener noreferrer">Read the Paper →</a>
       </div>
     </div>
+
+    <!-- Slide 9: The Wisdom Gap -->
+    <div class="carousel-slide" data-slide="9">
+      <div class="slide-background"
+           style="background-image: url('/assets/images/the_wisdom_gap_hero.png')"
+           alt="Scholar at a desk with ancient books and a modern tablet, representing the gap between knowledge and wisdom">
+      </div>
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <h2 class="slide-title">The Wisdom Gap: Why AI Today Is Structurally Capped Below Wisdom</h2>
+        <p class="slide-text">Wisdom cannot be accumulated. It must be traversed. This paper argues that AI is structurally precluded from wisdom, not as a temporary limitation, but as an architectural fact.</p>
+        <a href="/assets/papers/the-wisdom-gap.pdf" class="slide-link" target="_blank" rel="noopener noreferrer">Read the Paper →</a>
+      </div>
+    </div>
   </div>
 
     <!-- Navigation Dots -->
@@ -321,6 +335,7 @@
     <button class="dot" data-slide="6" aria-label="Slide 7: When the Music Stops"></button>
     <button class="dot" data-slide="7" aria-label="Slide 8: MOL"></button>
     <button class="dot" data-slide="8" aria-label="Slide 9: AHI White Paper"></button>
+    <button class="dot" data-slide="9" aria-label="Slide 10: The Wisdom Gap"></button>
   </div>
 </div>
 
@@ -497,6 +512,29 @@
 
     <div class="content-actions" style="justify-content: flex-start !important;">
       <a href="/assets/papers/ahi-case-for-augmented-human-intelligence.pdf" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Download Full Paper</a>
+      <a href="/about/#contact" class="btn btn--secondary">Discuss Collaboration</a>
+    </div>
+  </div>
+
+  <!-- Slide 9: The Wisdom Gap -->
+  <div class="content-section" data-content="9" style="text-align: left !important;">
+    <h2 style="text-align: left !important;">The Wisdom Gap: Why AI Today Is Structurally Capped Below Wisdom</h2>
+    <p style="text-align: left !important;">The public conversation about AI has focused on what it can do and how to prevent harm. This paper addresses a more foundational question: why AI cannot reach wisdom today, and what that structural limitation means for human development.</p>
+    <p style="text-align: left !important;"><strong>Core Argument:</strong> Drawing on the DIKW hierarchy, Judea Pearl's ladder of causation, William James's psychology of attention, and recent work on predictive cognition and embodied perception, this paper argues that wisdom is not knowledge at scale. It is the product of a specific developmental process, the attention-experience feedback loop, that requires a persistent, embodied, stake-bearing agent operating under conditions of genuine consequence. AI systems are structurally precluded from traversing this loop.</p>
+    <p style="text-align: left !important;"><strong>How This Fits:</strong> Builds directly on the AHI paper's foundations, going deeper into why the transition from knowledge to wisdom is not merely difficult for AI but architecturally impossible. It develops the seed corn argument: that replacing the junior work pipeline with AI capability eliminates the developmental foundation of wisdom itself.</p>
+
+    <details class="abstract-details" style="margin: 1.5rem 0; text-align: left !important;">
+      <summary style="cursor: pointer; color: #2c5f4f; font-weight: 600;">📄 Read Full Abstract</summary>
+      <div class="abstract-content" style="margin-top: 1rem; padding: 1rem; background: #f8f9fa; border-radius: 4px; text-align: left !important;">
+        <p style="text-align: left !important;"><strong>Abstract:</strong> The public conversation about artificial intelligence has focused on what AI can do and how to prevent it from causing harm. This paper addresses a more foundational question that both conversations have largely overlooked: why AI cannot reach wisdom today, and what that structural limitation means for human development.</p>
+        <p style="text-align: left !important;">Drawing on the DIKW hierarchy, Judea Pearl's ladder of causation, William James's psychology of attention, and recent work by Andy Clark and Donald Hoffman on predictive cognition and embodied perception, this paper argues that wisdom is not knowledge at scale. It is the product of a specific developmental process, the attention-experience feedback loop, that requires a persistent, embodied, stake-bearing agent operating under conditions of genuine consequence. AI systems are structurally precluded from traversing this loop, not as a temporary limitation awaiting the next architectural advance, but as a consequence of what these systems fundamentally are. These frameworks converge on a single structural property: wisdom requires consequence-bearing, embodied, persistent agents. Everything else is elaboration.</p>
+        <p style="text-align: left !important;">The paper further argues that the output AI produces in place of wisdom, synthetic wisdom, is not a stepping stone toward genuine wisdom but its category opposite: confident, fluent output without the constraint-awareness that wisdom requires. And it argues that the institutional response to AI capability, replacing the junior work that is the developmental foundation of wisdom, is eliminating the pipeline that produces the human judgment we will need most as AI systems become more capable and more consequential.</p>
+        <p style="text-align: left !important;">The conclusion is not pessimistic about AI. It is precise about what AI is for. Augmented Human Intelligence, AI designed to extend human judgment rather than simulate and replace it, is the response that the wisdom gap demands.</p>
+      </div>
+    </details>
+
+    <div class="content-actions" style="justify-content: flex-start !important;">
+      <a href="/assets/papers/the-wisdom-gap.pdf" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Download Full Paper</a>
       <a href="/about/#contact" class="btn btn--secondary">Discuss Collaboration</a>
     </div>
   </div>
@@ -680,6 +718,11 @@
 /* Optional: Adjust overlay darkness for better text */
 .carousel-slide[data-slide="0"] .slide-overlay {
   background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.7)) !important;
+}
+
+/* Lighten overlay on Wisdom Gap slide */
+.carousel-slide[data-slide="9"] .slide-overlay {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.15), rgba(0,0,0,0.45)) !important;
 }
 
 /* Dynamic Content Sections - LEFT ALIGNED with higher specificity */
@@ -905,7 +948,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 
-<div class="page__footer-copyright">&copy; 2026 <a href="https://jamesmaconochie.com">James Maconochie</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2026 <a href="http://localhost:4000">James Maconochie</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

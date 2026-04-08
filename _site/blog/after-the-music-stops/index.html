@@ -1,0 +1,745 @@
+
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.28.0 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js">
+  <head>
+    
+<meta charset="utf-8">
+
+
+<!-- begin _includes/seo.html --><title>After the Music Stops - James Maconochie</title>
+<meta name="description" content="In the first piece in this series, I argued that the technical foundations of the AI scaling thesis are cracking. Turing Award winners and field pioneers are converging on a shared diagnosis: brute-force scaling of large language models won’t yield general intelligence, and something architectura…">
+
+
+  <meta name="author" content="James Maconochie">
+  
+  <meta property="article:author" content="James Maconochie">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="James Maconochie">
+<meta property="og:title" content="After the Music Stops">
+<meta property="og:url" content="http://localhost:4000/blog/after-the-music-stops/">
+
+
+  <meta property="og:description" content="In the first piece in this series, I argued that the technical foundations of the AI scaling thesis are cracking. Turing Award winners and field pioneers are converging on a shared diagnosis: brute-force scaling of large language models won’t yield general intelligence, and something architectura…">
+
+
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2026-03-10T00:00:00-04:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/blog/after-the-music-stops/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="James Maconochie Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    
+<nav class="skip-links" aria-label="Skip links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/A&A_logo_108x108.png" alt="James Maconochie"></a>
+        
+        <a class="site-title" href="/">
+          James Maconochie
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >About</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/journey/"
+                
+                
+              >My Journey</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/papers/"
+                
+                
+              >Working Papers</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/blog/"
+                
+                
+              >Blog</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/search/"
+                
+                
+              >Search</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/attributions/"
+                
+                
+              >Attributions</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/#contact"
+                
+                
+              >Contact</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+
+
+<div id="main" role="main">
+  
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/james_maconochie_cliveden_headshot.jpg" alt="James Maconochie" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">James Maconochie</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Technology leader exploring AI architecture and human-AI collaboration</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-location-dot" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Boston, MA</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://twitter.com/jamaconochie" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://jamesmaconochie.substack.com" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-envelope-open-text" aria-hidden="true"></i><span class="label">Substack</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/jammit/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/jammit1994" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:maconochies@comcast.net" rel="me" class="u-email">
+            <meta itemprop="email" content="maconochies@comcast.net" />
+            <i class="fas fa-fw fa-square-envelope" aria-hidden="true"></i><span class="label">Email</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="After the Music Stops">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="2026-03-10T00:00:00-04:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/blog/after-the-music-stops/" itemprop="url">After the Music Stops
+</a>
+          </h1>
+          
+
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          11 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <p><img src="/assets/images/after-the-music-stops_hero_substack.png" alt="After the Music Stops" /></p>
+
+<h3 id="who-will-bear-the-cost-of-the-ai-correction">Who Will Bear the Cost of the AI Correction</h3>
+
+<hr />
+
+<p><em>This is the third and final installment in a series examining the cracks in the AI scaling narrative, from the technical limits, to the financial fragility, to who bears the cost when the correction comes.</em></p>
+
+<p>In the first piece in this series, I argued that the technical foundations of the AI scaling thesis are cracking. Turing Award winners and field pioneers are converging on a shared diagnosis: brute-force scaling of large language models won’t yield general intelligence, and something architecturally different is needed.</p>
+
+<p>In the second, I followed that technical critique to its financial implications. The AI boom is structurally fragile: narrow market concentration, lopsided revenue, a 95% enterprise pilot failure rate, and $1.5 trillion in projected debt predicated on productivity gains that may never materialize.</p>
+
+<p>This final piece asks the question that neither Silicon Valley nor Wall Street wants to answer: when the correction comes, who actually pays?</p>
+
+<p>To be clear: AI is not worthless. Large language models have genuine productivity applications, and many of the underlying technical advances are real and durable. The question isn’t whether AI creates value. It’s whether current valuations, capital allocation, and policy assumptions reflect a realistic assessment of that value, or whether they require something closer to general intelligence to justify themselves. If the latter, and the first two pieces in this series argue that it is, then the cost of the gap between expectation and reality has to land somewhere.</p>
+
+<p>Not on the investors. Not on the executives. The cost falls downstream, onto retirement accounts, communities, workers, and democratic institutions that are being quietly restructured around assumptions that may not hold.</p>
+
+<h3 id="its-not-the-investors">It’s Not the Investors</h3>
+
+<p>The mythology of tech busts centers on investor losses. Pets.com, Theranos, FTX. The names change; the pattern doesn’t. Venture capital absorbs the hit and raises the next fund. Sequoia survived the dot-com crash. Andreessen Horowitz kept right on investing. The hyperscalers writing off AI infrastructure will take earnings hits, not existential ones.</p>
+
+<p>The real exposure is further down the chain, in places most people don’t think to look.</p>
+
+<p>Start with your retirement account. The Magnificent Seven now account for roughly a third of the S&amp;P 500’s total market capitalization and were responsible for more than 40% of the index’s total return in 2025. That means virtually every 401(k) and public pension fund in America is making a concentrated bet on AI, whether the account holder knows it or not. As one strategic advisor put it, the danger isn’t just the Mag Seven falling; it’s that the rest of the index is too weak to pick up the slack when they do. A correction in these seven companies isn’t a venture capital problem. It’s a retirement security problem.</p>
+
+<p>Then there are the communities. Cities and states across the country are competing to host AI data centers, offering tax incentives, infrastructure commitments, and rezoning in exchange for the promise of jobs and economic development. Just this week, Illinois Governor JB Pritzker announced a two-year suspension of data center tax incentives, citing concerns about energy grid strain, rising consumer electricity costs, and whether these facilities are “financially sustainable over time.” In Indiana, local officials denied permission for a proposed data center after community pushback. South Dakota is passing a “Data Center Bill of Rights for Citizens.” The pattern is familiar: massive public investment in facilities that consume enormous energy, employ remarkably few people, and could become stranded assets if AI demand doesn’t sustain current projections.</p>
+
+<p>And then there’s the debt. JPMorgan’s projection of $1.5 trillion in AI-related bond issuances by 2030 is held by institutional investors, insurance companies, and pension funds. That debt isn’t inherently dangerous if it’s financing genuine productivity transformation. But if enterprise AI adoption continues to stall, with only 5% of pilots reaching production and 42% of initiatives being scrapped, then we’re left with bonds backed by phantom revenue. And the holders of that debt are often the same pension funds and insurance companies already overexposed to the Magnificent Seven through equity holdings. That’s a double exposure: the same retirement savers are concentrated in AI stocks <em>and</em> holding the bonds underwriting AI infrastructure. The 2008 parallel isn’t the technology; it’s the debt structure underneath it.</p>
+
+<h3 id="the-labor-gap">The Labor Gap</h3>
+
+<p>This is where the conversation gets personal, and where the cost becomes hardest to measure.</p>
+
+<p>The public discourse on AI and jobs swings between two poles: “AI will take all the jobs” and “AI is just a tool.” Both are wrong. The reality is messier, more specific, and already underway.</p>
+
+<p>Entry-level job postings in the United States have declined roughly 35% since January 2023, according to labor research firm Revelio Labs. That period also coincides with aggressive monetary tightening and a broader post-pandemic recalibration of labor demand, so AI isn’t the sole driver. But the structural pattern underneath the cyclical noise is clear. SignalFire found a 50% decline in new hires with less than one year of post-graduate experience at major tech companies between 2019 and 2024. Recent graduates aged 22 to 27 face unemployment rates near 5.8%, the highest since 2021, against an overall rate of 4.2%. This isn’t a future threat. It’s a present reality, largely invisible in headline employment data.</p>
+
+<p>The mechanism is quiet and structural. Companies aren’t announcing mass layoffs; they’re simply not backfilling roles when people leave. Federal Reserve Chair Jerome Powell has described this as a “low-hiring, low-firing” equilibrium. It sounds stable. It’s not. It means the displacement is happening through absence rather than announcement, concentrated on the youngest and most vulnerable workers, eroding the bottom rungs of the career ladder without anyone noticing until the ladder is gone.</p>
+
+<p>Customer service, content production, paralegal work, entry-level coding: specific categories are contracting. Not because AI fully replaces them, but because it reduces headcount enough to matter at scale. And there’s a perverse irony embedded in this dynamic. AI companies have a financial incentive to overstate displacement potential because it inflates their addressable market. The labor threat and the investment thesis are entangled. The same narrative that drives valuations also drives fear.</p>
+
+<p>I know something about this firsthand. In September 2023, I was part of a reduction in force after 25 years in technology consulting. The industry I’d built a career in was restructuring, and AI was part of the reason. I had a choice: compete for a shrinking pool of traditional roles, or invest in understanding what was actually happening. I chose the latter, spending over a year researching the intersection of human cognition, AI architecture, and evolutionary biology. Not because I had a comfortable runway, but because I believed the only durable response to AI displacement was to understand the technology deeply enough to work with it rather than against it.</p>
+
+<p>What struck me most during that period wasn’t the technology itself. It was the absence of any coherent framework to help people navigate the transition. The federal response, to this day, is plans about plans. The White House AI Action Plan, released in July 2025, proposes an “AI Workforce Research Hub” and “rapid retraining initiatives,” but these remain proposals, not funded programs. A mandated plan to reach one million new apprentices was due by late August 2025; as of this writing, no such plan has been published. The existing federal training infrastructure, primarily the Workforce Innovation and Opportunity Act, was designed for trade-related displacement and factory closures, not for the continuous, distributed, invisible erosion of knowledge work.</p>
+
+<p>The geographic dimension compounds the problem. AI jobs concentrate in a handful of metros. Displacement is distributed broadly. It’s not hard to picture: a mid-sized city that lost its call center to automation, watched entry-level coding jobs evaporate through attrition, and offered tax incentives for a data center that consumed grid capacity, employed a few dozen people, and may not outlast its tax abatement. That city exists in every state. This mirrors the manufacturing hollowing-out pattern, except it moves faster and affects white-collar workers who assumed they were insulated.</p>
+
+<h3 id="the-governance-deficit">The Governance Deficit</h3>
+
+<p>The economic consequences are serious. The political consequences may be worse.</p>
+
+<p>Here’s what doesn’t get discussed enough: the infrastructure being built for the AI boom doesn’t disappear when valuations correct. After the dot-com bust, the fiber optic cables that bankrupt companies had laid were bought for pennies on the dollar and became the backbone of the modern internet. That was mostly benign. The AI equivalent is massive behavioral datasets, surveillance capabilities, and algorithmic decision-making systems. When the correction comes, these assets don’t evaporate. They get acquired at fire-sale prices by buyers whose purposes may have nothing to do with the productivity narrative that justified building them in the first place.</p>
+
+<p>When populations lose economic leverage through job displacement while simultaneously living under systems designed to monitor and optimize them, the conditions for democratic governance weaken. This isn’t dystopian speculation. It’s the observable pattern in every context where economic marginalization and pervasive surveillance overlap. The question isn’t whether these tools will be misused; it’s whether the institutional safeguards exist to prevent it.</p>
+
+<p>They largely don’t. The United States has no comprehensive federal AI law. The Trump administration revoked Biden-era AI safety requirements on its first day in office and has since signed an executive order directing the Attorney General to establish an AI Litigation Task Force to challenge state-level AI regulations deemed “inconsistent” with federal policy. Over 1,000 AI-related bills were introduced across states in 2025, reflecting genuine demand for oversight. The federal response has been to threaten litigation against the states attempting to fill the vacuum while offering nothing comparable in return.</p>
+
+<p>The net effect is a moral hazard: the companies whose concentration of power most warrants oversight are shielded from local accountability, while the communities bearing the grid strain, the energy costs, and the employment shortfalls have no federal framework to fall back on.</p>
+
+<p>This is where the augmentation framework from the first piece in this series becomes more than an architectural preference. Systems designed to augment human decision-making preserve human agency by design. They keep humans in the loop not as a nicety but as a structural feature. Systems designed to replace human decision-making don’t. The governance question isn’t just “how do we regulate AI?” It’s whether we’re building systems that are compatible with democratic self-governance at all.</p>
+
+<h3 id="the-concentration-problem">The Concentration Problem</h3>
+
+<p>Whether the AI boom continues or corrects, the infrastructure is concentrating in very few hands. Microsoft, Google, Amazon, and a handful of others control the foundational compute layer. This is the equivalent of three companies owning the roads, the ports, and the electrical grid simultaneously.</p>
+
+<p>The most promising counterforce is open-source AI. As I noted in the second piece, open-source models are closing the performance gap with closed-source leaders, and enterprises are increasingly drawn to smaller, specialized, fine-tuned models. But open-source AI depends on compute access, which circles back to the same hyperscalers. Distributed architecture requires distributed infrastructure. Without it, “open” is a label, not a reality.</p>
+
+<p>The CHIPS Act and semiconductor export controls, discussed in the second piece, are framed as competitive tools against China, not as instruments for domestic market structure. The United States is subsidizing concentration while calling it competition. The alternative, public investment in open compute infrastructure, antitrust enforcement that addresses AI-specific concentration, data portability requirements that prevent lock-in, remains largely unexamined in policy circles.</p>
+
+<p>Meanwhile, China isn’t pursuing a single scaling approach. It’s diversifying architecturally while maintaining state oversight of strategic technology. Europe can’t compete in the capital-intensive scaling race but could lead in alternative architectures and governance frameworks. The United States is currently locked into the scaling paradigm by the very corporate interests that benefit most from it.</p>
+
+<h3 id="what-augmentation-actually-requires">What Augmentation Actually Requires</h3>
+
+<p>This series began with a technical argument: the scaling skeptics are right, and Augmented Human Intelligence offers a more promising architectural path than the brute-force pursuit of AGI. The second piece showed that the financial structure built on the AGI thesis is fragile and concentrated. This piece has argued that the human consequences of getting this wrong fall disproportionately on people who had no say in the bet.</p>
+
+<p>Those three threads converge on a single point. AHI isn’t just a better technical framework. It’s the only path that keeps humans economically relevant, politically empowered, and socially integrated in an age of increasingly capable machines. But it won’t happen by default. The economic incentives, the capital flows, and the policy environment all currently favor concentration, replacement, and scale.</p>
+
+<p>What augmentation actually requires is deliberate choice at every level. Architectural choices: modular, specialized, human-in-the-loop systems rather than monolithic models chasing general intelligence. Policy choices: antitrust enforcement, public compute infrastructure, workforce transition programs that match the scale of the disruption. Ownership choices: open-source development, distributed access, accountability structures that prevent the technology from concentrating power in the hands of those who build it.</p>
+
+<p>None of these are inevitable. All of them are possible.</p>
+
+<p>I mentioned earlier that I was part of a reduction in force in September 2023. What I didn’t say is where that led. Rather than compete for a shrinking pool of roles in an industry being restructured around me, I spent over a year building exactly the kind of human-AI collaboration I’ve been advocating for. A system called MARS (Multi-Agent Research System) that monitors AI-related content, scores it against my research corpus, and generates strategic engagement opportunities. This entire series, the research synthesis, the financial analysis, the policy arguments, was produced through that system. I used AI tools at every stage of retrieval, drafting, fact-checking, and revision. But the judgment, the framing, the argument, the decision about what matters and why: that’s mine. The AI handled pattern recognition and tireless iteration. I handled meaning-making.</p>
+
+<p>I’m not offering a theoretical framework. I’m offering evidence. This is what augmentation looks like in practice, and it’s available to anyone willing to invest the time in understanding these tools deeply enough to direct them rather than be directed by them.</p>
+
+<p>The orchestra can keep expanding. Or we can decide what music we actually want to hear, and who gets to play.</p>
+
+<hr />
+
+<p><em>Originally published on <a href="https://jamesmaconochie.substack.com/p/after-the-music-stops">Substack</a>.</em></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+  
+
+  
+    
+
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#substack-sync" class="page__taxonomy-item p-category" rel="tag">substack-sync</a>
+    
+    </span>
+  </p>
+
+
+  
+
+
+        
+
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2026-03-10T00:00:00-04:00">March 10, 2026</time></p>
+
+
+      </footer>
+
+      
+<section class="page__share">
+  <h4 class="page__share-title">Share on</h4>
+
+  <a href="https://x.com/intent/tweet?text=After+the+Music+Stops%20http%3A%2F%2Flocalhost%3A4000%2Fblog%2Fafter-the-music-stops%2F" class="btn btn--x" aria-label="Share on X" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on X">
+    <i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i><span> X</span>
+  </a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fblog%2Fafter-the-music-stops%2F" class="btn btn--facebook" aria-label="Share on Facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook">
+    <i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span>
+  </a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/blog/after-the-music-stops/" class="btn btn--linkedin" aria-label="Share on LinkedIn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
+    <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span>
+  </a>
+
+  <a href="https://bsky.app/intent/compose?text=After+the+Music+Stops%20http%3A%2F%2Flocalhost%3A4000%2Fblog%2Fafter-the-music-stops%2F" class="btn btn--bluesky" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Bluesky">
+    <i class="fab fa-fw fa-bluesky" aria-hidden="true"></i><span> Bluesky</span>
+  </a>
+</section>
+
+
+      
+
+  <nav class="pagination" aria-label="Post pagination">
+    
+      <a href="/blog/when-the-music-stops/" class="pagination--pager" title="When the Music Stops">Previous</a>
+    
+    
+      <a href="/blog/the-last-guardrail/" class="pagination--pager" title="The Last Guardrail">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    
+
+<div class="page__related">
+  
+  <h2 class="page__related-title">You May Also Enjoy</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item blog-card" itemscope itemtype="https://schema.org/CreativeWork">
+    <a href="/blog/a-viking-a-roman-a-greek-cypriot-and-an-englishman-living-in-boston-walk-into-a-bar-in-lisbon/" rel="permalink" class="blog-card__link">
+      
+      <div class="blog-card__header">
+        <h2 class="blog-card__title" itemprop="headline">A Viking, A Roman, A Greek Cypriot, and an Englishman living in Boston Walk into a Bar in Lisbon
+</h2>
+        <span class="blog-card__date">03/24/2026</span>
+      </div>
+      
+      
+      <div class="blog-card__image">
+        <img src="/assets/images/a-viking-a-roman-a-greek-cypriot-and-an-englishman-living-in-boston-walk-into-a-bar-in-lisbon_hero_substack.png" alt="A Viking, A Roman, A Greek Cypriot, and an Englishman living in Boston Walk into a Bar in Lisbon
+">
+      </div>
+      
+      
+      
+      <p class="blog-card__description">There is a particular kind of friendship that only makes sense to people who have it. It doesn’t require regular contact, shared geography, or even similar lives. It requires a shared past that was formative enough that no amount of intervening time can entirely dissolve it.</p>
+      
+      
+    </a>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item blog-card" itemscope itemtype="https://schema.org/CreativeWork">
+    <a href="/blog/swarm-intelligence/" rel="permalink" class="blog-card__link">
+      
+      <div class="blog-card__header">
+        <h2 class="blog-card__title" itemprop="headline">Swarm Intelligence
+</h2>
+        <span class="blog-card__date">03/17/2026</span>
+      </div>
+      
+      
+      <div class="blog-card__image">
+        <img src="/assets/images/swarm-intelligence_hero_substack.png" alt="Swarm Intelligence
+">
+      </div>
+      
+      
+      
+      <p class="blog-card__description">I played Doom. Almost obsessively. For nearly two years (1995 to 1997), my colleagues and I would wrap up long days on a construction site in Connecticut and disappear into networked deathmatches for a couple of hours or more (please don’t judge). It was, in the best possible way, a complete wast...</p>
+      
+      
+    </a>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item blog-card" itemscope itemtype="https://schema.org/CreativeWork">
+    <a href="/blog/the-last-guardrail/" rel="permalink" class="blog-card__link">
+      
+      <div class="blog-card__header">
+        <h2 class="blog-card__title" itemprop="headline">The Last Guardrail
+</h2>
+        <span class="blog-card__date">03/12/2026</span>
+      </div>
+      
+      
+      <div class="blog-card__image">
+        <img src="/assets/images/the-last-guardrail_hero_substack.png" alt="The Last Guardrail
+">
+      </div>
+      
+      
+      
+      <p class="blog-card__description">Two weeks ago, on Friday, February 27th, reports emerged of a confrontation between the U.S. Department of Defense and AI company Anthropic over the use of its Claude model in government systems. Within hours, the dispute escalated into an extraordinary step: federal agencies were directed to cea...</p>
+      
+      
+    </a>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item blog-card" itemscope itemtype="https://schema.org/CreativeWork">
+    <a href="/blog/when-the-music-stops/" rel="permalink" class="blog-card__link">
+      
+      <div class="blog-card__header">
+        <h2 class="blog-card__title" itemprop="headline">When the Music Stops
+</h2>
+        <span class="blog-card__date">03/03/2026</span>
+      </div>
+      
+      
+      <div class="blog-card__image">
+        <img src="/assets/images/when-the-music-stops_hero_substack.png" alt="When the Music Stops
+">
+      </div>
+      
+      
+      
+      <p class="blog-card__description">Michael Burry, the investor made famous by *The Big Short* for calling the 2008 housing crash, is shorting Nvidia and Palantir. He might be early. He might be wrong. But the fact that serious money is now betting against the AI boom tells us something worth examining.</p>
+      
+      
+    </a>
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        
+<div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/jamaconochie" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://jamesmaconochie.substack.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-open-text" aria-hidden="true"></i> Substack</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/jammit/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://github.com/jammit1994" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-square-rss" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2026 <a href="http://localhost:4000">James Maconochie</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,713 @@
+
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.28.0 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js">
+  <head>
+    
+<meta charset="utf-8">
+
+
+<!-- begin _includes/seo.html --><title>The Last Guardrail - James Maconochie</title>
+<meta name="description" content="Two weeks ago, on Friday, February 27th, reports emerged of a confrontation between the U.S. Department of Defense and AI company Anthropic over the use of its Claude model in government systems. Within hours, the dispute escalated into an extraordinary step: federal agencies were directed to cea…">
+
+
+  <meta name="author" content="James Maconochie">
+  
+  <meta property="article:author" content="James Maconochie">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="James Maconochie">
+<meta property="og:title" content="The Last Guardrail">
+<meta property="og:url" content="http://localhost:4000/blog/the-last-guardrail/">
+
+
+  <meta property="og:description" content="Two weeks ago, on Friday, February 27th, reports emerged of a confrontation between the U.S. Department of Defense and AI company Anthropic over the use of its Claude model in government systems. Within hours, the dispute escalated into an extraordinary step: federal agencies were directed to cea…">
+
+
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2026-03-12T00:00:00-04:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/blog/the-last-guardrail/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="James Maconochie Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    
+<nav class="skip-links" aria-label="Skip links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/A&A_logo_108x108.png" alt="James Maconochie"></a>
+        
+        <a class="site-title" href="/">
+          James Maconochie
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >About</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/journey/"
+                
+                
+              >My Journey</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/papers/"
+                
+                
+              >Working Papers</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/blog/"
+                
+                
+              >Blog</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/search/"
+                
+                
+              >Search</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/attributions/"
+                
+                
+              >Attributions</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/#contact"
+                
+                
+              >Contact</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+
+
+<div id="main" role="main">
+  
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/james_maconochie_cliveden_headshot.jpg" alt="James Maconochie" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">James Maconochie</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Technology leader exploring AI architecture and human-AI collaboration</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-location-dot" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Boston, MA</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://twitter.com/jamaconochie" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://jamesmaconochie.substack.com" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-envelope-open-text" aria-hidden="true"></i><span class="label">Substack</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/jammit/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/jammit1994" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:maconochies@comcast.net" rel="me" class="u-email">
+            <meta itemprop="email" content="maconochies@comcast.net" />
+            <i class="fas fa-fw fa-square-envelope" aria-hidden="true"></i><span class="label">Email</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="The Last Guardrail">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="2026-03-12T00:00:00-04:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/blog/the-last-guardrail/" itemprop="url">The Last Guardrail
+</a>
+          </h1>
+          
+
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <p><img src="/assets/images/the-last-guardrail_hero_substack.png" alt="The Last Guardrail" /></p>
+
+<h3 id="to-govern-ai-we-must-first-restore-the-balance-of-powers">To Govern AI, We Must First Restore The Balance Of Powers</h3>
+
+<hr />
+
+<p><em>There has been a lot of discussion about the Anthropic negotiations which ultimately fell apart when Anthropic was unwilling to accept certain requests by the Department of War. Negotiations had been ongoing for several months, and I am not taking sides, but for transparency’s sake I appreciate Anthropic’s focus on AI Safety at it’s core. This was not a planned post, but I wanted to share some observations that I believe this brings into sharp focus, and must not be ignored.</em></p>
+
+<h3 id="the-wrong-story">The Wrong Story</h3>
+
+<p>Two weeks ago, on Friday, February 27th, reports emerged of a confrontation between the U.S. Department of Defense and AI company Anthropic over the use of its Claude model in government systems. Within hours, the dispute escalated into an extraordinary step: federal agencies were directed to cease using Anthropic technology immediately, and Anthropic was classified as a supply-chain risk.</p>
+
+<p>Most people saw the episode as a story about AI safety. Would Claude be used for mass surveillance? Could an AI company hold the line against the most powerful military in the world? Those are genuine questions. But they are not the most crucial question raised by the week’s events. What we actually saw was something else: a stress test of constitutional infrastructure.</p>
+
+<p>Anthropic refused to relax certain safety guardrails on its Claude model before the U.S. Defense Secretary-imposed deadline. Later that same day, the President’s order changed the framework governing one of the most consequential technologies in human history. Not by legislation. Not by judicial review. By executive action, moving fast, with no meaningful check.</p>
+
+<p>The AI safety question was answered poorly within days.</p>
+
+<p>The constitutional question is still open.</p>
+
+<h3 id="the-vacuum">The Vacuum</h3>
+
+<p>This didn’t happen in a vacuum, though it exploited one. I’ve written elsewhere about how the <a href="https://jamesmaconochie.substack.com/p/the-attention-economy-is-eating-democracy?r=5270g6">attention economy is eating democracy</a>, hollowing out the deliberative capacity that foundational governance requires. That’s the backdrop here. Congress has not failed to govern AI because the problem is too hard. Legislating complex technology is always difficult. But today Congress operates inside an environment that makes sustained deliberation increasingly rare. The Pentagon didn’t exploit a legal loophole last week. It exploited that failure.</p>
+
+<h3 id="the-three-branches-a-case-study">The Three Branches: A Case Study</h3>
+
+<p>If you want to understand how fragile our institutional infrastructure has become, consider the recent debate around the Epstein Files Transparency Act.</p>
+
+<p>Last November, after months of debate, delays, and sustained public pressure, Congress passed legislation with the House voting 427-1 and the Senate approving it unanimously. The President then signed it into law; a clear example of separation of powers, with all three branches functioning as intended. Yet implementation stalled. Files were withheld. Deadlines passed. A law supported by nearly unanimous bipartisan votes was given mere lip service by the very executive branch sworn to enforce it.</p>
+
+<p>This isn’t a partisan story. It’s not even mainly about Epstein. It’s a warning for democracy: when institutional independence weakens, the government continues to function but stops delivering meaningful results. If we can’t reliably implement and enforce a law passed with a 427-1 vote in the House and a unanimous vote in the Senate, why would we think an AI governance law would fare any better?</p>
+
+<h3 id="the-mechanism">The Mechanism</h3>
+
+<p>Executive overreach is as old as the office itself. That alone is not the main point here. The real story is what happens when the usual friction (deliberation, dissent, and institutional pushback) is removed. A company was blacklisted by executive order on a Friday afternoon. The DOJ ignored the 427-1 law. Senators who break ranks face immediate, coordinated campaigns to label them as turncoats before they’ve even finished speaking.</p>
+
+<p>The guardrails didn’t fail due to poor design. They failed because the conditions that allow them to work have been worn down to near ineffectiveness. Social media has not only contributed to this erosion but also made unilateral executive action faster and politically safer than at any time in American history. Executive decisions are announced, defended, and politically normalized before traditional oversight mechanisms can even convene.</p>
+
+<p>This is a structural observation, not a partisan one, but it requires an honest addendum. Executive overreach is not new, and no administration has been innocent of it. What is new is this: we have moved from administrations that tested institutional limits to one that openly contests the legitimacy of those limits altogether. That is a qualitative shift, not merely a difference of degree.</p>
+
+<p>AI governance would land in that environment. The question is whether the institutions required to enforce it will still be standing.</p>
+
+<h3 id="the-question">The Question</h3>
+
+<p>The three branches of government were not designed for AI. They were designed for something more fundamentally human: preventing any single actor from unilaterally rewriting the rules of power, regardless of how urgent their justification or how overwhelming their momentum.</p>
+
+<p>That is exactly where we are.</p>
+
+<p>The Founders understood that good intentions were never enough to prevent the concentration of power. Structures mattered. Constraints mattered. Independence mattered. The separation of powers wasn’t a bureaucratic inconvenience; it was the point.</p>
+
+<p>Nobody in the AI debate is asking the right question. The argument is all about what to regulate, how to regulate it, who gets a seat at the table. But none of that matters if the machinery required to enforce any of it no longer reliably functions. You can write the clearest framework imaginable, and we should, but without institutional capacity to enforce it, you’ve produced more window dressing. We already have plenty of that.</p>
+
+<p>The question isn’t what AI governance should look like. The question is whether we still have the institutional capacity to govern anything at all, and whether the electorate understands that this, not any particular technology, is the crisis that demands their attention.</p>
+
+<p>That answer is still ours to write. But only if we choose to pick up the pen.</p>
+
+<hr />
+
+<p><em>Originally published on <a href="https://jamesmaconochie.substack.com/p/the-last-guardrail">Substack</a>.</em></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+  
+
+  
+    
+
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#substack-sync" class="page__taxonomy-item p-category" rel="tag">substack-sync</a>
+    
+    </span>
+  </p>
+
+
+  
+
+
+        
+
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2026-03-12T00:00:00-04:00">March 12, 2026</time></p>
+
+
+      </footer>
+
+      
+<section class="page__share">
+  <h4 class="page__share-title">Share on</h4>
+
+  <a href="https://x.com/intent/tweet?text=The+Last+Guardrail%20http%3A%2F%2Flocalhost%3A4000%2Fblog%2Fthe-last-guardrail%2F" class="btn btn--x" aria-label="Share on X" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on X">
+    <i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i><span> X</span>
+  </a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fblog%2Fthe-last-guardrail%2F" class="btn btn--facebook" aria-label="Share on Facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook">
+    <i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span>
+  </a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/blog/the-last-guardrail/" class="btn btn--linkedin" aria-label="Share on LinkedIn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
+    <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span>
+  </a>
+
+  <a href="https://bsky.app/intent/compose?text=The+Last+Guardrail%20http%3A%2F%2Flocalhost%3A4000%2Fblog%2Fthe-last-guardrail%2F" class="btn btn--bluesky" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Bluesky">
+    <i class="fab fa-fw fa-bluesky" aria-hidden="true"></i><span> Bluesky</span>
+  </a>
+</section>
+
+
+      
+
+  <nav class="pagination" aria-label="Post pagination">
+    
+      <a href="/blog/after-the-music-stops/" class="pagination--pager" title="After the Music Stops">Previous</a>
+    
+    
+      <a href="/blog/swarm-intelligence/" class="pagination--pager" title="Swarm Intelligence">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    
+
+<div class="page__related">
+  
+  <h2 class="page__related-title">You May Also Enjoy</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item blog-card" itemscope itemtype="https://schema.org/CreativeWork">
+    <a href="/blog/a-viking-a-roman-a-greek-cypriot-and-an-englishman-living-in-boston-walk-into-a-bar-in-lisbon/" rel="permalink" class="blog-card__link">
+      
+      <div class="blog-card__header">
+        <h2 class="blog-card__title" itemprop="headline">A Viking, A Roman, A Greek Cypriot, and an Englishman living in Boston Walk into a Bar in Lisbon
+</h2>
+        <span class="blog-card__date">03/24/2026</span>
+      </div>
+      
+      
+      <div class="blog-card__image">
+        <img src="/assets/images/a-viking-a-roman-a-greek-cypriot-and-an-englishman-living-in-boston-walk-into-a-bar-in-lisbon_hero_substack.png" alt="A Viking, A Roman, A Greek Cypriot, and an Englishman living in Boston Walk into a Bar in Lisbon
+">
+      </div>
+      
+      
+      
+      <p class="blog-card__description">There is a particular kind of friendship that only makes sense to people who have it. It doesn’t require regular contact, shared geography, or even similar lives. It requires a shared past that was formative enough that no amount of intervening time can entirely dissolve it.</p>
+      
+      
+    </a>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item blog-card" itemscope itemtype="https://schema.org/CreativeWork">
+    <a href="/blog/swarm-intelligence/" rel="permalink" class="blog-card__link">
+      
+      <div class="blog-card__header">
+        <h2 class="blog-card__title" itemprop="headline">Swarm Intelligence
+</h2>
+        <span class="blog-card__date">03/17/2026</span>
+      </div>
+      
+      
+      <div class="blog-card__image">
+        <img src="/assets/images/swarm-intelligence_hero_substack.png" alt="Swarm Intelligence
+">
+      </div>
+      
+      
+      
+      <p class="blog-card__description">I played Doom. Almost obsessively. For nearly two years (1995 to 1997), my colleagues and I would wrap up long days on a construction site in Connecticut and disappear into networked deathmatches for a couple of hours or more (please don’t judge). It was, in the best possible way, a complete wast...</p>
+      
+      
+    </a>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item blog-card" itemscope itemtype="https://schema.org/CreativeWork">
+    <a href="/blog/after-the-music-stops/" rel="permalink" class="blog-card__link">
+      
+      <div class="blog-card__header">
+        <h2 class="blog-card__title" itemprop="headline">After the Music Stops
+</h2>
+        <span class="blog-card__date">03/10/2026</span>
+      </div>
+      
+      
+      <div class="blog-card__image">
+        <img src="/assets/images/after-the-music-stops_hero_substack.png" alt="After the Music Stops
+">
+      </div>
+      
+      
+      
+      <p class="blog-card__description">In the first piece in this series, I argued that the technical foundations of the AI scaling thesis are cracking. Turing Award winners and field pioneers are converging on a shared diagnosis: brute-force scaling of large language models won’t yield general intelligence, and something architectura...</p>
+      
+      
+    </a>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item blog-card" itemscope itemtype="https://schema.org/CreativeWork">
+    <a href="/blog/when-the-music-stops/" rel="permalink" class="blog-card__link">
+      
+      <div class="blog-card__header">
+        <h2 class="blog-card__title" itemprop="headline">When the Music Stops
+</h2>
+        <span class="blog-card__date">03/03/2026</span>
+      </div>
+      
+      
+      <div class="blog-card__image">
+        <img src="/assets/images/when-the-music-stops_hero_substack.png" alt="When the Music Stops
+">
+      </div>
+      
+      
+      
+      <p class="blog-card__description">Michael Burry, the investor made famous by *The Big Short* for calling the 2008 housing crash, is shorting Nvidia and Palantir. He might be early. He might be wrong. But the fact that serious money is now betting against the AI boom tells us something worth examining.</p>
+      
+      
+    </a>
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        
+<div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/jamaconochie" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://jamesmaconochie.substack.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-open-text" aria-hidden="true"></i> Substack</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/jammit/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://github.com/jammit1994" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-square-rss" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2026 <a href="http://localhost:4000">James Maconochie</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>

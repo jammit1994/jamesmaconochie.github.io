@@ -1,0 +1,737 @@
+
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.28.0 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js">
+  <head>
+    
+<meta charset="utf-8">
+
+
+<!-- begin _includes/seo.html --><title>Swarm Intelligence - James Maconochie</title>
+<meta name="description" content="I played Doom. Almost obsessively. For nearly two years (1995 to 1997), my colleagues and I would wrap up long days on a construction site in Connecticut and disappear into networked deathmatches for a couple of hours or more (please don’t judge). It was, in the best possible way, a complete wast…">
+
+
+  <meta name="author" content="James Maconochie">
+  
+  <meta property="article:author" content="James Maconochie">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="James Maconochie">
+<meta property="og:title" content="Swarm Intelligence">
+<meta property="og:url" content="http://localhost:4000/blog/swarm-intelligence/">
+
+
+  <meta property="og:description" content="I played Doom. Almost obsessively. For nearly two years (1995 to 1997), my colleagues and I would wrap up long days on a construction site in Connecticut and disappear into networked deathmatches for a couple of hours or more (please don’t judge). It was, in the best possible way, a complete wast…">
+
+
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2026-03-17T00:00:00-04:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/blog/swarm-intelligence/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="James Maconochie Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    
+<nav class="skip-links" aria-label="Skip links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/A&A_logo_108x108.png" alt="James Maconochie"></a>
+        
+        <a class="site-title" href="/">
+          James Maconochie
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >About</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/journey/"
+                
+                
+              >My Journey</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/papers/"
+                
+                
+              >Working Papers</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/blog/"
+                
+                
+              >Blog</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/search/"
+                
+                
+              >Search</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/attributions/"
+                
+                
+              >Attributions</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/#contact"
+                
+                
+              >Contact</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+
+
+<div id="main" role="main">
+  
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/james_maconochie_cliveden_headshot.jpg" alt="James Maconochie" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">James Maconochie</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Technology leader exploring AI architecture and human-AI collaboration</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-location-dot" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Boston, MA</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://twitter.com/jamaconochie" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://jamesmaconochie.substack.com" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-envelope-open-text" aria-hidden="true"></i><span class="label">Substack</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/jammit/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/jammit1994" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:maconochies@comcast.net" rel="me" class="u-email">
+            <meta itemprop="email" content="maconochies@comcast.net" />
+            <i class="fas fa-fw fa-square-envelope" aria-hidden="true"></i><span class="label">Email</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Swarm Intelligence">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="2026-03-17T00:00:00-04:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/blog/swarm-intelligence/" itemprop="url">Swarm Intelligence
+</a>
+          </h1>
+          
+
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          6 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <p><img src="/assets/images/swarm-intelligence_hero_substack.png" alt="Swarm Intelligence" /></p>
+
+<h3 id="the-architecture-of-emergence">The Architecture of Emergence</h3>
+
+<hr />
+
+<p>I played Doom. Almost obsessively. For nearly two years (1995 to 1997), my colleagues and I would wrap up long days on a construction site in Connecticut and disappear into networked deathmatches for a couple of hours or more (please don’t judge). It was, in the best possible way, a complete waste of time, but we had a lot of fun, and you could hear the howls down the hallway.</p>
+
+<p>So when I read last week that 200,000 biological neurons, brain cells grown in a dish, had learned to play Doom, something clicked that went beyond the science. This wasn’t a benchmark. This wasn’t a leaderboard result. This was biology, doing something we built for fun, on hardware that didn’t exist when I was playing it.</p>
+
+<p>Keith Dear, writing at Cassi AI, captured the moment well: the Cortical Labs demo has the same feel as DeepMind going from Atari to Go, something dismissed as a parlour trick until it suddenly isn’t. What looked like a curiosity in 2020 is an engineering platform in 2026.</p>
+
+<p>The question is what we build with it. And more importantly, how.</p>
+
+<h3 id="the-portfolio-case">The Portfolio Case</h3>
+
+<p>Keith’s broader argument deserves serious attention. The UK, and any nation that can’t outcompute the United States or China on raw infrastructure, has no viable path that runs straight through LLM scaling. The compute gap is too large, the energy costs too high, and the infrastructure investment too slow. Doing things differently isn’t contrarian. It’s the only rational strategy.</p>
+
+<p>The portfolio case is right: organoid computing, neuromorphic systems, whole-brain emulation, bio</p>
+
+<p>compute. These aren’t science fiction anymore. Cortical Labs went from Pong in 2021 to Doom in 2025, the same arc DeepMind traced from Atari to AlphaGo, dismissed at every step until it wasn’t. The frontier is moving faster than policy, and the countries that treat alternative architectures as research curiosities rather than engineering priorities will regret it.</p>
+
+<p>But a portfolio of substrates isn’t the same as a portfolio of architectural principles. And that distinction matters more than almost anything else in this conversation.</p>
+
+<h3 id="swarms-are-powerful-they-are-not-wise">Swarms are Powerful. They Are Not Wise.</h3>
+
+<p>Swarm intelligence is one of nature’s most remarkable achievements. Ant colonies build sophisticated structures, wage wars, farm fungi, and solve optimization problems that no individual ant could comprehend. Fish schools evade predators with coordination that looks choreographed. Termites construct climate-controlled megastructures without a single architect on the payroll.</p>
+
+<p>No individual agent understands any of it. Each follows simple local rules. Complexity, stunning, functional, apparently purposeful complexity, emerges from interaction at scale.</p>
+
+<p>This is genuinely fascinating. But it’s ant-colony fascinating, not civilization fascinating. And that distinction is everything.</p>
+
+<p>Robert Sapolsky, in Determined, uses swarm behavior to make a related point: what looks like intention is often just emergence. The appearance of design doesn’t require a designer. The appearance of intelligence doesn’t require judgment.</p>
+
+<p>This is the frame I keep returning to when I watch the current excitement around multi-agent AI systems, networks of LLM agents interacting at scale, producing emergent behaviors their designers didn’t anticipate. Remarkable outputs. Apparent coordination. And in some cases, when left ungoverned, reputation systems are gamed, accounts are locked, and wallets are emptied. Not because the agents were malicious. Because emergence without executive function has no mechanism to catch when it’s optimizing for the wrong thing.</p>
+
+<p>Swarms are powerful. They are not wise.</p>
+
+<h3 id="more-biological-doesnt-mean-more-governed">More Biological Doesn’t Mean More Governed</h3>
+
+<p>Here is where the biocompute excitement risks repeating a familiar mistake.</p>
+
+<p>The dominant assumption of the LLM scaling era was seductive in its simplicity: more is better. More parameters, more data, more compute. Intelligence as a function of scale. We are now watching that assumption strain under its own weight, the critics Keith himself cites, the architectural limits that more silicon alone cannot solve.</p>
+
+<p>But swap silicon for organoids and the assumption can quietly reassert itself. More biological substrate. More emergent complexity. More neurons in the dish. If the design philosophy doesn’t change, the substrate swap changes less than we hope.</p>
+
+<p>The morphogenetics and cryptobiosis researchers are onto something real: let structure emerge from local rules, let dormancy preserve identity under stress. These are genuine biological insights with genuine engineering implications. But emergence still needs governance. A system that grows like biology, without the executive architecture that biology also evolved, isn’t more intelligent. It’s more complex. Those are not the same thing.</p>
+
+<p>The history of AI is littered with approaches that produced impressive emergent behavior and mistook it for progress toward intelligence. Swarms, cellular automata, genetic algorithms, each genuinely fascinating, each genuinely limited by the same ceiling: no judgment, no executive function, no capacity to evaluate the system’s own outputs against anything beyond the immediate reward signal.</p>
+
+<p>Being more biological doesn’t automatically mean being more governed. And ungoverned complexity, at scale, is not a step forward. It’s a faster way to get to the same dead end.</p>
+
+<h3 id="the-swarm-plus-the-architecture">The Swarm Plus the Architecture</h3>
+
+<p>This is where Augmented Human Intelligence parts ways with both the scaling and swarm paradigms.</p>
+
+<p>AHI is not an argument against emergence. It’s an argument about what governs it. The brain itself is a swarm of sorts, billions of neurons, no central controller, staggering complexity arising from local interactions. But evolution didn’t stop there. It layered executive function on top: the prefrontal cortex, the capacity for deliberation, the ability to override immediate impulse in service of longer-horizon judgment. The swarm plus the architect.</p>
+
+<p>That is the design principle worth carrying forward. Not ‘can we build systems that grow like biology?’ but ‘can we build systems where human judgment remains the executive layer as they grow?’</p>
+
+<p>The difference is not subtle. A system in which humans observe emergent behavior and occasionally intervene is not the same as one designed from the ground up to keep human attention in the governing role. The first relegates us to auditors of complexity we didn’t choose and can’t fully understand. The second treats human judgment as the irreplaceable ingredient it actually is.</p>
+
+<p>Keith is right that Britain, and every nation serious about this, needs a portfolio of architectural bets. I’d add one more dimension to that portfolio: not just which substrates, but which governance architectures. Biocompute without that question answered is just a more biological version of the same problem.</p>
+
+<p>The ant colony is extraordinary. But we didn’t build civilization by becoming better ants.</p>
+
+<h2 id="awe-is-not-a-design-principle">Awe Is Not a Design Principle</h2>
+
+<p>The Cortical Labs demo is genuinely awe-inspiring. Brains in a dish, playing Doom, accessible via the web. The whole-brain emulation work is, depending on your disposition, either thrilling or terrifying, probably both. The frontier is moving faster than most people’s mental models of what’s possible, and Keith is right that the countries and companies treating these developments as distant curiosities will regret it.</p>
+
+<p>But awe is not a design principle.</p>
+
+<p>The question worth sitting with isn’t whether AI can grow like biology. Biology has been solving hard problems for four billion years, and we should absolutely be paying attention. The question is whether we build systems that govern their own growth or assume that complexity, at sufficient scale, eventually produces wisdom.</p>
+
+<p>History, biological and human, suggests it doesn’t. Evolution produced the prefrontal cortex because ungoverned emergence wasn’t enough. Civilization developed institutions because collective intelligence without executive architecture produces cascades rather than decisions. The swarm is powerful. The swarm plus the architect is transformative.</p>
+
+<p>We are at a genuinely remarkable moment. Brains in dishes. Fly minds running in simulation. Intelligence emerging from substrates, we are only beginning to understand. The portfolio of bets is the right frame.</p>
+
+<p>Just make sure governance is one of them.</p>
+
+<hr />
+
+<p><em>Originally published on <a href="https://jamesmaconochie.substack.com/p/swarm-intelligence">Substack</a>.</em></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+  
+
+  
+    
+
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#substack-sync" class="page__taxonomy-item p-category" rel="tag">substack-sync</a>
+    
+    </span>
+  </p>
+
+
+  
+
+
+        
+
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2026-03-17T00:00:00-04:00">March 17, 2026</time></p>
+
+
+      </footer>
+
+      
+<section class="page__share">
+  <h4 class="page__share-title">Share on</h4>
+
+  <a href="https://x.com/intent/tweet?text=Swarm+Intelligence%20http%3A%2F%2Flocalhost%3A4000%2Fblog%2Fswarm-intelligence%2F" class="btn btn--x" aria-label="Share on X" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on X">
+    <i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i><span> X</span>
+  </a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fblog%2Fswarm-intelligence%2F" class="btn btn--facebook" aria-label="Share on Facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook">
+    <i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span>
+  </a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/blog/swarm-intelligence/" class="btn btn--linkedin" aria-label="Share on LinkedIn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
+    <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span>
+  </a>
+
+  <a href="https://bsky.app/intent/compose?text=Swarm+Intelligence%20http%3A%2F%2Flocalhost%3A4000%2Fblog%2Fswarm-intelligence%2F" class="btn btn--bluesky" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Bluesky">
+    <i class="fab fa-fw fa-bluesky" aria-hidden="true"></i><span> Bluesky</span>
+  </a>
+</section>
+
+
+      
+
+  <nav class="pagination" aria-label="Post pagination">
+    
+      <a href="/blog/the-last-guardrail/" class="pagination--pager" title="The Last Guardrail">Previous</a>
+    
+    
+      <a href="/blog/a-viking-a-roman-a-greek-cypriot-and-an-englishman-living-in-boston-walk-into-a-bar-in-lisbon/" class="pagination--pager" title="A Viking, A Roman, A Greek Cypriot, and an Englishman living in Boston Walk into a Bar in Lisbon">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    
+
+<div class="page__related">
+  
+  <h2 class="page__related-title">You May Also Enjoy</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item blog-card" itemscope itemtype="https://schema.org/CreativeWork">
+    <a href="/blog/a-viking-a-roman-a-greek-cypriot-and-an-englishman-living-in-boston-walk-into-a-bar-in-lisbon/" rel="permalink" class="blog-card__link">
+      
+      <div class="blog-card__header">
+        <h2 class="blog-card__title" itemprop="headline">A Viking, A Roman, A Greek Cypriot, and an Englishman living in Boston Walk into a Bar in Lisbon
+</h2>
+        <span class="blog-card__date">03/24/2026</span>
+      </div>
+      
+      
+      <div class="blog-card__image">
+        <img src="/assets/images/a-viking-a-roman-a-greek-cypriot-and-an-englishman-living-in-boston-walk-into-a-bar-in-lisbon_hero_substack.png" alt="A Viking, A Roman, A Greek Cypriot, and an Englishman living in Boston Walk into a Bar in Lisbon
+">
+      </div>
+      
+      
+      
+      <p class="blog-card__description">There is a particular kind of friendship that only makes sense to people who have it. It doesn’t require regular contact, shared geography, or even similar lives. It requires a shared past that was formative enough that no amount of intervening time can entirely dissolve it.</p>
+      
+      
+    </a>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item blog-card" itemscope itemtype="https://schema.org/CreativeWork">
+    <a href="/blog/the-last-guardrail/" rel="permalink" class="blog-card__link">
+      
+      <div class="blog-card__header">
+        <h2 class="blog-card__title" itemprop="headline">The Last Guardrail
+</h2>
+        <span class="blog-card__date">03/12/2026</span>
+      </div>
+      
+      
+      <div class="blog-card__image">
+        <img src="/assets/images/the-last-guardrail_hero_substack.png" alt="The Last Guardrail
+">
+      </div>
+      
+      
+      
+      <p class="blog-card__description">Two weeks ago, on Friday, February 27th, reports emerged of a confrontation between the U.S. Department of Defense and AI company Anthropic over the use of its Claude model in government systems. Within hours, the dispute escalated into an extraordinary step: federal agencies were directed to cea...</p>
+      
+      
+    </a>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item blog-card" itemscope itemtype="https://schema.org/CreativeWork">
+    <a href="/blog/after-the-music-stops/" rel="permalink" class="blog-card__link">
+      
+      <div class="blog-card__header">
+        <h2 class="blog-card__title" itemprop="headline">After the Music Stops
+</h2>
+        <span class="blog-card__date">03/10/2026</span>
+      </div>
+      
+      
+      <div class="blog-card__image">
+        <img src="/assets/images/after-the-music-stops_hero_substack.png" alt="After the Music Stops
+">
+      </div>
+      
+      
+      
+      <p class="blog-card__description">In the first piece in this series, I argued that the technical foundations of the AI scaling thesis are cracking. Turing Award winners and field pioneers are converging on a shared diagnosis: brute-force scaling of large language models won’t yield general intelligence, and something architectura...</p>
+      
+      
+    </a>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item blog-card" itemscope itemtype="https://schema.org/CreativeWork">
+    <a href="/blog/when-the-music-stops/" rel="permalink" class="blog-card__link">
+      
+      <div class="blog-card__header">
+        <h2 class="blog-card__title" itemprop="headline">When the Music Stops
+</h2>
+        <span class="blog-card__date">03/03/2026</span>
+      </div>
+      
+      
+      <div class="blog-card__image">
+        <img src="/assets/images/when-the-music-stops_hero_substack.png" alt="When the Music Stops
+">
+      </div>
+      
+      
+      
+      <p class="blog-card__description">Michael Burry, the investor made famous by *The Big Short* for calling the 2008 housing crash, is shorting Nvidia and Palantir. He might be early. He might be wrong. But the fact that serious money is now betting against the AI boom tells us something worth examining.</p>
+      
+      
+    </a>
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        
+<div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/jamaconochie" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://jamesmaconochie.substack.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-open-text" aria-hidden="true"></i> Substack</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/jammit/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://github.com/jammit1994" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-square-rss" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2026 <a href="http://localhost:4000">James Maconochie</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>

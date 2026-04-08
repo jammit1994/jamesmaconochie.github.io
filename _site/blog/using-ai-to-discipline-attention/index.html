@@ -1,0 +1,769 @@
+
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.28.0 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js">
+  <head>
+    
+<meta charset="utf-8">
+
+
+<!-- begin _includes/seo.html --><title>Using AI to Discipline Attention - James Maconochie</title>
+<meta name="description" content="Last week, I admitted I’m part of the problem. Despite advocating restraint, I’ve felt the pull to post more, feed the algorithm, and add to the noise. We’re all drowning in a flood we helped create.">
+
+
+  <meta name="author" content="James Maconochie">
+  
+  <meta property="article:author" content="James Maconochie">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="James Maconochie">
+<meta property="og:title" content="Using AI to Discipline Attention">
+<meta property="og:url" content="http://localhost:4000/blog/using-ai-to-discipline-attention/">
+
+
+  <meta property="og:description" content="Last week, I admitted I’m part of the problem. Despite advocating restraint, I’ve felt the pull to post more, feed the algorithm, and add to the noise. We’re all drowning in a flood we helped create.">
+
+
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2026-02-17T00:00:00-05:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/blog/using-ai-to-discipline-attention/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="James Maconochie Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    
+<nav class="skip-links" aria-label="Skip links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/A&A_logo_108x108.png" alt="James Maconochie"></a>
+        
+        <a class="site-title" href="/">
+          James Maconochie
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >About</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/journey/"
+                
+                
+              >My Journey</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/papers/"
+                
+                
+              >Working Papers</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/blog/"
+                
+                
+              >Blog</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/search/"
+                
+                
+              >Search</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/attributions/"
+                
+                
+              >Attributions</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/#contact"
+                
+                
+              >Contact</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+
+
+<div id="main" role="main">
+  
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/james_maconochie_cliveden_headshot.jpg" alt="James Maconochie" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">James Maconochie</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Technology leader exploring AI architecture and human-AI collaboration</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-location-dot" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Boston, MA</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://twitter.com/jamaconochie" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://jamesmaconochie.substack.com" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-envelope-open-text" aria-hidden="true"></i><span class="label">Substack</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/jammit/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/jammit1994" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:maconochies@comcast.net" rel="me" class="u-email">
+            <meta itemprop="email" content="maconochies@comcast.net" />
+            <i class="fas fa-fw fa-square-envelope" aria-hidden="true"></i><span class="label">Email</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Using AI to Discipline Attention">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="2026-02-17T00:00:00-05:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/blog/using-ai-to-discipline-attention/" itemprop="url">Using AI to Discipline Attention
+</a>
+          </h1>
+          
+
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          7 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <p><img src="/assets/images/using-ai-to-discipline-attention_hero_substack.png" alt="Using AI to Discipline Attention" /></p>
+
+<h3 id="fighting-fire-with-fire-carefully">Fighting Fire with Fire, Carefully</h3>
+
+<hr />
+
+<p>Last week, I admitted I’m part of the problem. Despite advocating restraint, I’ve felt the pull to post more, feed the algorithm, and add to the noise. We’re all drowning in a flood we helped create.</p>
+
+<p>I ended with a question: Could the same tools flooding us with content also help us navigate it?</p>
+
+<p>This post is my answer.</p>
+
+<h3 id="the-needle-and-the-haystack">The Needle and the Haystack</h3>
+
+<p>We live in a world of infinite language.</p>
+
+<p>No human can process it all, nor should they. Most of it is, at best, meaningless to any individual. At worst, it’s noise, pollution, or manipulation clogging the channels where meaning once flowed.</p>
+
+<p>I talk about disciplining attention by being deliberate. But it’s hard. Every day, the same question: In this endless sea of language, where should I focus? How do I find the needles in the haystack?</p>
+
+<p>For months, I scrolled and skimmed, hoping algorithms would surface something worthwhile. Occasionally, they did. Mostly, they didn’t.</p>
+
+<p>Then I realized: I was asking the wrong question.</p>
+
+<h3 id="what-llms-are-actually-good-at">What LLMs Are Actually Good At</h3>
+
+<p>I’ve argued that LLMs won’t achieve AGI. They don’t reason like humans. They don’t truly understand.</p>
+
+<p>But here’s what they are good at: processing language. Pattern matching. Summarizing. Filtering. Categorizing.</p>
+
+<p>These aren’t the glamorous capabilities that dominate AI headlines. No one writes breathless articles about “AI that sorts your reading list.” But for the problem I faced (too much language, too little attention), these are exactly the tools I needed.</p>
+
+<p>This is the AHI thesis in practice: use AI to extend human capabilities, not replace human judgment. Let the machine do what machines do well (process volume) so the human can do what humans do well (decide what matters).</p>
+
+<h3 id="building-a-filter-not-a-firehose">Building a Filter, Not a Firehose</h3>
+
+<p>Here’s what I did.</p>
+
+<p>I wanted to engage with writers whose work intersects with mine: AI, attention, cognition, architecture. But finding them manually, keeping up with their output, and identifying meaningful conversations: that was a full-time job.</p>
+
+<p>So I built a simple system. Nothing fancy, but deliberate.</p>
+
+<p>First, I curated a list of authors. Not everyone writing about AI, only those whose thinking genuinely aligns with mine, whose audiences might value my perspective. This required human judgment. No algorithm could tell me who I respect.</p>
+
+<p>Second, I built a corpus of my own work. My Substack posts, whitepapers, and core ideas. This corpus gave the system a reference point: What does my thinking sound like? What themes do I care about?</p>
+
+<p>Third, I created a scoring mechanism. When a new post from someone on my list appears, the system evaluates its relevance to my corpus. How much overlap? How timely? The output isn’t a binary “read or skip.” It’s a score from 0 to 100, with a ‘worth-a-look’ threshold currently set at 90 or higher: any article that reaches or exceeds it is identified as a potential engagement opportunity and therefore worthy of review and potentially posting a comment.</p>
+
+<p>The system doesn’t tell me what to think. It doesn’t write my responses (although it can certainly offer potential starting points - more on this later). It just filters the infinite down to the manageable so that I can do the actual intellectual work.</p>
+
+<p>I’m using the very thing that caused the flood to build a personal lifeboat.</p>
+
+<p>And that’s precisely the point.</p>
+
+<h3 id="how-i-built-my-filter-a-practical-pattern">How I Built My Filter (A Practical Pattern)</h3>
+
+<p>If you’re curious about the mechanics, not as a prescription, but as a pattern, here are the steps I followed:</p>
+
+<p><strong>Define your “needle.”</strong> I started by clarifying what I was actually looking for: writers exploring the intersection of AI, cognition, and meaning. Not “everything about AI,” but my slice of it. Your needle will be different.</p>
+
+<p><strong>Gather your own voice.</strong> I fed my system a corpus of my own writing: Substack posts, white papers, notes, and key ideas. This corpus provided a reference point for relevance: “Find things that resonate with this.” Your corpus is your intellectual fingerprint.</p>
+
+<p><strong>Curate, don’t collect.</strong> I handpicked a starter list of thinkers whose work I genuinely respect. No algorithms. The starter list is a human gate, built once, then scaled. Your list should feel like a dinner party invitation list, not a block party.</p>
+
+<p><strong>Score for signal, not popularity.</strong> My system ranks new content by thematic overlap, not engagement metrics. It asks: “How much does this align with what you care about?” Your scoring should reflect your priorities, not the platform’s.</p>
+
+<p><strong>Build an interface you’ll actually use.</strong> Raw output from a script isn’t enough. I built a simple web interface to review, sort, and manage the authors list, the scoring results, and record actual engagements (comments that I post). If you can’t easily see and interact with the insights, you won’t use the system. Make it visible. Make it yours.</p>
+
+<p><strong>Preserve the human moment.</strong> The output isn’t a command. It’s a filtered feed. I still choose what to read, how to engage, and whether to respond. Your judgment stays in the loop.</p>
+
+<p><strong>Iterate relentlessly.</strong> My first pass wasn’t right. I’ve refined my author list, adjusted my scoring weights, and improved the user interface as I learned what I actually needed. The system that I have built isn’t a finished product. It’s a living system that evolves as my thinking does. Your filter should grow with you.</p>
+
+<p>The tools are simple: RSS feeds, a language model API, a basic script, and a lightweight web app. The philosophy is what matters: AI as a lens, not a source.</p>
+
+<h3 id="the-discipline-still-required">The Discipline Still Required</h3>
+
+<p>Here’s what AI can’t do for me:</p>
+
+<p>It can’t decide what I actually care about. It can’t distinguish deep insight from clickbait in intellectual clothing. It can’t write a thoughtful response that truly reflects my voice, my personal experience, and my ever-evolving point of view. It can’t build real relationships with other thinkers.</p>
+
+<p>All of that remains mine.</p>
+
+<p>What AI can do is reduce the search cost. It helps me spend less time looking and more time thinking. It’s a filter, not a replacement for judgment.</p>
+
+<p>It can suggest potential starting points for me to consider, or more often than not, not consider. My process is:</p>
+
+<ol>
+  <li>Read the articles that exceed my scoring threshold (90/100)</li>
+  <li>Make my own notes about the thoughts that the article evokes in me, and parallels to the work that I have produced previously</li>
+  <li>View any system-generated starting points, and consider how, if at all, they might echo my personal gut reactions</li>
+  <li>Work to develop a final comment that considers all inputs, while ensuring the article is my work product and that I reference my own point of view and personal experience (just as I am doing right here).</li>
+  <li>My experience has been that more than 85% of the time, my own notes are the only input to the final comment. This is critical for me, as my corpus update process incorporates all of my comments as well as new articles and whitepapers written since the last update. I have also observed occasional hallucinations in the ‘target passage’ identification part of the system generated suggested starting points.</li>
+</ol>
+
+<p>This process is constraint-awareness applied to tools: knowing what to delegate and what to keep. Using AI to extend attention, not abdicate it.</p>
+
+<h3 id="an-invitation-to-experiment">An Invitation to Experiment</h3>
+
+<p>I haven’t solved the attention crisis. I’ve built one small tool for one specific problem. It helps me. It might not help you.</p>
+
+<p>But the principle generalizes.</p>
+
+<p>If you’re drowning in content, ask yourself: What’s my needle? What’s my haystack? What would it look like to use AI as a filter rather than a generator? Where could pattern-matching reclaim time for deeper thinking?</p>
+
+<p>The flood won’t stop. The language will keep coming. But we’re not helpless. The same technologies that are accelerating the crisis might, if used carefully, help us navigate it.</p>
+
+<p>Not by processing more, but by attending better.</p>
+
+<p><em>This is the fifth essay in my series on language, attention, and the architecture of shared meaning.</em> <em>Previous posts: <a href="https://jamesmaconochie.substack.com/p/the-architecture-of-language-part?r=5270g6">[Part I: The Constraints We Lost]</a> • <a href="https://jamesmaconochie.substack.com/p/the-architecture-of-language-part-241?r=5270g6">[Part II: Serviceability Failure]</a> • <a href="https://jamesmaconochie.substack.com/p/the-architecture-of-language-part-fd6?r=5270g6">[Part III: Wisdom in an Infinite-Language World]</a> • <a href="https://jamesmaconochie.substack.com/p/we-are-a-part-of-the-problem?r=5270g6">[Part IV: We Are the Problem]</a></em></p>
+
+<p><em>Next week in ‘More Instruments, Same Song’ I will summarize the growing number of respected AI experts that question the ‘Bigger is Better’ mantra for models, compare my critiques to these experts’, and share our observations about what might drive the next breakthroughs in the field of AI.</em></p>
+
+<hr />
+
+<p><em>Originally published on <a href="https://jamesmaconochie.substack.com/p/using-ai-to-discipline-attention">Substack</a>.</em></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+  
+
+  
+    
+
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#substack-sync" class="page__taxonomy-item p-category" rel="tag">substack-sync</a>
+    
+    </span>
+  </p>
+
+
+  
+
+
+        
+
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2026-02-17T00:00:00-05:00">February 17, 2026</time></p>
+
+
+      </footer>
+
+      
+<section class="page__share">
+  <h4 class="page__share-title">Share on</h4>
+
+  <a href="https://x.com/intent/tweet?text=Using+AI+to+Discipline+Attention%20http%3A%2F%2Flocalhost%3A4000%2Fblog%2Fusing-ai-to-discipline-attention%2F" class="btn btn--x" aria-label="Share on X" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on X">
+    <i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i><span> X</span>
+  </a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fblog%2Fusing-ai-to-discipline-attention%2F" class="btn btn--facebook" aria-label="Share on Facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook">
+    <i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span>
+  </a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/blog/using-ai-to-discipline-attention/" class="btn btn--linkedin" aria-label="Share on LinkedIn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
+    <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span>
+  </a>
+
+  <a href="https://bsky.app/intent/compose?text=Using+AI+to+Discipline+Attention%20http%3A%2F%2Flocalhost%3A4000%2Fblog%2Fusing-ai-to-discipline-attention%2F" class="btn btn--bluesky" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Bluesky">
+    <i class="fab fa-fw fa-bluesky" aria-hidden="true"></i><span> Bluesky</span>
+  </a>
+</section>
+
+
+      
+
+  <nav class="pagination" aria-label="Post pagination">
+    
+      <a href="/blog/we-are-a-part-of-the-problem/" class="pagination--pager" title="We Are a Part of the Problem">Previous</a>
+    
+    
+      <a href="/blog/more-instruments-same-tune/" class="pagination--pager" title="More Instruments, Same Tune">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    
+
+<div class="page__related">
+  
+  <h2 class="page__related-title">You May Also Enjoy</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item blog-card" itemscope itemtype="https://schema.org/CreativeWork">
+    <a href="/blog/a-viking-a-roman-a-greek-cypriot-and-an-englishman-living-in-boston-walk-into-a-bar-in-lisbon/" rel="permalink" class="blog-card__link">
+      
+      <div class="blog-card__header">
+        <h2 class="blog-card__title" itemprop="headline">A Viking, A Roman, A Greek Cypriot, and an Englishman living in Boston Walk into a Bar in Lisbon
+</h2>
+        <span class="blog-card__date">03/24/2026</span>
+      </div>
+      
+      
+      <div class="blog-card__image">
+        <img src="/assets/images/a-viking-a-roman-a-greek-cypriot-and-an-englishman-living-in-boston-walk-into-a-bar-in-lisbon_hero_substack.png" alt="A Viking, A Roman, A Greek Cypriot, and an Englishman living in Boston Walk into a Bar in Lisbon
+">
+      </div>
+      
+      
+      
+      <p class="blog-card__description">There is a particular kind of friendship that only makes sense to people who have it. It doesn’t require regular contact, shared geography, or even similar lives. It requires a shared past that was formative enough that no amount of intervening time can entirely dissolve it.</p>
+      
+      
+    </a>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item blog-card" itemscope itemtype="https://schema.org/CreativeWork">
+    <a href="/blog/swarm-intelligence/" rel="permalink" class="blog-card__link">
+      
+      <div class="blog-card__header">
+        <h2 class="blog-card__title" itemprop="headline">Swarm Intelligence
+</h2>
+        <span class="blog-card__date">03/17/2026</span>
+      </div>
+      
+      
+      <div class="blog-card__image">
+        <img src="/assets/images/swarm-intelligence_hero_substack.png" alt="Swarm Intelligence
+">
+      </div>
+      
+      
+      
+      <p class="blog-card__description">I played Doom. Almost obsessively. For nearly two years (1995 to 1997), my colleagues and I would wrap up long days on a construction site in Connecticut and disappear into networked deathmatches for a couple of hours or more (please don’t judge). It was, in the best possible way, a complete wast...</p>
+      
+      
+    </a>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item blog-card" itemscope itemtype="https://schema.org/CreativeWork">
+    <a href="/blog/the-last-guardrail/" rel="permalink" class="blog-card__link">
+      
+      <div class="blog-card__header">
+        <h2 class="blog-card__title" itemprop="headline">The Last Guardrail
+</h2>
+        <span class="blog-card__date">03/12/2026</span>
+      </div>
+      
+      
+      <div class="blog-card__image">
+        <img src="/assets/images/the-last-guardrail_hero_substack.png" alt="The Last Guardrail
+">
+      </div>
+      
+      
+      
+      <p class="blog-card__description">Two weeks ago, on Friday, February 27th, reports emerged of a confrontation between the U.S. Department of Defense and AI company Anthropic over the use of its Claude model in government systems. Within hours, the dispute escalated into an extraordinary step: federal agencies were directed to cea...</p>
+      
+      
+    </a>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item blog-card" itemscope itemtype="https://schema.org/CreativeWork">
+    <a href="/blog/after-the-music-stops/" rel="permalink" class="blog-card__link">
+      
+      <div class="blog-card__header">
+        <h2 class="blog-card__title" itemprop="headline">After the Music Stops
+</h2>
+        <span class="blog-card__date">03/10/2026</span>
+      </div>
+      
+      
+      <div class="blog-card__image">
+        <img src="/assets/images/after-the-music-stops_hero_substack.png" alt="After the Music Stops
+">
+      </div>
+      
+      
+      
+      <p class="blog-card__description">In the first piece in this series, I argued that the technical foundations of the AI scaling thesis are cracking. Turing Award winners and field pioneers are converging on a shared diagnosis: brute-force scaling of large language models won’t yield general intelligence, and something architectura...</p>
+      
+      
+    </a>
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        
+<div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/jamaconochie" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://jamesmaconochie.substack.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-open-text" aria-hidden="true"></i> Substack</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/jammit/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://github.com/jammit1994" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-square-rss" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2026 <a href="http://localhost:4000">James Maconochie</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>
