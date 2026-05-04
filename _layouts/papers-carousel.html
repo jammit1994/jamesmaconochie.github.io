@@ -142,6 +142,20 @@ layout: splash
         <a href="/assets/papers/the-wisdom-gap.pdf" class="slide-link" target="_blank" rel="noopener noreferrer">Read the Paper →</a>
       </div>
     </div>
+
+    <!-- Slide 10: AI Governance -->
+    <div class="carousel-slide" data-slide="10">
+      <div class="slide-background"
+           style="background-image: url('/assets/images/governance_hero_1500x500.png')"
+           alt="Conceptual representation of AI governance frameworks and the architecture of practice">
+      </div>
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <h2 class="slide-title">AI Governance and the Architecture of Practice</h2>
+        <p class="slide-text">Compliance can be produced by reflex. Wisdom cannot. This paper specifies the four design requirements any AI governance framework must meet to keep human judgment in authority over the machine.</p>
+        <a href="/assets/papers/ai-governance-architecture-of-practice.pdf" class="slide-link" target="_blank" rel="noopener noreferrer">Read the Paper →</a>
+      </div>
+    </div>
   </div>
 
     <!-- Navigation Dots -->
@@ -156,6 +170,7 @@ layout: splash
     <button class="dot" data-slide="7" aria-label="Slide 8: MOL"></button>
     <button class="dot" data-slide="8" aria-label="Slide 9: AHI White Paper"></button>
     <button class="dot" data-slide="9" aria-label="Slide 10: The Wisdom Gap"></button>
+    <button class="dot" data-slide="10" aria-label="Slide 11: AI Governance"></button>
   </div>
 </div>
 
@@ -358,6 +373,26 @@ layout: splash
       <a href="/about/#contact" class="btn btn--secondary">Discuss Collaboration</a>
     </div>
   </div>
+
+  <!-- Slide 10: AI Governance -->
+  <div class="content-section" data-content="10" style="text-align: left !important;">
+    <h2 style="text-align: left !important;">AI Governance and the Architecture of Practice</h2>
+    <p style="text-align: left !important;">AI is being deployed into judgment-laden institutional roles (clinical, financial, legal, regulatory) faster than governance frameworks for those roles are adapting. This paper argues that the frameworks being built are designed against the wrong failure mode, inspecting artifact quality when the variable that matters is the cognitive architecture beneath.</p>
+    <p style="text-align: left !important;"><strong>Core Argument:</strong> Drawing on Bainbridge's ironies of automation, Kahneman's dual-process framework, and the structural-dissent literature, this paper argues that whether AI-mediated judgment is wise depends not on whether AI is used but how: as scaffolding for System 2 deliberation, or as amplification for System 1 reflex. This variable is invisible at the artifact layer. Two practitioners producing identical compliant outputs can be running opposite cognitive architectures, and cognitive debt accumulates silently beneath the inspection regime that current frameworks rely on.</p>
+    <p style="text-align: left !important;"><strong>How This Fits:</strong> This paper is the third in the constructive arc following the AHI and Wisdom Gap papers. Where AHI made the case for the goal and Wisdom Gap explained why AI is structurally capped below it, this paper specifies what governance frameworks must do given those conditions. It develops four design requirements (cultivate, require, preserve, surface) and the interlocking liability architecture that together form a single integrated specification rather than a list of independent recommendations.</p>
+
+    <details class="abstract-details" style="margin: 1.5rem 0; text-align: left !important;">
+      <summary style="cursor: pointer; color: #2c5f4f; font-weight: 600;">📄 Read Full Abstract</summary>
+      <div class="abstract-content" style="margin-top: 1rem; padding: 1rem; background: #f8f9fa; border-radius: 4px; text-align: left !important;">
+        <p style="text-align: left !important;"><strong>Abstract:</strong> AI is being deployed into judgment-laden institutional roles faster than governance frameworks for those roles are adapting. This paper argues that the frameworks being built are designed against the wrong failure mode, inspecting artifact quality when the variable that matters is the cognitive architecture beneath. Drawing on Bainbridge's ironies of automation, Kahneman's dual-process framework, and the structural-dissent literature, it demonstrates that whether AI-mediated judgment is wise depends not on whether AI is used but how: as scaffolding for System 2 deliberation, or as amplification for System 1 reflex. Two practitioners producing identical compliant outputs can be running opposite cognitive architectures, and cognitive debt accumulates silently beneath the inspection regime that current frameworks rely on. The paper specifies four design requirements any governance framework must meet to keep human judgment in authority over the machine: cultivate the cognitive conditions under which wise judgment forms, require structured deliberation at defined decision points, preserve the developmental pipeline through which practitioners acquire judgment, and surface the cognitive architecture beneath compliant artifacts. These four requirements, together with the interlocking liability architecture developed in the final section, form a single integrated specification rather than a list of independent recommendations.</p>
+      </div>
+    </details>
+
+    <div class="content-actions" style="justify-content: flex-start !important;">
+      <a href="/assets/papers/ai-governance-architecture-of-practice.pdf" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Download Full Paper</a>
+      <a href="/about/#contact" class="btn btn--secondary">Discuss Collaboration</a>
+    </div>
+  </div>
 </div>
 
 <!-- Main Content -->
@@ -541,6 +576,11 @@ layout: splash
 
 /* Lighten overlay on Wisdom Gap slide */
 .carousel-slide[data-slide="9"] .slide-overlay {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.15), rgba(0,0,0,0.45)) !important;
+}
+
+/* Lighten overlay on Governance slide */
+.carousel-slide[data-slide="10"] .slide-overlay {
   background: linear-gradient(to bottom, rgba(0,0,0,0.15), rgba(0,0,0,0.45)) !important;
 }
 
