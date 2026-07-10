@@ -465,10 +465,22 @@ jobs:
               new_posts = []
               skipped_recent = []
               skipped_dup = []
+              skipped_podcast = []
 
               for item in items:
                   title = item.get("title", "Untitled")
                   link = item.get("link", "")
+
+                  # Skip podcast/audio items (whitepaper voiceovers). These live
+                  # in the Substack "Whitepapers - The Working Source Documents"
+                  # section and are pushed to Apple Podcasts; the written
+                  # whitepapers under /papers/ are canonical on the site.
+                  enclosure = item.get("enclosure", {})
+                  enc_type = enclosure.get("type", "") if isinstance(enclosure, dict) else ""
+                  if enc_type.startswith("audio/"):
+                      print(f"SKIP '{title}': podcast/audio item (whitepaper voiceover)")
+                      skipped_podcast.append(title)
+                      continue
 
                   # Parse publish date (rss2json format: "YYYY-MM-DD HH:MM:SS")
                   pub_date = None
@@ -525,7 +537,8 @@ jobs:
               print(f"\n{'='*50}")
               print(f"Summary: {len(new_posts)} new, "
                     f"{len(skipped_dup)} duplicates, "
-                    f"{len(skipped_recent)} too recent")
+                    f"{len(skipped_recent)} too recent, "
+                    f"{len(skipped_podcast)} podcast/audio")
 
               if new_posts:
                   print("\nNew posts:")
