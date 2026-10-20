@@ -388,7 +388,9 @@ def create_post(item, pub_date, categories=None):
             if len(clean) > 80 and not clean.startswith("*") and not clean.startswith("!"):
                 description = clean
                 if len(description) > 300:
-                    description = description[:297] + "..."
+                    # Keep whole sentences rather than cutting mid-word
+                    ends = [m.end() for m in re.finditer(r"[.!?][\"”’]?(?=\s)", description[:300])]
+                    description = description[:ends[-1]] if ends else description[:297] + "..."
                 break
 
     # Download hero image
