@@ -511,6 +511,7 @@ layout: splash
 .slide-title {
   font-size: 2.5rem;
   font-weight: 700;
+  margin-top: 0; /* the theme's h2 top margin pushed buttons into the dots */
   margin-bottom: 1.5rem;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
   line-height: 1.2;
@@ -599,6 +600,19 @@ layout: splash
   .slide-link {
     padding: 0.6rem 1.5rem;
     font-size: 0.95rem;
+  }
+}
+
+/* Shorter screens (most laptops): tighten the slide so the button stays clear of the dots */
+@media (min-width: 769px) and (max-height: 860px) {
+  .slide-title {
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .slide-text {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
   }
 }
 
