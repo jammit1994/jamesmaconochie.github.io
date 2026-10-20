@@ -18,7 +18,7 @@ image: /assets/images/the-last-guardrail_hero_substack.png
 
 ![The Last Guardrail](/assets/images/the-last-guardrail_hero_substack.png)
 
-### To Govern AI, We Must First Restore The Balance Of Powers
+### To Govern AI, We Must First Restore The Balance Of Power
 
 ---
 

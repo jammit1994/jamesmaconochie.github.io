@@ -17,7 +17,7 @@ image: /assets/images/we-are-a-part-of-the-problem_hero_substack.png
 
 ![We Are a Part of the Problem](/assets/images/we-are-a-part-of-the-problem_hero_substack.png)
 
-### And Why That's Where the Solution Begins
+### And That's Where the Solution Begins
 
 ---
 

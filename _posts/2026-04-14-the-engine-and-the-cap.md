@@ -17,7 +17,7 @@ image: /assets/images/the-engine-and-the-cap_hero_substack.png
 
 ![The Engine and the Cap](/assets/images/the-engine-and-the-cap_hero_substack.png)
 
-### Part 2 of 3: The Wisdom Gap
+### The mechanism that builds wisdom requires stakes. AI has none.
 
 ---
 

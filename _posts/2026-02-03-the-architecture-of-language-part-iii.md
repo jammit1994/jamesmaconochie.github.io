@@ -17,7 +17,7 @@ image: /assets/images/the-architecture-of-language-part-iii_hero_substack.png
 
 ![A conceptual image representing wisdom as the new constraint in an infinite-language world.](/assets/images/the-architecture-of-language-part-iii_hero_substack.png)
 
-### Wisdom in an Infinite-Language World
+### Wisdom in a World of Infinite Language
 
 ---
 

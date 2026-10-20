@@ -17,7 +17,7 @@ image: /assets/images/the-variable-nobody-measured_hero_substack.png
 
 ![The Variable Nobody Measured](/assets/images/the-variable-nobody-measured_hero_substack.png)
 
-### Part 1 of 3: The Wisdom Gap
+### Knowledge and wisdom are not the same thing. The difference is architectural.
 
 ---
 

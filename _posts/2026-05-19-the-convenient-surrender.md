@@ -18,7 +18,7 @@ image: /assets/images/the-convenient-surrender_hero_substack.png
 
 ![The Convenient Surrender](/assets/images/the-convenient-surrender_hero_substack.png)
 
-### Essay 1 of 3 in the Another Brave New World series
+### Another Brave New World, Part 1 — A universal income can replace the salary, not the twenty years of competence that earned it.
 
 ---
 

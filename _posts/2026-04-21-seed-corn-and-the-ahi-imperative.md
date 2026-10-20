@@ -17,7 +17,7 @@ image: /assets/images/seed-corn-and-the-ahi-imperative_hero_substack.png
 
 ![Seed Corn and the AHI Imperative](/assets/images/seed-corn-and-the-ahi-imperative_hero_substack.png)
 
-### Part 3 of 3: The Wisdom Gap
+### We are automating the work that builds wisdom. The cost won't show up for a decade.
 
 ---
 

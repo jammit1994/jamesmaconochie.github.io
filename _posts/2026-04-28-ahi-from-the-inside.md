@@ -17,7 +17,7 @@ image: /assets/images/ahi-from-the-inside_hero_substack.png
 
 ![AHI From the Inside](/assets/images/ahi-from-the-inside_hero_substack.png)
 
-### From the Inside
+### AI can amplify System 1, or scaffold System 2. The difference is the practice.
 
 ---
 

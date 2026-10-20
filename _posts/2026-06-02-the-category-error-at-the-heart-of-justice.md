@@ -17,7 +17,7 @@ image: /assets/images/the-category-error-at-the-heart-of-justice_hero_substack.p
 
 ![The Category Error at the Heart of Justice](/assets/images/the-category-error-at-the-heart-of-justice_hero_substack.png)
 
-### Why procedural fairness and causal literacy are not the same thing
+### Why blindness to bias is not the same as blindness to cause
 
 ---
 

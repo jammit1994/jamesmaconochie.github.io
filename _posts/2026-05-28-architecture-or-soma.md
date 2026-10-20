@@ -17,7 +17,7 @@ image: /assets/images/architecture-or-soma_hero_substack.png
 
 ![Architecture or Soma](/assets/images/architecture-or-soma_hero_substack.png)
 
-### Essay 3 of 3 in the Another Brave New World series
+### Another Brave New World, Part 3 — One path asks nothing of you. That is precisely the problem.
 
 ---
 
