@@ -1,9 +1,9 @@
 name: Sync Substack to Blog
 
 on:
-  schedule:
-    # Runs every Wednesday at 10:00 AM UTC (5:00 AM EST / 6:00 AM EDT)
-    - cron: '0 10 * * 3'
+  # Manual backup only. The weekly sync runs on James's Mac via launchd
+  # (scripts/run_substack_sync_local.sh): Substack blocks GitHub Actions, and
+  # the rss2json proxy this workflow relies on fails on this feed.
   workflow_dispatch:
     inputs:
       dry_run:
