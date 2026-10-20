@@ -5,8 +5,13 @@ author_profile: true
 date: 2026-03-10
 permalink: /blog/after-the-music-stops/
 categories:
-  - substack-sync
-description: "In the first piece in this series, I argued that the technical foundations of the AI scaling thesis are cracking. Turing Award winners and field pioneers are converging on a shared diagnosis: brute-force scaling of large language models won’t yield general intelligence, and something architectura..."
+  - architecture-and-attention
+  - future-of-work
+  - systems-thinking
+  - cognitive-augmentation
+  - ai
+  - technology-ethics
+description: "When the AI correction comes, the cost will not land on investors or executives but on retirement accounts, communities, workers, and democratic institutions. The final part of a series on the AI scaling narrative."
 substack_url: "https://jamesmaconochie.substack.com/p/after-the-music-stops"
 image: /assets/images/after-the-music-stops_hero_substack.png
 ---

@@ -5,8 +5,12 @@ author_profile: true
 date: 2026-02-24
 permalink: /blog/more-instruments-same-tune/
 categories:
-  - substack-sync
-description: "The dominant AI narrative is seductively simple: scale is all you need. More data, more compute, more parameters, and intelligence emerges. It’s the story that’s justified hundreds of billions in investment, reshuffled the power structure of Silicon Valley, and convinced a generation of executive..."
+  - architecture-and-attention
+  - systems-thinking
+  - ai
+  - ai-scaling
+  - cognitive-architecture
+description: "Turing Award winners and field pioneers are converging on the same diagnosis: scaling large language models will not produce general intelligence. Part 1 of a series on the cracks in the AI scaling narrative."
 substack_url: "https://jamesmaconochie.substack.com/p/more-instruments-same-tune"
 image: /assets/images/more-instruments-same-tune_hero_substack.png
 ---

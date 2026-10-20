@@ -5,7 +5,11 @@ author_profile: true
 date: 2026-07-21
 permalink: /blog/the-red-card-that-wouldnt-stay-red/
 categories:
-  - substack-sync
+  - architecture-and-attention
+  - institutions
+  - world-cup
+  - ai
+  - accountability
 description: "Last week, I left a question hanging. The ledger, it turns out, can be edited at both ends. What happens when the beings built to bear consequences start behaving like the systems that were built without them?"
 substack_url: "https://jamesmaconochie.substack.com/p/the-red-card-that-wouldnt-stay-red"
 image: /assets/images/the-red-card-that-wouldnt-stay-red_hero_substack.png

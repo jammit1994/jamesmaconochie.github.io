@@ -5,7 +5,12 @@ author_profile: true
 date: 2026-05-24
 permalink: /blog/the-wrong-dystopia/
 categories:
-  - substack-sync
+  - architecture-and-attention
+  - technology-and-society
+  - history
+  - ai
+  - social-media
+  - huxley
 description: "Another Brave New World, Part 2 — We braced for Orwell's boot. The pacification arrived as convenience instead."
 substack_url: "https://jamesmaconochie.substack.com/p/the-wrong-dystopia"
 image: /assets/images/the-wrong-dystopia_hero_substack.png

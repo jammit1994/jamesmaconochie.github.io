@@ -5,7 +5,12 @@ author_profile: true
 date: 2026-07-28
 permalink: /blog/the-jagged-star/
 categories:
-  - substack-sync
+  - architecture-and-attention
+  - the-wisdom-gap
+  - systems-thinking
+  - ai
+  - cognitive-science
+  - epistemic-humility
 description: "What carved the canyons in machine intelligence, and why nothing exists to sand them."
 substack_url: "https://jamesmaconochie.substack.com/p/the-jagged-star"
 image: /assets/images/the-jagged-star_hero_substack.png

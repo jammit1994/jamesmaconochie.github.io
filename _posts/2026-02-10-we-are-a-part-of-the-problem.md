@@ -5,8 +5,12 @@ author_profile: true
 date: 2026-02-10
 permalink: /blog/we-are-a-part-of-the-problem/
 categories:
-  - substack-sync
-description: "I’ve just finished a three-part series arguing that wisdom, in our current moment, means constraint-awareness. One of the core practices I advocate is generative restraint: resisting the impulse to add to the noise, valuing thought before speech, and recognizing that not every reaction needs to b..."
+  - architecture-and-attention
+  - personal-development
+  - wisdom
+  - attention-economy
+  - social-media
+description: "Even while preaching generative restraint, I felt the pull to post more. The attention economy is a systemic trap made of individual choices, and recognising your own part in it is where the solution begins."
 substack_url: "https://jamesmaconochie.substack.com/p/we-are-a-part-of-the-problem"
 image: /assets/images/we-are-a-part-of-the-problem_hero_substack.png
 ---

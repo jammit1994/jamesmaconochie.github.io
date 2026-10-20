@@ -5,8 +5,12 @@ author_profile: true
 date: 2026-03-17
 permalink: /blog/swarm-intelligence/
 categories:
-  - substack-sync
-description: "I played Doom. Almost obsessively. For nearly two years (1995 to 1997), my colleagues and I would wrap up long days on a construction site in Connecticut and disappear into networked deathmatches for a couple of hours or more (please don’t judge). It was, in the best possible way, a complete wast..."
+  - architecture-and-attention
+  - systems-thinking
+  - cognitive-augmentation
+  - ai
+  - cognitive-architecture
+description: "Brain cells in a dish have learned to play Doom. Biological computing is no longer science fiction, but swarms are powerful, not wise: emergence without executive architecture produces cascades, not decisions."
 substack_url: "https://jamesmaconochie.substack.com/p/swarm-intelligence"
 image: /assets/images/swarm-intelligence_hero_substack.png
 ---

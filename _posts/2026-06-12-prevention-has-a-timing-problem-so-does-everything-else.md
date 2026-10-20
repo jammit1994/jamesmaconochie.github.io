@@ -5,15 +5,19 @@ author_profile: true
 date: 2026-06-12
 permalink: /blog/prevention-has-a-timing-problem-so-does-everything-else/
 categories:
-  - substack-sync
-description: "In a previous essay I argued that Pope Leo XIV’s encyclical on artificial intelligence did something remarkable and then walked away from it. It reached the architectural diagnosis almost no one reaches, that displacement is a choice made at the point of deployment, not a fact of nature descendin..."
+  - architecture-and-attention
+  - future-of-work
+  - magnifica-humanitas-c55
+  - ai-policy
+  - pope-leo-xiv
+description: "Yes, prevention is slow. But the cure isn't built either. And that changes the argument."
 substack_url: "https://jamesmaconochie.substack.com/p/prevention-has-a-timing-problem-so"
 image: /assets/images/prevention-has-a-timing-problem-so-does-everything-else_hero_substack.png
 ---
 
 ![Prevention Has a Timing Problem. So Does Everything Else.](/assets/images/prevention-has-a-timing-problem-so-does-everything-else_hero_substack.png)
 
-### Need to think about subtitle
+### Yes, prevention is slow. But the cure isn't built either. And that changes the argument.
 
 ---
 

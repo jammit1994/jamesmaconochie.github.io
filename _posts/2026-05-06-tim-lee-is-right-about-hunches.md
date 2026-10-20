@@ -5,8 +5,12 @@ author_profile: true
 date: 2026-05-06
 permalink: /blog/tim-lee-is-right-about-hunches/
 categories:
-  - substack-sync
-description: "In [a recent piece](https://substack.com/home/post/p-196703642), Tim Lee offers one of the cleaner arguments I’ve read for why today’s agent architectures are unlikely to produce “AI scientists” anytime soon. His central observation: the implicit knowledge knowledge workers carry, the hunches, th..."
+  - architecture-and-attention
+  - the-wisdom-gap
+  - ai
+  - agents
+  - ai-governance
+description: "Tim Lee is right that hunches don't survive agentic handoffs. But a seasoned hunch is trustworthy because it has carried a consequence, which makes AI's limit a stake problem, not a context-window problem."
 substack_url: "https://jamesmaconochie.substack.com/p/tim-lee-is-right-about-hunches"
 image: /assets/images/tim-lee-is-right-about-hunches_hero_substack.jpeg
 ---

@@ -5,7 +5,12 @@ author_profile: true
 date: 2026-09-15
 permalink: /blog/who-is-left-holding-the-napkin/
 categories:
-  - substack-sync
+  - architecture-and-attention
+  - the-wisdom-gap
+  - systems-thinking
+  - ai
+  - accountability
+  - epistemic-humility
 description: "I have told this story before. Six weeks ago I told it to make a point about software. I want to tell it again to make a point about myself, because I think I put the emphasis in the wrong place."
 substack_url: "https://jamesmaconochie.substack.com/p/who-is-left-holding-the-napkin"
 image: /assets/images/who-is-left-holding-the-napkin_hero_substack.png

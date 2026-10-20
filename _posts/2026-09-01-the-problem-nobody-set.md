@@ -5,7 +5,13 @@ author_profile: true
 date: 2026-09-01
 permalink: /blog/the-problem-nobody-set/
 categories:
-  - substack-sync
+  - architecture-and-attention
+  - the-wisdom-gap
+  - systems-thinking
+  - ai-benchmarks
+  - ai
+  - cognitive-science
+  - epistemic-humility
 description: "What twenty-two players and a dancer alone on a stage are doing that the objective doesn’t describe, and why we have never counted it."
 substack_url: "https://jamesmaconochie.substack.com/p/the-problem-nobody-set"
 image: /assets/images/the-problem-nobody-set_hero_substack.png

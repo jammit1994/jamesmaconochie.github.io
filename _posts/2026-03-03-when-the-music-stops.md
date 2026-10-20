@@ -5,7 +5,11 @@ author_profile: true
 date: 2026-03-03
 permalink: /blog/when-the-music-stops/
 categories:
-  - substack-sync
+  - architecture-and-attention
+  - systems-thinking
+  - attention-economy
+  - technology-ethics
+  - deliberative-democracy
 description: "Michael Burry, the investor made famous by *The Big Short* for calling the 2008 housing crash, is shorting Nvidia and Palantir. He might be early. He might be wrong. But the fact that serious money is now betting against the AI boom tells us something worth examining."
 substack_url: "https://jamesmaconochie.substack.com/p/when-the-music-stops"
 image: /assets/images/when-the-music-stops_hero_substack.png

@@ -5,7 +5,12 @@ author_profile: true
 date: 2026-08-04
 permalink: /blog/ai-inherited-the-word-reward-not-the-parts/
 categories:
-  - substack-sync
+  - architecture-and-attention
+  - ai-architecture
+  - the-wisdom-gap
+  - attention-economy
+  - ai
+  - cognitive-science
 description: "In a brain, reward is three systems that can disagree. A machine got one number that can’t."
 substack_url: "https://jamesmaconochie.substack.com/p/ai-inherited-the-word-reward-not"
 image: /assets/images/ai-inherited-the-word-reward-not-the-parts_hero_substack.png

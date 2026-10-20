@@ -5,7 +5,13 @@ author_profile: true
 date: 2026-05-05
 permalink: /blog/the-architecture-of-truth/
 categories:
-  - substack-sync
+  - philosophy
+  - truth
+  - architecture-and-attention
+  - the-wisdom-gap
+  - constraint-awareness
+  - ai
+  - augmented-human-intelligence
 description: "The cognitive toolkit is necessary. It is not sufficient. Here is what's missing."
 substack_url: "https://jamesmaconochie.substack.com/p/the-architecture-of-truth"
 image: /assets/images/the-architecture-of-truth_hero_substack.png

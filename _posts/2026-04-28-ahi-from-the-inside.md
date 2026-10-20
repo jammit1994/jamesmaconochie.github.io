@@ -5,7 +5,11 @@ author_profile: true
 date: 2026-04-28
 permalink: /blog/ahi-from-the-inside/
 categories:
-  - substack-sync
+  - architecture-and-attention
+  - practical-ai
+  - decision-making
+  - ai-governance
+  - augmented-human-intelligence
 description: "David Hoze and I had been corresponding since early April about a co-authored essay. Three movements, his philosophical and theological grounding bridging to my structural one, the disagreement between us preserved rather than smoothed over. The tone had been generous on both sides."
 substack_url: "https://jamesmaconochie.substack.com/p/ahi-from-the-inside"
 image: /assets/images/ahi-from-the-inside_hero_substack.png

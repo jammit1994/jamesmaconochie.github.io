@@ -5,7 +5,11 @@ author_profile: true
 date: 2026-08-24
 permalink: /blog/the-kindest-thing-pain-does/
 categories:
-  - substack-sync
+  - architecture-and-attention
+  - the-wisdom-gap
+  - ai
+  - cognitive-science
+  - accountability
 description: "A rare condition, two of my own mistakes, and what a body does that a process has to be built to do."
 substack_url: "https://jamesmaconochie.substack.com/p/the-kindest-thing-pain-does"
 image: /assets/images/the-kindest-thing-pain-does_hero_substack.png

@@ -5,7 +5,11 @@ author_profile: true
 date: 2026-06-02
 permalink: /blog/the-category-error-at-the-heart-of-justice/
 categories:
-  - substack-sync
+  - architecture-and-attention
+  - law
+  - ai
+  - politics
+  - decision-making
 description: "A judge reads a sentence. The defendant stands. The crime is not in dispute. The facts were established, the process followed, and the verdict reached by peers. By every procedural measure, justice has been done."
 substack_url: "https://jamesmaconochie.substack.com/p/the-category-error-at-the-heart-of"
 image: /assets/images/the-category-error-at-the-heart-of-justice_hero_substack.png

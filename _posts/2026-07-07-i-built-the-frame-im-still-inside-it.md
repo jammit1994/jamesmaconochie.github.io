@@ -5,7 +5,11 @@ author_profile: true
 date: 2026-07-07
 permalink: /blog/i-built-the-frame-im-still-inside-it/
 categories:
-  - substack-sync
+  - architecture-and-attention
+  - epistemology
+  - the-wisdom-gap
+  - cognitive-bias
+  - ai
 description: "I can recite every way LLMs fool people. Here is why my expertise makes it worse, not better, and why I am the most exposed person in this essay."
 substack_url: "https://jamesmaconochie.substack.com/p/i-built-the-frame-im-still-inside"
 image: /assets/images/i-built-the-frame-im-still-inside-it_hero_substack.png

@@ -5,7 +5,11 @@ author_profile: true
 date: 2026-04-14
 permalink: /blog/the-engine-and-the-cap/
 categories:
-  - substack-sync
+  - architecture-and-attention
+  - learning
+  - wisdom
+  - ai
+  - cognitive-science
 description: "Last week, I established that wisdom cannot be accumulated. It must be traversed. This week: what traversal actually requires, and why AI cannot complete it."
 substack_url: "https://jamesmaconochie.substack.com/p/the-engine-and-the-cap"
 image: /assets/images/the-engine-and-the-cap_hero_substack.png

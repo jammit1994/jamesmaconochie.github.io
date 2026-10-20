@@ -5,7 +5,12 @@ author_profile: true
 date: 2026-03-24
 permalink: /blog/a-viking-a-roman-a-greek-cypriot-and-an-englishman-living-in-boston-walk-into-a-bar-in-lisbon/
 categories:
-  - substack-sync
+  - parallel-horizons
+  - architecture-and-attention
+  - future-of-work
+  - ai
+  - reflection
+  - mastery-of-life
 description: "There is a particular kind of friendship that only makes sense to people who have it. It doesn’t require regular contact, shared geography, or even similar lives. It requires a shared past that was formative enough that no amount of intervening time can entirely dissolve it."
 substack_url: "https://jamesmaconochie.substack.com/p/a-viking-a-roman-a-greek-cypriot"
 image: /assets/images/a-viking-a-roman-a-greek-cypriot-and-an-englishman-living-in-boston-walk-into-a-bar-in-lisbon_hero_substack.png

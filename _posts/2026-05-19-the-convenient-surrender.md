@@ -5,8 +5,13 @@ author_profile: true
 date: 2026-05-19
 permalink: /blog/the-convenient-surrender/
 categories:
-  - substack-sync
-description: "In a recent essay translated by Zilan Qian, Wang Peng, a senior expert at the Tencent Research Institute, names the AI race as a narrative choice rather than a scientific path, and identifies UBI as “maintaining order, not sharing wealth.” That last phrase deserves more attention than it has rece..."
+  - universal-basic-income
+  - architecture-and-attention
+  - future-of-work
+  - technology-and-society
+  - ai
+  - ai-policy
+description: "A universal income can replace the salary, not the twenty years of competence that earned it. Part 1 of the Another Brave New World series."
 substack_url: "https://jamesmaconochie.substack.com/p/the-convenient-surrender"
 image: /assets/images/the-convenient-surrender_hero_substack.png
 ---

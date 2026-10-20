@@ -5,7 +5,12 @@ author_profile: true
 date: 2026-07-14
 permalink: /blog/memory-as-ledger-not-scar/
 categories:
-  - substack-sync
+  - philosophy
+  - ai-ethics
+  - architecture-and-attention
+  - ai-consciousness
+  - ai
+  - memory
 description: "What two years of being remembered by a machine taught me about the continuity question."
 substack_url: "https://jamesmaconochie.substack.com/p/memory-as-ledger-not-scar"
 image: /assets/images/memory-as-ledger-not-scar_hero_substack.png

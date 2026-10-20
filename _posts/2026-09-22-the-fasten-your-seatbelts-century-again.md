@@ -5,7 +5,12 @@ author_profile: true
 date: 2026-09-22
 permalink: /blog/the-fasten-your-seatbelts-century-again/
 categories:
-  - substack-sync
+  - architecture-and-attention
+  - systems-thinking
+  - attention-economy
+  - ai
+  - epistemic-humility
+  - decision-making
 description: "A warning that never turns off stops carrying information, even when it’s right."
 substack_url: "https://jamesmaconochie.substack.com/p/the-fasten-your-seatbelts-century"
 image: /assets/images/the-fasten-your-seatbelts-century-again_hero_substack.png

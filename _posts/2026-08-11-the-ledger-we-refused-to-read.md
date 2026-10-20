@@ -5,7 +5,11 @@ author_profile: true
 date: 2026-08-11
 permalink: /blog/the-ledger-we-refused-to-read/
 categories:
-  - substack-sync
+  - architecture-and-attention
+  - wisdom
+  - ai
+  - accountability
+  - decision-making
 description: "The problem is not that institutions forget. It is that what they remember doesn't cost anybody in the here and now."
 substack_url: "https://jamesmaconochie.substack.com/p/the-ledger-we-refused-to-read"
 image: /assets/images/the-ledger-we-refused-to-read_hero_substack.png

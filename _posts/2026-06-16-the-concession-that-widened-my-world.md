@@ -5,7 +5,11 @@ author_profile: true
 date: 2026-06-16
 permalink: /blog/the-concession-that-widened-my-world/
 categories:
-  - substack-sync
+  - universal-basic-income
+  - architecture-and-attention
+  - future-of-work
+  - ai-and-society
+  - augmented-human-intelligence
 description: "For about a year after that, I did what someone with my résumé is supposed to do. I pursued the next role. A dozen or so serious leads. Most of them reached the second or third interview, a few the fourth. None ended in an offer. The market kept telling me, politely and at length, no."
 substack_url: "https://jamesmaconochie.substack.com/p/the-concession-that-widened-my-world"
 image: /assets/images/the-concession-that-widened-my-world_hero_substack.png

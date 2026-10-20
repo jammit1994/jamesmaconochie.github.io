@@ -5,7 +5,11 @@ author_profile: true
 date: 2026-06-23
 permalink: /blog/the-loop-the-seat-closes/
 categories:
-  - substack-sync
+  - architecture-and-attention
+  - future-of-work
+  - cognitive-debt
+  - ai-and-society
+  - augmented-human-intelligence
 description: "What the driver's seat reveals about consequence, feedback, and the variable both post-labor and AI optimism miss."
 substack_url: "https://jamesmaconochie.substack.com/p/the-loop-the-seat-closes"
 image: /assets/images/the-loop-the-seat-closes_hero_substack.png

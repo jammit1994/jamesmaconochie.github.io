@@ -5,7 +5,12 @@ author_profile: true
 date: 2026-06-30
 permalink: /blog/the-accent-buys-me-a-half-second/
 categories:
-  - substack-sync
+  - architecture-and-attention
+  - critical-thinking
+  - epistemology
+  - the-wisdom-gap
+  - cognitive-bias
+  - ai
 description: "I have spent thirty years spending it. Here is what fluency actually sells, why a machine just broke the deal, and why my own skepticism keeps waving through the voices I lean toward."
 substack_url: "https://jamesmaconochie.substack.com/p/the-accent-buys-me-a-half-second"
 image: /assets/images/the-accent-buys-me-a-half-second_hero_substack.png

@@ -5,7 +5,12 @@ author_profile: true
 date: 2026-09-08
 permalink: /blog/turtles-all-the-way-down/
 categories:
-  - substack-sync
+  - architecture-and-attention
+  - systems-thinking
+  - ai
+  - accountability
+  - epistemic-humility
+  - decision-making
 description: "Every layer of checking rests on the one below it. Here is what happens at the bottom, and how long you can go without looking."
 substack_url: "https://jamesmaconochie.substack.com/p/turtles-all-the-way-down"
 image: /assets/images/turtles-all-the-way-down_hero_substack.png

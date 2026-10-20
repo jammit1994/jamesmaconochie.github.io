@@ -5,8 +5,13 @@ author_profile: true
 date: 2026-03-31
 permalink: /blog/the-wave-that-bypasses-the-system/
 categories:
-  - substack-sync
-description: "Water scarcity is not a future threat. It is here now. Remember the Survival Rule of Threes: death is the likely result of three minutes without air, three hours without shelter (in extreme conditions), three days without water, and three weeks without food. Four billion people, more than half th..."
+  - parallel-horizons
+  - architecture-and-attention
+  - systems-thinking
+  - technology-ethics
+  - desalinization
+  - non-ai-technology-solving-critical
+description: "An old friend's wave-powered desalination buoys turn ocean motion directly into fresh water, with no grid and no fuel. A lesson in removing a layer rather than adding scale, for engineering and for AI."
 substack_url: "https://jamesmaconochie.substack.com/p/the-wave-that-bypasses-the-system"
 image: /assets/images/the-wave-that-bypasses-the-system_hero_substack.png
 ---

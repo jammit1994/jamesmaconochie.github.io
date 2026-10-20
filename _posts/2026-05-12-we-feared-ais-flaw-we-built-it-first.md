@@ -5,7 +5,11 @@ author_profile: true
 date: 2026-05-12
 permalink: /blog/we-feared-ais-flaw-we-built-it-first/
 categories:
-  - substack-sync
+  - architecture-and-attention
+  - ai
+  - politics
+  - cognitive-science
+  - decision-making
 description: "A note I posted recently about due process sparked a broader thought. I’ll come back to it at the end."
 substack_url: "https://jamesmaconochie.substack.com/p/we-feared-ais-flaw-we-built-it-first"
 image: /assets/images/we-feared-ais-flaw-we-built-it-first_hero_substack.png

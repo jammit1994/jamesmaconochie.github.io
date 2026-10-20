@@ -5,7 +5,13 @@ author_profile: true
 date: 2026-02-17
 permalink: /blog/using-ai-to-discipline-attention/
 categories:
-  - substack-sync
+  - architecture-and-attention
+  - systems-thinking
+  - personal-development
+  - cognitive-augmentation
+  - attention-economy
+  - ai
+  - practical-ai
 description: "Last week, I admitted I’m part of the problem. Despite advocating restraint, I’ve felt the pull to post more, feed the algorithm, and add to the noise. We’re all drowning in a flood we helped create."
 substack_url: "https://jamesmaconochie.substack.com/p/using-ai-to-discipline-attention"
 image: /assets/images/using-ai-to-discipline-attention_hero_substack.png

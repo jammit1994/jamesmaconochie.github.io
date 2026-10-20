@@ -5,8 +5,12 @@ author_profile: true
 date: 2026-04-21
 permalink: /blog/seed-corn-and-the-ahi-imperative/
 categories:
-  - substack-sync
-description: "In the previous two posts, I established that wisdom cannot be accumulated and that AI is structurally precluded from traversing the loop that produces it. This week: what that means for the humans building expertise alongside these systems, and why the decisions being made right now may be the m..."
+  - architecture-and-attention
+  - future-of-work
+  - wisdom
+  - ai
+  - cognitive-science
+description: "We are automating the work that builds wisdom. The cost won't show up for a decade. Part 3 of The Wisdom Gap series."
 substack_url: "https://jamesmaconochie.substack.com/p/seed-corn-and-the-ahi-imperative"
 image: /assets/images/seed-corn-and-the-ahi-imperative_hero_substack.png
 ---

@@ -5,8 +5,13 @@ author_profile: true
 date: 2026-03-12
 permalink: /blog/the-last-guardrail/
 categories:
-  - substack-sync
-description: "Two weeks ago, on Friday, February 27th, reports emerged of a confrontation between the U.S. Department of Defense and AI company Anthropic over the use of its Claude model in government systems. Within hours, the dispute escalated into an extraordinary step: federal agencies were directed to cea..."
+  - architecture-and-attention
+  - attention-economy
+  - ai-policy
+  - technology-ethics
+  - deliberative-democracy
+  - governance
+description: "The confrontation between Anthropic and the Department of War was told as an AI safety story. It was really a stress test of constitutional infrastructure, and governing AI starts with restoring the balance of powers."
 substack_url: "https://jamesmaconochie.substack.com/p/the-last-guardrail"
 image: /assets/images/the-last-guardrail_hero_substack.png
 ---

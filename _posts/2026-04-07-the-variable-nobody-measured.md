@@ -5,7 +5,11 @@ author_profile: true
 date: 2026-04-07
 permalink: /blog/the-variable-nobody-measured/
 categories:
-  - substack-sync
+  - architecture-and-attention
+  - wisdom
+  - ai
+  - cognitive-science
+  - decision-making
 description: "In early 2026, researchers added an important wrinkle to what had been a fairly damning picture of AI’s effect on human reasoning."
 substack_url: "https://jamesmaconochie.substack.com/p/the-variable-nobody-measured"
 image: /assets/images/the-variable-nobody-measured_hero_substack.png

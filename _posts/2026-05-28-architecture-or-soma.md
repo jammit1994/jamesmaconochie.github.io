@@ -5,8 +5,12 @@ author_profile: true
 date: 2026-05-28
 permalink: /blog/architecture-or-soma/
 categories:
-  - substack-sync
-description: "The diagnosis was that an old pattern is arriving in a new form, that the pattern is pacification at scale, and that the pattern’s convenience is what makes it durable. The diagnosis matters because the pattern is invisible until it is named. Once named, it becomes refusable. But refusing it requ..."
+  - philosophy-of-technology
+  - technology-and-society
+  - cognitive-debt
+  - ai
+  - augmented-human-intelligence
+description: "One path asks nothing of you. That is precisely the problem. The closing essay of Another Brave New World names the alternative to pacification by default, and what choosing it requires."
 substack_url: "https://jamesmaconochie.substack.com/p/architecture-or-soma"
 image: /assets/images/architecture-or-soma_hero_substack.png
 ---
