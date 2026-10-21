@@ -5,6 +5,8 @@ main:
     url: /journey/
   - title: "Working Papers"
     url: /papers/
+  - title: "Short Reads"
+    url: /companions/
   - title: "Blog"
     url: /blog/
   - title: "Search"           # ← Add this line

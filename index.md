@@ -8,6 +8,9 @@ header:
   overlay_filter: 0.15       # lower = brighter image (try 0.15–0.22)
   caption: "Sunrise over the Charles River between Cambridge and Boston"
   actions:
+    - label: "Start here"
+      url: /companions/
+      class: "btn--primary"
     - label: "Read the Papers"
       url: /papers/
       class: "btn--primary"
