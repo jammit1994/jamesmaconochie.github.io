@@ -1,0 +1,30 @@
+# Plain-language companion pieces, keyed by the slug of the paper they belong to
+# (the filename in _papers/ without .md). A paper with no entry here has no
+# companion, and every link to one is simply left out.
+#
+# The pages themselves are static files in /companions/ and the decks are in
+# /assets/companions/. The gateway, /companions/, belongs to no single paper.
+
+attention-crisis:
+  title: "Why Does It All Feel Like Too Much?"
+  url: /companions/why-does-it-all-feel-like-too-much/
+
+the-wisdom-gap:
+  title: "Why Can't You Just Be Told?"
+  url: /companions/why-cant-you-just-be-told/
+
+architecture-of-truth:
+  title: "What Holds a Claim Up?"
+  url: /companions/what-holds-a-claim-up/
+
+ai-governance:
+  title: "How Would You Know?"
+  url: /companions/how-would-you-know/
+
+when-the-music-stops:
+  title: "Who Pays If It's Wrong?"
+  url: /companions/who-pays-if-its-wrong/
+
+ahi:
+  title: "What Would You Build Instead?"
+  url: /companions/what-would-you-build-instead/

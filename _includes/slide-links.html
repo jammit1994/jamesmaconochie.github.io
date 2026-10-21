@@ -1,0 +1,18 @@
+{%- comment -%}
+  The button(s) on a papers carousel slide. A paper without a companion gets
+  exactly the original single "Read the Paper" link, with no wrapper, so its
+  slide renders as it always has. A paper with one gets the short version
+  first, then the paper, side by side.
+  Params: paper (paper slug), pdf (PDF url).
+{%- endcomment -%}
+{%- capture paper_link -%}
+<a href="{{ include.pdf }}" class="slide-link" target="_blank" rel="noopener noreferrer">Read the Paper →</a>
+{%- endcapture -%}
+{%- if site.data.companions[include.paper] -%}
+<div class="slide-links">
+          {% include companion-link.html paper=include.paper class="slide-link" label="Read the short version →" %}
+          {{ paper_link }}
+        </div>
+{%- else -%}
+{{ paper_link }}
+{%- endif -%}

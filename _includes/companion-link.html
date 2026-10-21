@@ -1,0 +1,9 @@
+{%- comment -%}
+  Prints a "Read the short version" link if the paper has a companion piece
+  in _data/companions.yml, and prints nothing at all if it does not.
+  Params: paper (paper slug), class (link classes), label (optional).
+{%- endcomment -%}
+{%- assign companion = site.data.companions[include.paper] -%}
+{%- if companion -%}
+<a href="{{ companion.url }}" class="{{ include.class }}">{{ include.label | default: "Read the short version" }}</a>
+{%- endif -%}

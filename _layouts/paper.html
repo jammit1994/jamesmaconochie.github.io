@@ -11,6 +11,7 @@ layout: single
 
   {% if page.pdf_url %}
   <div class="paper-actions" style="margin-top: 2rem;">
+    {%- include companion-link.html paper=page.slug class="btn btn--primary btn--large" %}
     <a href="{{ page.pdf_url }}" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer">
       Download Full Paper (PDF)
     </a>
