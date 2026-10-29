@@ -119,13 +119,13 @@ blockquote cite{font-family:var(--d-mono);font-size:.72rem;font-style:normal;
 
 /* three questions */
 .asks{counter-reset:ask;list-style:none;margin:1.25rem 0 0;padding:0;display:grid;gap:1.1rem}
-.asks li{counter-increment:ask;display:grid;grid-template-columns:auto 1fr;gap:1rem;
+.asks li{counter-increment:ask;display:grid;grid-template-columns:auto 1fr;gap:.3rem 1rem;
   align-items:start}
 .asks li::before{content:counter(ask);font-family:var(--d-mono);font-size:.8rem;
   color:var(--redline);border:1px solid var(--redline);width:1.7rem;height:1.7rem;
   display:grid;place-items:center;margin-top:.15rem}
 .asks strong{font-family:var(--d-display);font-weight:600;display:block;font-size:1.05rem}
-.asks span{color:var(--muted);font-size:.97rem}
+.asks span{grid-column:2;color:var(--muted);font-size:.97rem}
 
 /* stats */
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));
